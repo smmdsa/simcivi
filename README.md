@@ -16,9 +16,19 @@ Experiencia contemplativa en HTML, CSS, JavaScript nativo y Three.js r170. Un pl
 
 ## Controles
 
-Arrastrar: recorrer y girar el planeta. Rueda: zoom. Botón derecho o Mayúsculas + arrastrar: desplazamiento más fino. Pinza con dos dedos: zoom. Clic sobre criatura o marcador: ficha, nombre y seguimiento. H: contemplación. Espacio: pausa. Velocidades 1×, 3× y 8×.
+Arrastrar: recorrer y girar el planeta. Rueda: zoom. Botón derecho o Mayúsculas + arrastrar: desplazamiento más fino. Pinza con dos dedos: zoom. Clic sobre criatura o marcador: ficha, nombre y seguimiento. H o botón ⛶: modo pantalla completa, con solicitud de mantener el monitor encendido. Espacio: pausa. Velocidades 1×, 3× y 8×.
 
 Sembrar, lluvia y mutación son intervenciones opcionales. El audio comienza silenciado; cada familia mantiene su voz sintetizada. Las notificaciones aparecen abajo a la derecha, permanecen un segundo, se desvanecen una vez y admiten diez visibles con cola FIFO.
+
+## Modo pantalla
+
+Mover la ventana al monitor deseado y tocar ⛶ o presionar H. Solicita pantalla completa y Screen Wake Lock; oculta la interfaz y, después de cuatro segundos sin movimiento, los controles y el cursor. Mover el mouse o usar el teclado vuelve a mostrar los controles. Esc, H o Salir termina el modo y libera el bloqueo de pantalla.
+
+El indicador confirma si la solicitud está activa. Si el navegador no permite fullscreen, queda una vista limpia en ventana. Si no admite o rechaza Wake Lock, advierte que el monitor podría apagarse. Hay reintento manual; al volver a una pestaña visible se solicita un bloqueo nuevo. No se hacen reintentos continuos después de una revocación del sistema, ni se reproducen videos falsos o se modifican ajustes del sistema operativo.
+
+Requiere HTTPS y una pestaña visible. Ahorro de batería, políticas del navegador o suspensión del sistema pueden prevalecer. No es un fondo nativo de Windows detrás de los iconos y no mantiene funcionando una página cerrada. [Referencia: Screen Wake Lock API](https://developer.mozilla.org/en-US/docs/Web/API/Screen_Wake_Lock_API).
+
+Verificación específica: `node scripts/verify-screen-mode.mjs` cubre entrada/salida, Esc, pérdida y recuperación de visibilidad, permisos denegados, ausencia de API, revocaciones y solicitudes tardías. No simula un apagado físico del monitor.
 
 ## Biología conservada
 
