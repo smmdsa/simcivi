@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "checks": [
+    "spherical projection, seam and poles, opposite day/night, hemispheric seasons",
+    "diploid inheritance, morphology cost, courtship, birth, parental cultural transmission",
+    "material conservation on place/repair/remove and measurable moisture retention",
+    "migration preserves names and lineage, deterministic independent save continuation",
+    "real Three.js geometry, finite IK, polar navigation, LOD/horizon and render/data isolation",
+    "20 simulated minutes: population/material bounds, valid habitats, births, deaths, nutrients, learning"
+  ],
+  "observed": {
+    "seed": 3105480411,
+    "seconds": 1200.000000000004,
+    "population": 298,
+    "births": 225,
+    "deaths": 59,
+    "plants": 2195,
+    "pieces": 977,
+    "groups": 30,
+    "migrations": 257,
+    "activity": {
+      "collected": 1049,
+      "placed": 1488,
+      "shared": 554,
+      "contests": 53,
+      "learned": 21306
+    }
+  },
+  "cpu": {
+    "stepP95ms": 12.454,
+    "closeViewPreparationP95ms": 1.806
+  },
+  "limits": "Node CPU and real Three.js geometry only. No browser/GPU verification or universal 60 FPS guarantee. Six anatomical families; local learned practices, not guaranteed civilizations."
+}

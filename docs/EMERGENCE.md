@@ -1,3 +1,5 @@
+> Documento histórico de V3. Para el comportamiento actual, consultar [V4: planeta y cultura](V4-PLANET.md).
+
 # Véspera III: qué emerge y qué está programado
 
 ## Dos principios, varios mecanismos necesarios
