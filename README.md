@@ -1,10 +1,16 @@
-# SimCivi · Véspera IV — Un planeta vivo
+# SimCivi · Véspera IV.1 — Vidas entrelazadas
 
 Experiencia contemplativa en HTML, CSS, JavaScript nativo y Three.js r170. Un planeta esférico con continentes, océanos, ríos, organismos celulares y prácticas aprendidas. Intervenir es opcional.
 
 [Observar el planeta](https://vespera-biodigital.mrtiagosan.chatgpt.site) · [Roadmap de diez ideas](docs/ROADMAP-V4.md) · [Arquitectura y límites de V4](docs/V4-PLANET.md)
 
-## Novedades
+## Novedades de IV.1
+
+Culturas que se transmiten, se refuerzan y se olvidan; vínculos y cuidados con coste energético; polinización, dispersión y rasgos vegetales heredables; cámara documental autónoma con prioridad al mouse. El modo pantalla completa y monitor encendido queda integrado. [Detalles de los puntos 4–7](docs/V4-LIFEWAYS.md).
+
+El botón **Documental** permite dejar que la cámara encuentre historias reales. Arrastrar o hacer zoom la suspende durante 30 segundos; seguir un individuo mantiene tu elección. También puede controlarse dentro del modo pantalla. Las fichas incorporan vínculos, cuidados, función ecológica y recuerdos.
+
+## Base del planeta
 
 - Geografía esférica: cuatro regiones continentales, océanos, canales fluviales y biomas. Movimiento sobre la superficie; continuidad de longitud y navegación en polos.
 - Sol orbital: hemisferios con día y noche simultáneos. Día de 160 segundos a 1×; año de 24 días, declinación estacional de 23,4°. Luz local, latitud, altura, humedad y estación afectan temperatura, evaporación, crecimiento vegetal y actividad.
@@ -48,7 +54,7 @@ Objetivo 60 FPS con contador real y calidad adaptativa. No se garantiza en todo 
 
 Servir `dist/` por HTTP: `python -m http.server 8080 --directory dist`. Requiere navegador con WebGL y Web Workers. Three.js y su licencia MIT están incluidos; no requiere instalación ni compilación. No abrir mediante `file://`.
 
-`npm test` ejecuta geometría esférica, clima solar, genética, reproducción, cultura, recursos, migración, continuidad determinista, aislamiento render/datos, IK, LOD, veinte minutos simulados, ciclo de vida del worker y notificaciones. Resultado principal: `verification-v4.json`.
+`npm test` ejecuta cultura perecedera, cuidados, polinización, herencia vegetal, dispersión, refugios, cámara documental, fullscreen/Wake Lock, geometría esférica, clima solar, genética, reproducción, cultura, recursos, migración, continuidad determinista, aislamiento render/datos, IK, LOD, veinte minutos simulados, ciclo de vida del worker y notificaciones. Resultado principal: `verification-v4.json`.
 
 Los resultados `verification.json` y `verification-emergence.json` corresponden a la versión III y se conservan como antecedentes.
 
@@ -59,6 +65,9 @@ Los resultados `verification.json` y `verification-emergence.json` corresponden 
 - `simulation-worker.js`: propietario del reloj y de las mutaciones del estado.
 - `genetics.js`: alelos, semillas, herencia y mutación.
 - `culture.js`: aprendizaje, prácticas, materiales, refugios y agrupaciones.
+- `lifeways.js`: memoria perecedera, vínculos, cuidado, polen, semillas y rasgos vegetales.
+- `documentary.js`: director observador, planos, navegación esférica y control manual.
+- `screen-mode.js`: fullscreen y ciclo de vida de Screen Wake Lock.
 - `world.js`: anatomía celular e IK reutilizadas de V3.
 - `globe.js`: planeta, navegación, iluminación, horizonte y LOD.
 - `app.js`, `style.css`, `index.html`: observatorio, fichas, controles y guardado.
