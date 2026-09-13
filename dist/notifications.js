@@ -1,0 +1,6 @@
+/** Stable DOM queue. Visible for 1000 ms, then one fade; never rebuilt by UI refresh. */
+export class NotificationQueue{
+ constructor(root,{maxVisible=10,lifetime=1000,fade=160,timers=globalThis,onSelect=()=>{}}={}){this.root=root;this.maxVisible=maxVisible;this.lifetime=lifetime;this.fade=fade;this.timers=timers;this.onSelect=onSelect;this.pending=[];this.active=new Set();}
+ push({text,title='Véspera',icon='✧',kind='world',entity=0}){this.pending.push({text,title,icon,kind,entity});this.drain();}
+ drain(){while(this.active.size<this.maxVisible&&this.pending.length){const e=this.pending.shift(),node=this.root.ownerDocument.createElement('button');node.className='notice '+e.kind;const icon=this.root.ownerDocument.createElement('span');icon.className='notice-icon';icon.textContent=e.icon;const body=this.root.ownerDocument.createElement('div'),title=this.root.ownerDocument.createElement('strong'),text=this.root.ownerDocument.createElement('span');title.textContent=e.title;text.textContent=e.text;body.append(title,text);node.append(icon,body);if(e.entity)node.addEventListener('click',()=>this.onSelect(e.entity));this.root.append(node);this.active.add(node);this.timers.setTimeout(()=>{node.classList.add('leaving');this.timers.setTimeout(()=>{node.remove();this.active.delete(node);this.drain();},this.fade);},this.lifetime);}}
+}

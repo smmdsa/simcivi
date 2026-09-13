@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "checks": [
+    "10 stable notifications; 1 s dwell; one fade; queued overflow",
+    "material conservation on pickup and placement",
+    "physical obstruction and measurable shelter",
+    "learned utility estimates",
+    "v1 migration and v3 save roundtrip",
+    "no macro construction/war actions",
+    "20 simulated minutes within resource limits"
+  ],
+  "observed": {
+    "population": 112,
+    "blocks": 523,
+    "connectedGroups": 14,
+    "autoExpansions": 2,
+    "activity": {
+      "collected": 543,
+      "placed": 523,
+      "shared": 383,
+      "contests": 21,
+      "learned": 9494
+    }
+  },
+  "cpuStepP95ms": 2.265,
+  "limits": "CPU test only. No claim of human intelligence, cities, civilization, warfare or universal 60 FPS."
+}

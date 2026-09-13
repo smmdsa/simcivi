@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "checks": [
+    "deterministic diploid inheritance and mutation records",
+    "courtship, male/female mating, gestation, biparental birth",
+    "death, corpse persistence, decomposition and nutrient return",
+    "dead vegetation fertilizes growing vegetation",
+    "v1 migration preserves names and world; v2 save roundtrip",
+    "three expansions, habitat confinement, seed uniqueness and one simulated hour",
+    "six locomotion models, living/dead transforms and cell budgets"
+  ],
+  "cells": {
+    "Folívoro": 181,
+    "Brumín": 203,
+    "Áureo": 175,
+    "Rubrón": 184,
+    "Zancaluz": 163,
+    "Nácar": 145
+  },
+  "simulatedHour": {
+    "population": 126,
+    "species": [
+      47,
+      25,
+      14,
+      0,
+      17,
+      23
+    ],
+    "births": 239,
+    "deaths": 147,
+    "nutrients": 25858
+  },
+  "cpuBenchmarks": {
+    "simulationStepP95ms": 3.063,
+    "creaturePreparationP95ms": 2.005,
+    "agents": 126,
+    "note": "Node CPU only; excludes WebGL, GPU, browser layout and display timing. Does not certify 60 FPS."
+  }
+}
