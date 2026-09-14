@@ -41,3 +41,9 @@ Completados dentro de un alcance de reglas locales acotadas:
 **10. Escala y detalle implementado:** descarte por horizonte y cámara, LOD con histéresis, presupuestos estrictos de células, vegetación y píxeles, calidad adaptada a P95/FPS medidos, consulta GPU opcional y transporte incremental sin pérdida. Todas las regiones conservan el mismo reloj biológico. Océano, atmósfera, nubes, estrellas y detalles de superficie se integran con el sol orbital y los niveles de calidad.
 
 [Presupuestos, validación y límites](V4-SCALE.md). Objetivo de 60 FPS, sujeto al dispositivo; no se aumenta sin límite la población ni se garantiza ejecución en segundo plano cuando el navegador suspende la pestaña.
+
+## Entrega V4.4 — profundización ambiental
+
+Se profundiza el punto 2 y su conexión con el 9: clima autónomo con memoria térmica, ciclo del agua y viento local. Se eliminan los sliders climáticos. [Implementación](V4-ENVIRONMENT.md).
+
+El nuevo [plan de naturaleza y sociedades](PLANET-SOCIETIES-ROADMAP.md) organiza riesgos, comunidades e información pública en seis entregas; solo A está completada. No sustituye ni declara terminado el punto 8 de memoria histórica.

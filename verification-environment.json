@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "checks": [
+    "conservative water transfers over four day/night cycles",
+    "solar forcing and opposing hemispheric seasons",
+    "land/ocean thermal inertia",
+    "wind from thermal pressure differences",
+    "seam continuity and finite bounded state",
+    "local nutrients from decomposition",
+    "deterministic save continuation and v5 identity-preserving migration",
+    "manual climate/rain intervention removed"
+  ],
+  "cells": 512,
+  "waterError": -4.511093720793724e-10,
+  "dailyTemperatureAmplitude": {
+    "inland": 25.099078977279984,
+    "ocean": 6.566365206555528
+  },
+  "seasonalTemperatures": [
+    {
+      "north": 17.805631386088216,
+      "south": 11.607131909549159
+    },
+    {
+      "north": 11.929853163461347,
+      "south": 17.33850394459062
+    }
+  ],
+  "waterCycle": {
+    "evaporated": 296.1094847757337,
+    "precipitated": 333.64053075085735,
+    "runoff": 28.431484828742107
+  },
+  "cpuUpdateP95ms": 2.718201000000022,
+  "limits": "Reduced environmental model, not a calibrated forecast; CPU in Node, not browser FPS."
+}

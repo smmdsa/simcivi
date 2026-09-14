@@ -104,5 +104,5 @@ export class Recovery {
   }
   this.regions=rows;this.refuges=refuges;
  }
- wind(){let moved=0;for(const s of this.seeds.slice(0,9)){const a=this.sim.random()*Math.PI*2,p=move(s.x,s.z,Math.sin(a)*4,Math.cos(a)*4);if(this.site(p,s.type)){Object.assign(s,p);s.ready=0;moved++;}}this.totals.windMoved+=moved;return moved;}
+ wind(){let moved=0;for(const s of this.seeds.slice(0,9)){const e=this.sim.local(s);if((e.wind||0)<.25)continue;const scale=Math.min(4,e.wind)/e.wind,p=move(s.x,s.z,e.windEast*scale,e.windNorth*scale);if(this.site(p,s.type)){Object.assign(s,p);s.ready=0;moved++;}}this.totals.windMoved+=moved;return moved;}
 }

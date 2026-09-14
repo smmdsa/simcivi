@@ -1,3 +1,4 @@
+await import('./verify-environment.mjs');
 await import('./verify-scale.mjs');
 await import('./verify-recovery.mjs');
 await import('./verify-lifeways.mjs');

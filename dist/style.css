@@ -22,3 +22,5 @@
 @media(max-width:400px){.brand>svg{display:none}.topbar{gap:10px}.documentary-caption{font-size:12px}}
 
 .recovery-open{border-color:#b8cdaa40;background:#adbb8f08}.recovery-open .eyebrow{display:block;font-size:9px;margin-bottom:8px}.recovery-open>b{display:block;font-size:12px;font-weight:500}#recovery-dialog{width:620px}#recovery-dialog p{font-size:13px;line-height:1.75}#refuge-list{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}.refuge-link{border:1px solid #b8cdaa40;border-radius:18px;padding:10px 13px;color:#d8e4bd;font-size:12px}#resilience-detail{color:#d2d8b3}
+
+.climate-observation{display:grid;grid-template-columns:1fr 1fr;gap:12px 16px;margin:15px 0}.climate-observation>div{display:flex;flex-direction:column;gap:4px}.climate-observation span{font-size:14px;line-height:1.4;opacity:.75}.climate-observation b{font-size:16px;font-weight:500;font-variant-numeric:tabular-nums}
