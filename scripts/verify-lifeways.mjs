@@ -13,7 +13,7 @@ Object.assign(child,move(p.x,p.z,3,0),{energy:40});m.social.intent={kind:'care',
 // An alarm must not erase its fleeing destination when canceling a social action.
 m.state='Huyendo';m.target={...p,kind:'escape'};l.guide(m);assert.equal(m.target.kind,'escape');
 // Floral contact: no self-pollination; cross pollen required for local offspring.
-s.food=[];const a=s.addFood(p,1,1),b=s.addFood(move(p.x,p.z,.2,0),1,1);assert.equal(a.type,1);assert.equal(b.type,1);l.ensurePlant(a);l.ensurePlant(b);l.visit(m,a);assert(!a.pollinated);l.visit(m,a);assert(!a.pollinated);l.visit(m,b);assert(b.pollinated);assert.equal(l.totals.pollinations,1);assert(m.ecology.pollen);
+s.food=[];const a=s.addFood(p,1,1),b=s.addFood(move(p.x,p.z,.2,0),1,1);assert.equal(a.type,1);assert.equal(b.type,1);l.ensurePlant(a);l.ensurePlant(b);m.ecology.pollen=null;const pollinationsBefore=l.totals.pollinations;l.visit(m,a);assert(!a.pollinated);l.visit(m,a);assert(!a.pollinated);l.visit(m,b);assert(b.pollinated);assert.equal(l.totals.pollinations,pollinationsBefore+1);assert(m.ecology.pollen);
 const genes={...b.genes},desc=l.germinate(p,1,genes,b.id);assert(desc);assert.equal(desc.parentPlant,b.id);assert.equal(desc.genes.generation,genes.generation+1);assert.notDeepEqual(desc.genes,genes);assert.equal(l.germinate(s.point(5),1,genes),null);
 const unpollinated=s.addFood(p,1,1);const seedCount=m.ecology.seeds.length;l.consume(m,unpollinated);assert.equal(m.ecology.seeds.length,seedCount);
 // Seed transport requires time AND separation, with inherited plant traits.

@@ -28,4 +28,16 @@ Completados dentro de un alcance de reglas locales acotadas:
 - **6:** polinización cruzada, semillas transportadas, rasgos vegetales heredables, cobertura contra depredación y consecuencias ecológicas medibles.
 - **7:** director autónomo basado en sucesos, planos largos, viajes esféricos suaves y prioridad al control manual; disponible en modo pantalla.
 
-[Implementación, controles, presupuestos y límites](V4-LIFEWAYS.md). Los puntos 8–10 siguen como líneas futuras; existen bases parciales de historia, nutrientes y LOD, sin considerar completado su alcance completo.
+[Implementación, controles, presupuestos y límites](V4-LIFEWAYS.md). El punto 8 sigue pendiente: las bases de genealogía y eventos todavía no constituyen mapas históricos ni timelapses. Los puntos 9 y 10 se entregan en las versiones siguientes.
+
+## Entrega V4.2 — punto 9
+
+**9. Recuperación ecológica implementada:** banco finito de semillas con genética y viabilidad, dormancia vegetal, letargo animal con gasto energético y envejecimiento, búsqueda de microrefugios y recuperación observable por región. La reproducción y las reservas sustituyen la generación ambiental continua de plantas. No hay repoblación automática tras extinciones.
+
+[Reglas, migración de partidas, pruebas y límites](V4-RECOVERY.md).
+
+## Entrega V4.3 — punto 10
+
+**10. Escala y detalle implementado:** descarte por horizonte y cámara, LOD con histéresis, presupuestos estrictos de células, vegetación y píxeles, calidad adaptada a P95/FPS medidos, consulta GPU opcional y transporte incremental sin pérdida. Todas las regiones conservan el mismo reloj biológico. Océano, atmósfera, nubes, estrellas y detalles de superficie se integran con el sol orbital y los niveles de calidad.
+
+[Presupuestos, validación y límites](V4-SCALE.md). Objetivo de 60 FPS, sujeto al dispositivo; no se aumenta sin límite la población ni se garantiza ejecución en segundo plano cuando el navegador suspende la pestaña.

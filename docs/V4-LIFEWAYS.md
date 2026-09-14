@@ -1,6 +1,6 @@
 # V4.1 — Memoria, compañía y vidas entrelazadas
 
-Implementación de los puntos 4–7 del primer roadmap. Se conserva el planeta, el reloj solar, los habitantes y el guardado existente. No hace falta reiniciar.
+Implementación de los puntos 4–7 del primer roadmap. Nota posterior: V4.2 reemplaza el aporte ambiental de plantas por reservas finitas y amplía el presupuesto reproductivo; ver [Recuperación](V4-RECOVERY.md). Se conserva el planeta, el reloj solar, los habitantes y el guardado existente. No hace falta reiniciar.
 
 ## 4. Culturas aprendidas y perecederas
 

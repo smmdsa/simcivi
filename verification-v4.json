@@ -10,39 +10,50 @@
     "20 simulated minutes: population/material bounds, valid habitats, births, deaths, nutrients, learning"
   ],
   "observed": {
-    "seed": 1629994428,
+    "seed": 515684378,
     "seconds": 1200.000000000004,
-    "population": 303,
-    "births": 242,
-    "deaths": 71,
-    "plants": 2397,
-    "pieces": 891,
+    "population": 357,
+    "births": 279,
+    "deaths": 54,
+    "plants": 2400,
+    "pieces": 885,
     "groups": 30,
-    "migrations": 752,
+    "migrations": 248,
     "activity": {
-      "collected": 977,
-      "placed": 1338,
-      "shared": 538,
-      "contests": 45,
-      "learned": 18971
+      "collected": 950,
+      "placed": 1254,
+      "shared": 506,
+      "contests": 62,
+      "learned": 18531
     },
     "lifeways": {
-      "transmissions": 701,
-      "forgotten": 724,
-      "care": 411,
-      "companionship": 6736,
-      "pollinations": 757,
-      "dispersed": 2572,
-      "germinated": 6077,
-      "refuge": 73.4000000000001
+      "transmissions": 884,
+      "forgotten": 939,
+      "care": 513,
+      "companionship": 7634,
+      "pollinations": 309,
+      "dispersed": 3303,
+      "germinated": 13097,
+      "refuge": 140.5999999999963
     },
+    "recovery": {
+      "stored": 4384,
+      "sprouted": 3265,
+      "expired": 1,
+      "plantSleeps": 1364,
+      "plantWakes": 1039,
+      "animalSleeps": 176,
+      "animalWakes": 140,
+      "windMoved": 13
+    },
+    "seedBank": 1118,
     "sharedPractices": 96,
-    "snapshotBytes": 3550314,
-    "plantGenerations": 10
+    "snapshotBytes": 4238138,
+    "plantGenerations": 12
   },
   "cpu": {
-    "stepP95ms": 15.661,
-    "closeViewPreparationP95ms": 2.413
+    "stepP95ms": 17.945,
+    "closeViewPreparationP95ms": 1.682
   },
   "limits": "Node CPU and real Three.js geometry only. No browser/GPU verification or universal 60 FPS guarantee. Six anatomical families; local learned practices, not guaranteed civilizations."
 }

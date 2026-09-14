@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "seed": 1724630257,
+  "phases": [
+    {
+      "name": "Before crisis",
+      "time": 120,
+      "population": 151,
+      "plants": 2400,
+      "active": 2283,
+      "dormant": 117,
+      "seeds": 1119,
+      "sleeping": 0,
+      "sprouted": 179,
+      "wakes": 1,
+      "plantWakes": 31,
+      "deaths": 4
+    },
+    {
+      "name": "Hot drought",
+      "time": 210,
+      "population": 161,
+      "plants": 2018,
+      "active": 57,
+      "dormant": 1961,
+      "seeds": 1198,
+      "sleeping": 123,
+      "sprouted": 206,
+      "wakes": 17,
+      "plantWakes": 42,
+      "deaths": 7
+    },
+    {
+      "name": "Recovery",
+      "time": 392,
+      "population": 173,
+      "plants": 1971,
+      "active": 1812,
+      "dormant": 159,
+      "seeds": 62,
+      "sleeping": 6,
+      "sprouted": 1366,
+      "wakes": 157,
+      "plantWakes": 2045,
+      "deaths": 19
+    }
+  ],
+  "cpuStepP95ms": 12.424,
+  "cpuStepP99ms": 18.987,
+  "snapshotBytes": 2264368,
+  "scope": "Whole ecosystem, 120 seconds baseline + 90 seconds hot drought + save continuation + 180 seconds favorable weather. No respawn. Node CPU, not GPU."
+}

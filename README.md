@@ -1,8 +1,22 @@
-# SimCivi · Véspera IV.1 — Vidas entrelazadas
+# SimCivi · Véspera IV.3 — Un mundo vivo
 
 Experiencia contemplativa en HTML, CSS, JavaScript nativo y Three.js r170. Un planeta esférico con continentes, océanos, ríos, organismos celulares y prácticas aprendidas. Intervenir es opcional.
 
 [Observar el planeta](https://vespera-biodigital.mrtiagosan.chatgpt.site) · [Roadmap de diez ideas](docs/ROADMAP-V4.md) · [Arquitectura y límites de V4](docs/V4-PLANET.md)
+
+## Novedades de IV.3
+
+El punto 10 integra océanos con profundidad, reflejo solar y oleaje, nubes procedurales ligadas a humedad y lluvia, atmósfera de amanecer, relieve con grano fino, estrellas y flores con brillo nocturno asociado a su néctar. El encuadre orbital deja respirar al planeta; al acercarse, las nubes se retiran de la vista.
+
+La calidad automática usa tiempos P95/P99, límites de células, vegetación y píxeles. El LOD conserva su nivel entre umbrales para evitar saltos repetidos. El panel de rendimiento distingue CPU, fotogramas y GPU cuando el dispositivo permite medirla. El canal del worker omite genomas sin cambios y reconstruye estados completos; fuera de cámara la simulación continúa. [Presupuestos, pruebas y límites](docs/V4-SCALE.md).
+
+## Novedades de IV.2
+
+El punto 9 incorpora una reserva finita de semillas con genética persistente, plantas que repliegan su crecimiento, animales que buscan microrefugios y entran en letargo, y rebrotes cuando las condiciones vuelven a ser favorables. La recuperación depende de supervivientes. No reaparecen animales extintos ni plantas sin semillas o raíces vivas.
+
+El botón **La vida resiste** permite observar reservas, dormancia y recuperación por región. La cámara documental puede seguir estos acontecimientos. La partida se adapta automáticamente sin reiniciarse. [Reglas, presupuestos y límites](docs/V4-RECOVERY.md).
+
+Se sustituye la llegada continua de brotes por descendencia y reservas reales; el viento transporta semillas existentes y los cadáveres aportan nutrientes. Las plantas maduras de partidas anteriores pueden formar una primera reserva, una sola vez y con coste de biomasa.
 
 ## Novedades de IV.1
 
@@ -46,15 +60,15 @@ Sexos, madurez, energía, salud, edad, gestación, semillas genéticas únicas, 
 
 Se conserva la clave local `vespera-world-v2`, ahora con formato 5. Los formatos 2–4 migran automáticamente; el original se respalda en `vespera-pre-planet-backup`. El jardín anterior se traslada a Auralia conservando identidades e historias; otros continentes reciben fundadores. Guardado cada 12 segundos, al salir y después de acciones relevantes. Estado local, sin sincronización y sin avance con la página cerrada.
 
-Límites: 384 criaturas vivas, 2.400 plantas, 1.400 piezas, 420 depósitos materiales, 64 cadáveres, 180 parches de nutrientes, 500 difuntos y 100 eventos recientes. El navegador puede ralentizar o suspender una pestaña oculta. Bajo sobrecarga el reloj puede avanzar más despacio, manteniendo los mismos pasos de simulación.
+Límites: 384 criaturas vivas, 2.400 plantas, 1.400 piezas, 420 depósitos materiales, 64 cadáveres, 180 parches de nutrientes, 500 difuntos y 100 eventos recientes. La recuperación añade hasta 1.200 semillas y 48 microrefugios observados. Los temporizadores se conservan y el clima/aptitud derivados no se duplican en el guardado. El navegador puede ralentizar o suspender una pestaña oculta. Bajo sobrecarga el reloj puede avanzar más despacio, manteniendo los mismos pasos de simulación.
 
-Objetivo 60 FPS con contador real y calidad adaptativa. No se garantiza en todo hardware. Las pruebas del repositorio miden CPU y geometría Three.js, **no GPU, WebGL ni fluidez visual en navegador**.
+Objetivo 60 FPS con contador real y calidad adaptativa. No se garantiza en todo hardware. Las pruebas principales miden CPU, transporte y geometría Three.js. La prueba opcional de shaders compila y enlaza GLSL ES 3 con Mesa; la revisión visual empleó rasterización por software. **No certifican 60 FPS ni fluidez en un navegador o GPU concreto**.
 
 ## Ejecutar y verificar
 
 Servir `dist/` por HTTP: `python -m http.server 8080 --directory dist`. Requiere navegador con WebGL y Web Workers. Three.js y su licencia MIT están incluidos; no requiere instalación ni compilación. No abrir mediante `file://`.
 
-`npm test` ejecuta cultura perecedera, cuidados, polinización, herencia vegetal, dispersión, refugios, cámara documental, fullscreen/Wake Lock, geometría esférica, clima solar, genética, reproducción, cultura, recursos, migración, continuidad determinista, aislamiento render/datos, IK, LOD, veinte minutos simulados, ciclo de vida del worker y notificaciones. Resultado principal: `verification-v4.json`.
+`npm test` ejecuta crisis y recuperación, viabilidad, dormancia, ausencia de respawn, cultura perecedera, cuidados, polinización, herencia vegetal, dispersión, refugios, cámara documental, fullscreen/Wake Lock, geometría esférica, clima solar, genética, reproducción, cultura, recursos, migración, continuidad determinista, aislamiento render/datos, IK, LOD, veinte minutos simulados, ciclo de vida del worker y notificaciones. Informes: `verification-v4.json`, `verification-recovery.json` `verification-crisis.json` y `verification-scale.json`. `npm run test:shaders` requiere Python 3 y Mesa EGL/GLES en Linux.
 
 Los resultados `verification.json` y `verification-emergence.json` corresponden a la versión III y se conservan como antecedentes.
 
@@ -66,10 +80,14 @@ Los resultados `verification.json` y `verification-emergence.json` corresponden 
 - `genetics.js`: alelos, semillas, herencia y mutación.
 - `culture.js`: aprendizaje, prácticas, materiales, refugios y agrupaciones.
 - `lifeways.js`: memoria perecedera, vínculos, cuidado, polen, semillas y rasgos vegetales.
+- `recovery.js`: reservas, viabilidad, dormancia, microrefugios y recuperación regional.
 - `documentary.js`: director observador, planos, navegación esférica y control manual.
 - `screen-mode.js`: fullscreen y ciclo de vida de Screen Wake Lock.
 - `world.js`: anatomía celular e IK reutilizadas de V3.
 - `globe.js`: planeta, navegación, iluminación, horizonte y LOD.
+- `planet-visuals.js`: océano, atmósfera, nubes, superficie, estrellas y néctar luminoso.
+- `render-budget.js`: límites, histéresis, tiempos de fotogramas y consultas GPU.
+- `state-channel.js`: transporte incremental y reconstrucción completa del estado.
 - `app.js`, `style.css`, `index.html`: observatorio, fichas, controles y guardado.
 - `sound.js`, `notifications.js`: audio y avisos.
 

@@ -1,10 +1,11 @@
 {
   "name": "vespera",
-  "version": "4.1.0",
+  "version": "4.3.0",
   "type": "module",
   "private": true,
   "description": "Contemplative cellular ecosystem in plain HTML, CSS, JavaScript and Three.js",
   "scripts": {
-    "test": "node scripts/verify.mjs"
+    "test": "node scripts/verify.mjs",
+    "test:shaders": "node scripts/verify-shaders.mjs"
   }
 }
