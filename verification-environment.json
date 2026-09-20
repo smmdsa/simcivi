@@ -31,6 +31,6 @@
     "precipitated": 333.64053075085735,
     "runoff": 28.431484828742107
   },
-  "cpuUpdateP95ms": 2.718201000000022,
+  "cpuUpdateP95ms": 1.420024999999896,
   "limits": "Reduced environmental model, not a calibrated forecast; CPU in Node, not browser FPS."
 }

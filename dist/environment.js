@@ -26,11 +26,11 @@ export class Environment {
  }
 
  tick(dt){this.clock+=dt;if(this.clock+1e-9<ENV_STEP)return;this.clock-=ENV_STEP;this.advance(ENV_STEP,this.sim.time);}
- advance(dt,time){this.time=time;const {cells,geo}=this,sun=sunDirection(time);this.revision++;
+ advance(dt,time){this.time=time;this.sim.geology?.advance(dt,time);const {cells,geo}=this,sun=sunDirection(time);this.revision++;
   for(const c of cells){c.cover=0;c.nutrients=0;}
   for(const p of this.sim.food){if(!p.recovery?.dormant)cells[this.index(p.x,p.z)].cover+=p.growth*.045;}
   for(const p of this.sim.soil)cells[this.index(p.x,p.z)].nutrients+=p.nutrients;
-  for(let i=0;i<N;i++){const c=cells[i],g=geo[i],cloud=clamp(c.cloud/.12,0,1);c.cover=clamp(c.cover,0,1);this.sunlight[i]=clamp((g.n.x*sun.x+g.n.y*sun.y+g.n.z*sun.z)*1.35,0,1);const target=thermalTarget(g,this.sunlight[i],cloud,c.cover),inertia=14+g.sea*90+c.soil*8;
+  for(let i=0;i<N;i++){const c=cells[i],g=geo[i],cloud=clamp(c.cloud/.12,0,1);c.cover=clamp(c.cover,0,1);this.sunlight[i]=clamp((g.n.x*sun.x+g.n.y*sun.y+g.n.z*sun.z)*1.35,0,1);const target=thermalTarget(g,this.sunlight[i],cloud,c.cover)-(this.sim.geology?.offset(g.x,g.z)||0)*1.1-Math.min(2,(this.sim.hydrology?.snow[i]||0)*2),inertia=14+g.sea*90+c.soil*8;
    this.heat[i]=c.temperature+(target-c.temperature)*(1-Math.exp(-dt/inertia));
    c.pressure=1013-(c.temperature-(18-12*g.latitude))*.85;
   }
@@ -41,17 +41,17 @@ export class Environment {
    for(const [component,to]of [[c.east,c.east>=0?east:west],[c.north,c.north>=0?north:south]]){const fraction=Math.min(.06,Math.abs(component)*dt*.009);const vapor=c.vapor*fraction,cloud=c.cloud*fraction;this.vaporDelta[i]-=vapor;this.vaporDelta[to]+=vapor;this.cloudDelta[i]-=cloud;this.cloudDelta[to]+=cloud;}
   }
   for(let i=0;i<N;i++){const c=cells[i],g=geo[i];c.temperature=this.heat[i];c.vapor+=this.vaporDelta[i];c.cloud+=this.cloudDelta[i];
-   const humidity=clamp(c.vapor/saturation(c.temperature),0,1),wind=Math.hypot(c.east,c.north),potential=dt*.0017*(.3+this.sunlight[i])*(1+Math.max(0,c.temperature-12)*.04)*(1-humidity*.65)*(1+wind*.07)*(1+c.cover*.3),available=g.water?c.ocean:c.soil,evap=Math.min(available,potential);
-   if(g.water)c.ocean-=evap;else c.soil-=evap;c.vapor+=evap;c.temperature-=evap*14;this.totals.evaporated+=evap;
+   const humidity=clamp(c.vapor/saturation(c.temperature),0,1),wind=Math.hypot(c.east,c.north),potential=dt*.0017*(.3+this.sunlight[i])*(1+Math.max(0,c.temperature-12)*.04)*(1-humidity*.65)*(1+wind*.07)*(1+c.cover*.3),available=g.water?c.ocean:c.soil,evap=this.sim.hydrology?this.sim.hydrology.evaporate(i,potential):Math.min(available,potential);
+   if(!this.sim.hydrology){if(g.water)c.ocean-=evap;else c.soil-=evap;}c.vapor+=evap;c.temperature-=evap*14;this.totals.evaporated+=evap;
    const condensate=Math.max(0,c.vapor-saturation(c.temperature))*(1-Math.exp(-dt*.4));c.vapor-=condensate;c.cloud+=condensate;c.temperature+=condensate*4;
    const dryCloud=Math.min(c.cloud,Math.max(0,saturation(c.temperature)-c.vapor)*.02*dt);c.cloud-=dryCloud;c.vapor+=dryCloud;
    const rain=Math.min(c.cloud,Math.max(0,c.cloud-.009)*dt*.16);c.cloud-=rain;c.rain=rain/dt*10;this.totals.precipitated+=rain;
-   if(g.water)c.ocean+=rain;else c.soil+=rain;
+   if(this.sim.hydrology)this.sim.hydrology.precipitation(i,rain,c.temperature);else if(g.water)c.ocean+=rain;else c.soil+=rain;
    const overflow=Math.max(0,c.soil-1),drain=Math.min(c.soil,dt*.00013*Math.max(0,c.soil-.35)),flow=overflow+drain;let to=i;for(const j of g.neighbors)if(geo[j].height<geo[to].height)to=j;
-   if(!g.water&&to!==i&&flow>0){c.soil-=flow;this.waterDelta[to]+=flow;this.totals.runoff+=flow;}
+   if(!this.sim.hydrology&&!g.water&&to!==i&&flow>0){c.soil-=flow;this.waterDelta[to]+=flow;this.totals.runoff+=flow;}
   }
   for(let i=0;i<N;i++){if(geo[i].water)cells[i].ocean+=this.waterDelta[i];else cells[i].soil+=this.waterDelta[i];}
-  this.summarize();this.windClock+=dt;if(this.windClock>=30){this.windClock=0;this.sim.recovery?.wind();}
+  this.sim.hydrology?.advance(dt,time);this.sim.hydrology?.exposure();this.sim.geology?.exposure();this.summarize();this.windClock+=dt;if(this.windClock>=30){this.windClock=0;this.sim.recovery?.wind();}
   if(time>=this.noticeAt){this.noticeAt=time+45;const wet=cells.reduce((best,c,i)=>c.rain>cells[best].rain?i:best,0);if(cells[wet].rain>.035){const g=geo[wet];this.sim.log('La condensación trae lluvia a '+CONTINENTS[g.region].name+'.','☂','weather',null,g);}}
  }
  summarize(){let temperature=0,humidity=0,moisture=0,cloud=0,rain=0,fertility=0;for(let i=0;i<N;i++){const c=this.cells[i];fertility+=.30+.4*this.geo[i].moisture+c.nutrients/(35+c.nutrients)*.3;temperature+=c.temperature;humidity+=clamp(c.vapor/saturation(c.temperature),0,1);moisture+=clamp(c.soil,0,1);cloud+=clamp(c.cloud/.12,0,1);rain+=c.rain;}this.summary={temperature:temperature/N,humidity:humidity/N,moisture:moisture/N,cloud:cloud/N,rain:rain/N,fertility:fertility/N};this.sim.climate={temperature:this.summary.temperature,moisture:this.summary.moisture*100,fertility:this.summary.fertility*100};this.sim.rain=this.summary.rain;this.sim.weather=this.summary.rain>.008?'Lluvia':'Calma';}

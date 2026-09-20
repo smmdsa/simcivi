@@ -8,30 +8,30 @@
     "bounded nonblocking GPU queries and disjoint handling"
   ],
   "transport": {
-    "fullBytes": 29008990,
-    "deltaBytes": 20179507,
-    "reductionPercent": 30.4
+    "fullBytes": 30189303,
+    "deltaBytes": 21358516,
+    "reductionPercent": 29.3
   },
   "renderBudgets": [
     {
       "tier": 0,
       "cells": 22806,
-      "plants": 351,
-      "markers": 136,
+      "plants": 227,
+      "markers": 133,
       "pixelRatio": 1.2422599874998832
     },
     {
       "tier": 1,
       "cells": 14732,
-      "plants": 351,
-      "markers": 146,
+      "plants": 227,
+      "markers": 143,
       "pixelRatio": 1.0063456073742665
     },
     {
       "tier": 2,
       "cells": 9271,
-      "plants": 78,
-      "markers": 189,
+      "plants": 56,
+      "markers": 186,
       "pixelRatio": 0.7917884896521792
     }
   ],

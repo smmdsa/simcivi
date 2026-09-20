@@ -1,5 +1,5 @@
 import {normal,coordinates,distance,clamp} from './planet.js';
-const PRIORITY={recovery:8,birth:9,social:8,ecology:8,culture:7,mutation:7,migration:6,collective:5,death:5,court:4};
+const PRIORITY={earthquake:10,eruption:10,flood:9,recovery:8,birth:9,social:8,ecology:8,culture:7,mutation:7,migration:6,collective:5,death:5,court:4};
 export function sphericalBlend(a,b,t){const u=normal(a.x,a.z),v=normal(b.x,b.z),dot=clamp(u.x*v.x+u.y*v.y+u.z*v.z,-1,1),angle=Math.acos(dot);if(angle<.00001)return {...b};if(dot<-.9999){const axis=Math.abs(u.y)<.9?{x:0,y:1,z:0}:{x:1,y:0,z:0},d=axis.x*u.x+axis.y*u.y+axis.z*u.z,q={x:axis.x-d*u.x,y:axis.y-d*u.y,z:axis.z-d*u.z},l=Math.hypot(q.x,q.y,q.z),c=Math.cos(Math.PI*t),s=Math.sin(Math.PI*t);return coordinates({x:u.x*c+q.x/l*s,y:u.y*c+q.y/l*s,z:u.z*c+q.z/l*s});}const s=Math.sin(angle),x=Math.sin((1-t)*angle)/s,y=Math.sin(t*angle)/s;return coordinates({x:u.x*x+v.x*y,y:u.y*x+v.y*y,z:u.z*x+v.z*y});}
 export class Documentary {
  constructor({enabled=true,reducedMotion=false}={}){this.enabled=enabled;this.reducedMotion=reducedMotion;this.elapsed=0;this.resumeAt=0;this.shot=null;this.used=new Map();this.caption='La vida sigue su curso';this.status='Observando';this.nextAt=2;}

@@ -1,14 +1,20 @@
-# SimCivi · Véspera IV.4 — El planeta respira
+# SimCivi · Véspera IV.5 — El paisaje tiene memoria
 
 Experiencia contemplativa en HTML, CSS, JavaScript nativo y Three.js r170. Un planeta esférico con continentes, océanos, ríos, organismos celulares y prácticas aprendidas. Intervenir es opcional.
 
 [Observar el planeta](https://vespera-biodigital.mrtiagosan.chatgpt.site) · [Roadmap de diez ideas](docs/ROADMAP-V4.md) · [Arquitectura y límites de V4](docs/V4-PLANET.md)
 
+## Novedades de IV.5
+
+Cuencas con agua superficial, nieve, infiltración, acuíferos, caudales, desbordes y sedimentos. Placas y fallas acumulan tensión hasta producir sismos locales; los reservorios de magma alimentan volcanes que dejan roca y ceniza. Los habitantes evitan peligros caminando y los daños persisten. El observatorio **Agua y roca** permite recorrer cuencas, fallas y volcanes; el documental y el diario registran los acontecimientos.
+
+[Reglas, conservación, pruebas y límites](docs/V4-GEODYNAMICS.md). Se completan B y C con resolución ambiental de 512 celdas y geología acelerada. Las costas base se conservan; no hay deriva continental ni tsunamis. Guardado v7 compatible con mundos anteriores. Tormentas organizadas, instituciones y medios siguen pendientes.
+
 ## Novedades de IV.4
 
 El clima se gobierna por el entorno: temperatura con memoria térmica, día/noche y estaciones, moderación del agua, vapor, condensación, lluvia local, escorrentía y viento. Se retiran los sliders de temperatura, humedad y fertilidad y la intervención de lluvia. El panel muestra condiciones del lugar observado; la vida y los materiales responden a esas condiciones.
 
-[Modelo, migración y pruebas](docs/V4-ENVIRONMENT.md) · [Investigación y plan: riesgos naturales, comunidades y noticiero](docs/PLANET-SOCIETIES-ROADMAP.md). Se completa la entrega A de ese plan. Tectónica, huracanes, instituciones y medios siguen pendientes.
+[Modelo, migración y pruebas](docs/V4-ENVIRONMENT.md) · [Investigación y plan: riesgos naturales, comunidades y noticiero](docs/PLANET-SOCIETIES-ROADMAP.md). Se completa la entrega A de ese plan. La tectónica se incorpora en IV.5; huracanes, instituciones y medios siguen pendientes.
 
 ## Novedades de IV.3
 
@@ -64,7 +70,7 @@ Sexos, madurez, energía, salud, edad, gestación, semillas genéticas únicas, 
 
 ## Guardado y rendimiento
 
-Se conserva la clave local `vespera-world-v2`, ahora con formato 6. Los formatos 2–5 migran automáticamente; el original se respalda en `vespera-pre-planet-backup`. El jardín anterior se traslada a Auralia conservando identidades e historias; otros continentes reciben fundadores. Las partidas sin atmósfera reciben un clima geográfico determinista, conservando sus habitantes e historias. Guardado cada 12 segundos, al salir y después de acciones relevantes. Estado local, sin sincronización y sin avance con la página cerrada.
+Se conserva la clave local `vespera-world-v2`, ahora con formato 7. Los formatos 2–6 migran automáticamente; el original se respalda en `vespera-pre-planet-backup`. El jardín anterior se traslada a Auralia conservando identidades e historias; otros continentes reciben fundadores. Las partidas sin atmósfera reciben un clima geográfico determinista, conservando sus habitantes e historias. Guardado cada 12 segundos, al salir y después de acciones relevantes. Estado local, sin sincronización y sin avance con la página cerrada.
 
 Límites: 384 criaturas vivas, 2.400 plantas, 1.400 piezas, 420 depósitos materiales, 64 cadáveres, 180 parches de nutrientes, 500 difuntos y 100 eventos recientes. La recuperación añade hasta 1.200 semillas y 48 microrefugios observados; la atmósfera usa 512 celdas persistentes. Los temporizadores se conservan y el clima/aptitud derivados no se duplican en el guardado. El navegador puede ralentizar o suspender una pestaña oculta. Bajo sobrecarga el reloj puede avanzar más despacio, manteniendo los mismos pasos de simulación.
 
@@ -74,13 +80,15 @@ Objetivo 60 FPS con contador real y calidad adaptativa. No se garantiza en todo 
 
 Servir `dist/` por HTTP: `python -m http.server 8080 --directory dist`. Requiere navegador con WebGL y Web Workers. Three.js y su licencia MIT están incluidos; no requiere instalación ni compilación. No abrir mediante `file://`.
 
-`npm test` ejecuta crisis y recuperación, viabilidad, dormancia, ausencia de respawn, cultura perecedera, cuidados, polinización, herencia vegetal, dispersión, refugios, cámara documental, fullscreen/Wake Lock, geometría esférica, clima solar, genética, reproducción, cultura, recursos, migración, continuidad determinista, aislamiento render/datos, IK, LOD, veinte minutos simulados, ciclo de vida del worker y notificaciones. Informes: `verification-v4.json`, `verification-recovery.json` `verification-crisis.json`, `verification-scale.json` y `verification-environment.json`. `npm run test:shaders` requiere Python 3 y Mesa EGL/GLES en Linux.
+`npm test` ejecuta crisis y recuperación, viabilidad, dormancia, ausencia de respawn, cultura perecedera, cuidados, polinización, herencia vegetal, dispersión, refugios, cámara documental, fullscreen/Wake Lock, geometría esférica, clima solar, genética, reproducción, cultura, recursos, migración, continuidad determinista, aislamiento render/datos, IK, LOD, veinte minutos simulados, ciclo de vida del worker y notificaciones. Informes: `verification-v4.json`, `verification-recovery.json` `verification-crisis.json`, `verification-scale.json` `verification-environment.json` y `verification-geodynamics.json`. `npm run test:shaders` requiere Python 3 y Mesa EGL/GLES en Linux.
 
 Los resultados `verification.json` y `verification-emergence.json` corresponden a la versión III y se conservan como antecedentes.
 
 ## Código
 
 - `planet.js`: coordenadas, distancias, geografía, ciclo solar y adaptación.
+- `hydrology.js` y `geology.js`: reservas, cuencas, sedimentos, tensión, magma y consecuencias persistentes.
+- `land-process-visuals.js`: relieve, red de drenaje, agua, conos, lava y fallas con buffers acotados.
 - `environment.js`: clima local autónomo, memoria térmica, agua, condensación, lluvia y viento.
 - `simulation.js`: ecosistema, recursos, reproducción, migración y persistencia.
 - `simulation-worker.js`: propietario del reloj y de las mutaciones del estado.

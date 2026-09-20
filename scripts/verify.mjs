@@ -1,3 +1,4 @@
+await import('./verify-geodynamics.mjs');
 await import('./verify-environment.mjs');
 await import('./verify-scale.mjs');
 await import('./verify-recovery.mjs');

@@ -47,3 +47,11 @@ Completados dentro de un alcance de reglas locales acotadas:
 Se profundiza el punto 2 y su conexión con el 9: clima autónomo con memoria térmica, ciclo del agua y viento local. Se eliminan los sliders climáticos. [Implementación](V4-ENVIRONMENT.md).
 
 El nuevo [plan de naturaleza y sociedades](PLANET-SOCIETIES-ROADMAP.md) organiza riesgos, comunidades e información pública en seis entregas; solo A está completada. No sustituye ni declara terminado el punto 8 de memoria histórica.
+
+## Ampliación ambiental · IV.5
+
+Se completan B y C del [plan ambiental y social](PLANET-SOCIETIES-ROADMAP.md): cuencas, reservas hídricas, erosión, placas, fallas, sismos y volcanes. [Alcance y pruebas](V4-GEODYNAMICS.md). Esta entrega no cambia el estado pendiente del punto 8 del roadmap original.
+
+## Prioridad siguiente · recuperación tras extinciones
+
+El usuario informa de desaparición de vida cerca del día 100. Se prioriza C1 del [plan ambiental](PLANET-SOCIETIES-ROADMAP.md): reproducir el colapso, conservar un reservorio microbiano finito y permitir sucesión con selección heredable. Ritmo propuesto: colonias alrededor de 3 días y vida macroscópica unos 20 días después, sujeto a recursos y habitabilidad. Pendiente de implementación; no modifica IV.5 ni declara resuelto el colapso.

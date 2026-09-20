@@ -2,7 +2,7 @@
 
 Investigación y plan de implementación · 14 de septiembre de 2026.
 
-El objetivo es que un mundo con intervención opcional produzca cambios que puedan observarse y explicarse. La primera entrega de este plan es **clima autónomo local**. Tectónica, ciclones e información social se especifican aquí, pero no se presentan como funciones ya implementadas.
+El objetivo es que un mundo con intervención opcional produzca cambios que puedan observarse y explicarse. A está implementada en IV.4; B y C se incorporan en IV.5. Ciclones e información social siguen planificados.
 
 ## Lo que había y lo que faltaba
 
@@ -29,8 +29,9 @@ Estas fuentes sustentan las relaciones cualitativas. Las constantes, unidades ac
 | Entrega | Alcance y dependencia | Criterio para considerarla terminada |
 |---|---|---|
 | **A · Clima autónomo — implementada en IV.4** | Temperatura con memoria, agua/suelo/aire, condensación y lluvia local, viento básico, fertilidad observada y eliminación de sliders. | Día/noche y hemisferios diferenciados; agua conservada entre depósitos; biología local; recarga determinista; presupuesto medido. |
-| **B · Cuencas y relieve activo — pendiente** | Ampliar A con caudales fluviales, infiltración profunda, nieve física, escorrentía por cuencas y erosión. | Agua aguas arriba afecta aguas abajo; inundaciones y sequías tienen duración y huella; cambios de navegabilidad seguros. |
-| **C · Geología — pendiente** | Placas con identidad, fronteras convergentes/divergentes/transformantes, tensión, fallas y reservorios de magma. | Sismos situados y causados; volcanes condicionados por estructura geológica; destrucción, nutrientes y recuperación registradas. |
+| **B · Cuencas y relieve activo — implementada en IV.5** | Ampliar A con caudales fluviales, infiltración profunda, nieve física, escorrentía por cuencas y erosión. | Agua aguas arriba afecta aguas abajo; inundaciones y sequías tienen duración y huella; cambios de navegabilidad seguros. |
+| **C · Geología — implementada en IV.5** | Placas con identidad, fronteras convergentes/divergentes/transformantes, tensión, fallas y reservorios de magma. | Sismos situados y causados; volcanes condicionados por estructura geológica; destrucción, nutrientes y recuperación registradas. |
+| **C1 · Recuperación tras extinciones — próxima prioridad** | Diagnóstico de colapsos a largo plazo, reservorio microbiano persistente, sucesión ecológica y adaptación heredable. | Múltiples ciclos de colapso y recuperación explicables; no respawn de especies extintas ni inmunidad automática. Ver plan detallado al final. |
 | **D · Tormentas organizadas — pendiente** | Ampliar A/B con presión dinámica, circulación, temperatura oceánica superficial, cizalladura aproximada y vorticidad. | Un ciclón consume condiciones favorables, puede disiparse y pierde fuerza sobre tierra; sin generación por mero temporizador. |
 | **E · Comunidades e instituciones — pendiente** | Identidad colectiva persistente, pertenencia, territorio de uso, normas y decisiones comunes; integración con recursos y migración. | Comunidades que sobreviven a cambios de habitantes, se dividen/fusionan y pueden perder instituciones. No progresión obligatoria. |
 | **F · Crónica y medios — pendiente** | Registro estructurado y boletín del observatorio sobre A–E; después redes de comunicación dentro del mundo. | Cada noticia enlaza hechos, lugar, período y evidencia. Sin inventar categorías que no tengan mecanismos. |
@@ -86,4 +87,41 @@ Dos productos distintos:
 
 ## Estado de esta entrega
 
-Se completa A. No se implementan todavía B–F, medios, países, terremotos, volcanes ni huracanes. Las reglas y límites del clima entregado se detallan en [V4-ENVIRONMENT.md](V4-ENVIRONMENT.md). Este plan amplía el roadmap original, sin declarar terminado el punto 8 de memoria histórica.
+Se completan A–C. D–F, medios, países y huracanes siguen pendientes. Cuencas, terremotos y volcanes usan un modelo reducido: [reglas y límites de IV.5](V4-GEODYNAMICS.md). Las reglas y límites del clima entregado se detallan en [V4-ENVIRONMENT.md](V4-ENVIRONMENT.md). Este plan amplía el roadmap original, sin declarar terminado el punto 8 de memoria histórica.
+
+## Próxima prioridad: continuidad de la vida · 20 de septiembre de 2026
+
+**Observación del usuario, pendiente de reproducir:** alrededor del día 100 desaparece la vida visible y no vuelve. No se asume todavía que la causa sea un desastre natural: puede ser agotamiento de nutrientes, desequilibrio trófico, clima persistente, pérdida de semillas o un problema de reglas. La entrega C1 va después de cerrar B/C y antes de tormentas organizadas, instituciones y medios. No se implementa en IV.5.
+
+### 1. Diagnosticar antes de compensar
+
+Ejecutar varios mundos durante al menos 150 días, con métricas diarias de biomasa por nivel trófico, nutrientes disponibles y almacenados, agua, semillas viables, nacimientos, mortalidad por causa y habitabilidad. Guardar una partida inmediatamente anterior al colapso para reproducirlo. Distinguir extinción animal, pérdida de vegetación y esterilización total. Corregir pérdidas de recursos o inviabilidad sistemática si aparecen; una recuperación programada no debe esconder esos problemas.
+
+### 2. Reservorio microbiano finito
+
+Introducir poblaciones microscópicas por celda, con biomasa, reservas, actividad o latencia, diversidad genética y tolerancias heredables. Pueden sobrevivir en refugios, consumir recursos y morir. No usar millones de entidades gráficas: agregados en datos y unos pocos indicadores visibles según LOD. Microorganismos, detritos y nutrientes deben compartir un balance explícito; la nueva biomasa requiere materia y energía disponibles.
+
+Si sobreviven microorganismos o formas latentes, hablar de recuperación después de la desaparición de vida macroscópica. Si todos los reservorios vivos se agotan, el mundo puede permanecer estéril. Un modo opcional de origen de vida sería una regla distinta y tendría que presentarse como tal; no confundirlo con evolución darwiniana ni introducirlo sin explicarlo.
+
+### 3. Ritmo contemplativo propuesto
+
+Objetivo de diseño: primeras colonias microbianas observables hacia el tercer día tras el colapso macroscópico, y nuevas formas macroscópicas alrededor de veinte días después de la primera colonia (aproximadamente día 23 desde el colapso). Son ventanas de calibración aceleradas, no plazos científicos ni apariciones obligatorias. Las activan habitabilidad, reservas y crecimiento acumulado; si persiste el peligro, se retrasan o fracasan.
+
+Usar el reloj actual del planeta: un día solar y biológico equivale a 160 segundos simulados. Pausa, velocidad, recarga y cámara no alteran esos tiempos.
+
+### 4. Selección y sucesión, sin conocimiento omnisciente
+
+Las variantes con tolerancias útiles dejan más descendencia; herencia y mutación conservan o modifican esas tolerancias. No darles una lista de causas de muerte ni aumentar su resistencia global por cada extinción. La memoria material está en linajes supervivientes y formas latentes; un registro histórico sirve al observador, no informa mágicamente a los organismos.
+
+La recuperación debe pasar por productores y disponibilidad de alimento antes de sostener consumidores. Las nuevas formas proceden de linajes identificables, con compensaciones entre tolerancia, metabolismo y reproducción. Convertir microorganismos en animales visibles en veinte días será una abstracción explícita de evolución acelerada, no una reproducción fiel de sus escalas naturales. Las culturas y conocimientos aprendidos de poblaciones desaparecidas no se restauran automáticamente.
+
+### 5. Criterios de aceptación
+
+- Reproducir y explicar el colapso comunicado antes de declararlo resuelto.
+- Demostrar recuperación cuando sobreviven reservas viables y vuelve la habitabilidad, y ausencia de recuperación forzada cuando no hay recursos o persiste el peligro.
+- Registrar linajes nuevos, origen, tolerancias y costes; comparar supervivencia entre variantes sin adaptación dirigida por el observador.
+- Conservar masa y evitar duplicación de semillas, microorganismos o nutrientes durante reproducción, muerte y recarga.
+- Repetir varios ciclos durante cientos de días, con guardados antes/después del colapso y continuidad determinista.
+- Mantener presupuestos acotados de datos y render; medir CPU, transporte y FPS reales por separado.
+
+El observatorio distinguirá «sin animales», «refugios microscópicos activos», «colonización», «sucesión» y «sin reservas vivas», para que la espera tenga información y no parezca una simulación detenida.
