@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": [
+    "drought reserve, finite viability, inherited genome preserved, deterministic crisis save and rain-driven germination",
+    "plant dormancy slows aging and growth; surviving roots wake only after favorable conditions persist",
+    "animal torpor consumes reserves, preserves aging, blocks mating and wakes for food, improving climate or attack",
+    "material refuges change survival conditions; removing them removes the benefit",
+    "exhausted reserves compost; rain and wind do not respawn extinct life",
+    "bounded seed bank and wind transport without duplication",
+    "old saves gain recovery state once and retain individual identities"
+  ],
+  "limits": "Causal model tests in Node; no WebGL/GPU or physical monitor validation."
+}

@@ -1,0 +1,12 @@
+import {forceWeather} from './fixtures/weather.mjs';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {Ecosystem} from '../dist/simulation.js';
+const sim=new Ecosystem(),seed=sim.worldSeed,times=[];
+const state=()=>({time:+sim.time.toFixed(1),population:sim.creatures.length,plants:sim.food.length,active:sim.food.filter(f=>!f.recovery.dormant).length,dormant:sim.food.filter(f=>f.recovery.dormant).length,seeds:sim.recovery.seeds.length,sleeping:sim.creatures.filter(c=>c.recovery.mode==='dormant').length,sprouted:sim.recovery.totals.sprouted,wakes:sim.recovery.totals.animalWakes,plantWakes:sim.recovery.totals.plantWakes,deaths:sim.deaths});
+const phases=[];
+function run(seconds){for(let i=0;i<seconds*10;i++){const start=performance.now();sim.step(.1);times.push(performance.now()-start);assert(sim.recovery.seeds.length<=1200);if(i%100===0)for(const c of sim.creatures)assert(sim.valid(c.x,c.z,c.species,c));}}
+run(120);phases.push({name:'Before crisis',...state()});sim.eventAt=1e9;forceWeather(sim,5,39);run(90);phases.push({name:'Hot drought',...state()});assert(sim.recovery.totals.plantSleeps>0);assert(sim.recovery.totals.animalSleeps>0);assert(phases[1].dormant>phases[0].dormant);assert(sim.creatures.length>0);
+const snapshot=sim.snapshot();fs.writeFileSync('/tmp/vespera-crisis-checkpoint.json',JSON.stringify(snapshot));const clone=new Ecosystem(snapshot);forceWeather(clone,5,39);for(let i=0;i<20;i++){sim.step(.1);clone.step(.1);}assert.deepEqual(sim.snapshot(),clone.snapshot());
+forceWeather(sim,90,22);run(180);phases.push({name:'Recovery',...state()});assert(phases[2].plantWakes>phases[1].plantWakes);assert(phases[2].wakes>phases[1].wakes);assert(phases[2].active>phases[1].active);assert(phases[2].sprouted>phases[1].sprouted);assert(sim.creatures.length>0);assert(sim.food.length>0);times.sort((a,b)=>a-b);
+fs.writeFileSync(new URL('../verification-crisis.json',import.meta.url),JSON.stringify({passed:true,seed,phases,cpuStepP95ms:+times[Math.floor(times.length*.95)].toFixed(3),cpuStepP99ms:+times[Math.floor(times.length*.99)].toFixed(3),snapshotBytes:Buffer.byteLength(JSON.stringify(sim.snapshot())),scope:'Whole ecosystem, 120 seconds baseline + 90 seconds hot drought + save continuation + 180 seconds favorable weather. No respawn. Node CPU, not GPU.'},null,2)+'\n');console.log('PASS: whole-ecosystem crisis, persistence and recovery.');

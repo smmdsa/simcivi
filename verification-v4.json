@@ -6,29 +6,54 @@
     "material conservation on place/repair/remove and measurable moisture retention",
     "migration preserves names and lineage, deterministic independent save continuation",
     "real Three.js geometry, finite IK, polar navigation, LOD/horizon and render/data isolation",
+    "autonomous care, transmission/forgetting, cross-pollination, seed dispersal and bounded social memory",
     "20 simulated minutes: population/material bounds, valid habitats, births, deaths, nutrients, learning"
   ],
   "observed": {
-    "seed": 3105480411,
+    "seed": 2758642347,
     "seconds": 1200.000000000004,
-    "population": 298,
-    "births": 225,
-    "deaths": 59,
-    "plants": 2195,
-    "pieces": 977,
+    "population": 241,
+    "births": 164,
+    "deaths": 55,
+    "plants": 817,
+    "pieces": 557,
     "groups": 30,
-    "migrations": 257,
+    "migrations": 370,
     "activity": {
-      "collected": 1049,
-      "placed": 1488,
-      "shared": 554,
-      "contests": 53,
-      "learned": 21306
-    }
+      "collected": 672,
+      "placed": 823,
+      "shared": 232,
+      "contests": 94,
+      "learned": 11110
+    },
+    "lifeways": {
+      "transmissions": 448,
+      "forgotten": 1024,
+      "care": 208,
+      "companionship": 3427,
+      "pollinations": 196,
+      "dispersed": 2057,
+      "germinated": 5454,
+      "refuge": 64.6000000000006
+    },
+    "recovery": {
+      "stored": 1994,
+      "sprouted": 1443,
+      "expired": 1,
+      "plantSleeps": 2603,
+      "plantWakes": 1548,
+      "animalSleeps": 908,
+      "animalWakes": 775,
+      "windMoved": 302
+    },
+    "seedBank": 550,
+    "sharedPractices": 96,
+    "snapshotBytes": 2685719,
+    "plantGenerations": 9
   },
   "cpu": {
-    "stepP95ms": 12.454,
-    "closeViewPreparationP95ms": 1.806
+    "stepP95ms": 15.812,
+    "closeViewPreparationP95ms": 3.457
   },
   "limits": "Node CPU and real Three.js geometry only. No browser/GPU verification or universal 60 FPS guarantee. Six anatomical families; local learned practices, not guaranteed civilizations."
 }

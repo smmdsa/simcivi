@@ -1,0 +1,24 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {Environment,seasonAt,thermalTarget} from '../dist/environment.js';
+import {Ecosystem} from '../dist/simulation.js';
+import {HALF,YEAR,PLANET_RADIUS as R,climateAt,geography} from '../dist/planet.js';
+const fixture=()=>({time:0,worldSeed:1947,food:[],soil:[],log(){}}),sim=fixture(),env=new Environment(sim),water=()=>env.cells.reduce((v,c)=>v+c.soil+c.ocean+c.vapor+c.cloud,0),initialWater=water(),cost=[],ranges=env.cells.map(()=>({min:1e9,max:-1e9}));
+for(let t=1;t<=640;t++){sim.time=t;const before=performance.now();env.advance(1,t);cost.push(performance.now()-before);if(t>480)env.cells.forEach((c,i)=>{ranges[i].min=Math.min(ranges[i].min,c.temperature);ranges[i].max=Math.max(ranges[i].max,c.temperature);});}
+assert(Math.abs(water()-initialWater)<1e-7,'Water must transfer between reservoirs without creation');
+assert(env.totals.evaporated>0&&env.totals.precipitated>0&&env.totals.runoff>0);
+assert(env.cells.some(c=>Math.hypot(c.east,c.north)>.3));
+for(const c of env.cells){assert(c.soil>=0&&c.vapor>=0&&c.cloud>=0&&c.ocean>=0);assert(c.temperature>-35&&c.temperature<55);}
+const amplitude=(sea)=>{const values=ranges.flatMap((r,i)=>Math.abs(env.geo[i].z)<15&&(sea?env.geo[i].water:!env.geo[i].water&&env.geo[i].sea===0)?[r.max-r.min]:[]);return values.reduce((s,n)=>s+n,0)/values.length;};assert(amplitude(false)>amplitude(true)*1.4,'Ocean thermal inertia must damp day/night temperature swings');
+const n=climateAt(0,.7*R,YEAR/4),s=climateAt(0,-.7*R,YEAR/4);assert(n.light>s.light);assert.equal(seasonAt(.7*R,YEAR/4),'Verano');assert.equal(seasonAt(-.7*R,YEAR/4),'Invierno');assert(thermalTarget({...n,height:0},n.light,0)>thermalTarget({...s,height:0},s.light,0));
+const seasons=[];
+for(const center of [YEAR/4,YEAR*3/4]){const climate=new Environment(fixture());let north=0,south=0,count=0;for(let t=center-320;t<center;t++){climate.advance(1,t);if(t>=center-160){north+=climate.cells.slice(12*32,13*32).reduce((sum,c)=>sum+c.temperature,0)/32;south+=climate.cells.slice(3*32,4*32).reduce((sum,c)=>sum+c.temperature,0)/32;count++;}}seasons.push({north:north/count,south:south/count});}
+assert(seasons[0].north>seasons[1].north+2);assert(seasons[1].south>seasons[0].south+2);
+const seamA=env.sample(-HALF+1e-6,0),seamB=env.sample(HALF-1e-6,0);assert(Math.abs(seamA.temperature-seamB.temperature)<1e-5);assert(Math.abs(seamA.moisture-seamB.moisture)<1e-5);
+const dry=fixture(),wet=fixture(),a=new Environment(dry),b=new Environment(wet);const i=a.geo.findIndex(g=>g.land&&!g.river);a.cells[i].soil=.1;b.cells[i].soil=.8;a.cells[i].vapor=b.cells[i].vapor=0;a.advance(1,0);b.advance(1,0);assert(a.cells[i].soil<b.cells[i].soil);
+const living=new Ecosystem();const snapshot=living.snapshot(),clone=new Ecosystem(snapshot);assert.deepEqual(clone.snapshot(),snapshot);for(let t=0;t<35;t++){living.step(.1);clone.step(.1);}assert.deepEqual(living.snapshot(),clone.snapshot());
+const midCycle=new Ecosystem(living.snapshot());for(let t=0;t<25;t++){living.step(.1);midCycle.step(.1);}assert.deepEqual(living.snapshot(),midCycle.snapshot());
+const old=structuredClone(snapshot);old.version=5;delete old.environment;old.climate={temperature:40,moisture:5,fertility:5};const migrated=new Ecosystem(old);assert.equal(migrated.version,7);assert.equal(migrated.creatures[0].id,old.creatures[0].id);assert.notEqual(migrated.climate.temperature,40);assert.equal(migrated.environment.cells.length,512);assert.equal(typeof migrated.setClimate,'undefined');
+const before=JSON.stringify(living.environment.snapshot());living.intervene('rain',0,0);assert.equal(JSON.stringify(living.environment.snapshot()),before);
+const p=living.food.find(p=>geography(p.x,p.z).land),baseline=living.environment.sample(p.x,p.z).fertility;living.deposit(p.x,p.z,30,'Test decomposition');living.environment.advance(1,living.time);assert(living.environment.sample(p.x,p.z).fertility>baseline);
+const report={passed:true,checks:['conservative water transfers over four day/night cycles','solar forcing and opposing hemispheric seasons','land/ocean thermal inertia','wind from thermal pressure differences','seam continuity and finite bounded state','local nutrients from decomposition','deterministic save continuation and v5 identity-preserving migration','manual climate/rain intervention removed'],cells:512,waterError:water()-initialWater,dailyTemperatureAmplitude:{inland:amplitude(false),ocean:amplitude(true)},seasonalTemperatures:seasons,waterCycle:env.totals,cpuUpdateP95ms:cost.sort((a,b)=>a-b)[Math.floor(cost.length*.95)],limits:'Reduced environmental model, not a calibrated forecast; CPU in Node, not browser FPS.'};fs.writeFileSync(new URL('../verification-environment.json',import.meta.url),JSON.stringify(report,null,2)+'\n');console.log('PASS: autonomous local climate, water cycle, seasonal forcing, thermal inertia and persistence.');

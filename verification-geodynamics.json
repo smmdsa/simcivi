@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checks": [
+    "water conservation across all seven reservoirs",
+    "upstream runoff, snowmelt, basin identity and sediment mass balance",
+    "plate-boundary loading and local earthquake damage",
+    "finite magma, extrusion mass balance, cooling and delayed ash weathering",
+    "hazard evacuation without teleportation",
+    "exact JSON continuation during active hazards and migration from v6",
+    "bounded Three.js visuals independent of simulation"
+  ],
+  "simulatedSeconds": 2400,
+  "waterError": -5.238689482212067e-10,
+  "cpuEnvironmentalGeologyP95ms": 1.1807450000000017,
+  "earthquakes": 48,
+  "eruptions": 16,
+  "limits": "Node CPU and injected renderer; no real-device FPS or browser visual review."
+}

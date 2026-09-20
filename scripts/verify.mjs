@@ -1,3 +1,10 @@
+await import('./verify-geodynamics.mjs');
+await import('./verify-environment.mjs');
+await import('./verify-scale.mjs');
+await import('./verify-recovery.mjs');
+await import('./verify-lifeways.mjs');
 await import('./verify-v4.mjs');
 await import('./verify-worker.mjs');
 await import('./verify-notifications.mjs');
+await import('./verify-screen-mode.mjs');
+await import('./verify-crisis.mjs');
