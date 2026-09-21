@@ -31,7 +31,7 @@ Estas fuentes sustentan las relaciones cualitativas. Las constantes, unidades ac
 | **A · Clima autónomo — implementada en IV.4** | Temperatura con memoria, agua/suelo/aire, condensación y lluvia local, viento básico, fertilidad observada y eliminación de sliders. | Día/noche y hemisferios diferenciados; agua conservada entre depósitos; biología local; recarga determinista; presupuesto medido. |
 | **B · Cuencas y relieve activo — implementada en IV.5** | Ampliar A con caudales fluviales, infiltración profunda, nieve física, escorrentía por cuencas y erosión. | Agua aguas arriba afecta aguas abajo; inundaciones y sequías tienen duración y huella; cambios de navegabilidad seguros. |
 | **C · Geología — implementada en IV.5** | Placas con identidad, fronteras convergentes/divergentes/transformantes, tensión, fallas y reservorios de magma. | Sismos situados y causados; volcanes condicionados por estructura geológica; destrucción, nutrientes y recuperación registradas. |
-| **C1 · Recuperación tras extinciones — próxima prioridad** | Diagnóstico de colapsos a largo plazo, reservorio microbiano persistente, sucesión ecológica y adaptación heredable. | Múltiples ciclos de colapso y recuperación explicables; no respawn de especies extintas ni inmunidad automática. Ver plan detallado al final. |
+| **C1 · Continuidad ecológica — base en IV.6; radiación macroscópica pendiente** | Diagnóstico de colapsos a largo plazo, reservorio microbiano persistente, sucesión ecológica y adaptación heredable. | Múltiples ciclos de colapso y recuperación explicables; no respawn de especies extintas ni inmunidad automática. Ver plan detallado al final. |
 | **D · Tormentas organizadas — pendiente** | Ampliar A/B con presión dinámica, circulación, temperatura oceánica superficial, cizalladura aproximada y vorticidad. | Un ciclón consume condiciones favorables, puede disiparse y pierde fuerza sobre tierra; sin generación por mero temporizador. |
 | **E · Comunidades e instituciones — pendiente** | Identidad colectiva persistente, pertenencia, territorio de uso, normas y decisiones comunes; integración con recursos y migración. | Comunidades que sobreviven a cambios de habitantes, se dividen/fusionan y pueden perder instituciones. No progresión obligatoria. |
 | **F · Crónica y medios — pendiente** | Registro estructurado y boletín del observatorio sobre A–E; después redes de comunicación dentro del mundo. | Cada noticia enlaza hechos, lugar, período y evidencia. Sin inventar categorías que no tengan mecanismos. |
@@ -125,3 +125,7 @@ La recuperación debe pasar por productores y disponibilidad de alimento antes d
 - Mantener presupuestos acotados de datos y render; medir CPU, transporte y FPS reales por separado.
 
 El observatorio distinguirá «sin animales», «refugios microscópicos activos», «colonización», «sucesión» y «sin reservas vivas», para que la espera tenga información y no parezca una simulación detenida.
+
+## Actualización IV.6
+
+Se reproduce el colapso animal en dos semillas y se entrega microbiología, productores, microconsumidores, dormancia, mutación heredable y pastoreo parcial. [Resultados y límites](V4-BIOSPHERE.md). La recuperación de fauna compleja desde nuevos linajes y el ritmo de 3 + 20 días no están implementados. Se prioriza después insectos funcionales, red marina y aves, antes de instituciones y medios.

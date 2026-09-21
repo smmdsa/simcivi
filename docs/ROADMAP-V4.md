@@ -54,4 +54,8 @@ Se completan B y C del [plan ambiental y social](PLANET-SOCIETIES-ROADMAP.md): c
 
 ## Prioridad siguiente · recuperación tras extinciones
 
-El usuario informa de desaparición de vida cerca del día 100. Se prioriza C1 del [plan ambiental](PLANET-SOCIETIES-ROADMAP.md): reproducir el colapso, conservar un reservorio microbiano finito y permitir sucesión con selección heredable. Ritmo propuesto: colonias alrededor de 3 días y vida macroscópica unos 20 días después, sujeto a recursos y habitabilidad. Pendiente de implementación; no modifica IV.5 ni declara resuelto el colapso.
+El usuario informa de desaparición de vida cerca del día 100. C1 del [plan ambiental](PLANET-SOCIETIES-ROADMAP.md) prioriza reproducir el colapso, conservar un reservorio microbiano finito y permitir sucesión con selección heredable. IV.6 implementa esa base. El ritmo previo de colonias alrededor de 3 días y vida macroscópica unos 20 días después queda como objetivo de calibración para una futura radiación macroscópica; no se impone por temporizador.
+
+## IV.6 · Base de continuidad ecológica
+
+C1 recibe una biosfera microscópica finita, red trófica basal, adaptación heredable, colonias observables y pastoreo que conserva raíces. [Investigación y pruebas](V4-BIOSPHERE.md). Siguen pendientes la radiación de nuevos animales tras una extinción, insectos individuales, aves y la memoria histórica del punto 8.

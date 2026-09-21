@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {Ecosystem} from '../dist/simulation.js';
+import {census} from '../dist/ecology-census.js';
+const s=new Ecosystem(),before=JSON.stringify(s.snapshot()),r=census(s);
+assert.equal(r.animals,s.creatures.length);assert.equal(r.bySpecies.reduce((a,b)=>a+b,0),r.animals);
+assert.equal(r.plantTypes.reduce((a,b)=>a+b,0),s.food.length);assert.equal(r.seedBank,s.recovery.seeds.length);
+assert.equal(JSON.stringify(s.snapshot()),before);
+s.creatures=[];s.food=[];s.recovery.seeds=[];s.reindex();
+assert.equal(census(s).animals,0);assert.equal(census(s).plantBiomass,0);
+console.log('PASS: daily census counts and observer independence.');
