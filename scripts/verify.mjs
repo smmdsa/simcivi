@@ -1,3 +1,8 @@
+await import('./verify-world-store.mjs');
+await import('./verify-biosphere-view.mjs');
+await import('./verify-census.mjs');
+await import('./verify-biosphere.mjs');
+await import('./verify-biosphere-integration.mjs');
 await import('./verify-geodynamics.mjs');
 await import('./verify-environment.mjs');
 await import('./verify-scale.mjs');

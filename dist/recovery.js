@@ -79,7 +79,7 @@ export class Recovery {
  }
  tick(dt){
   this.clock+=dt;if(this.clock<2)return;const elapsed=this.clock;this.clock=0;const sim=this.sim,plants=new Neighborhood(sim.food),animals=new Neighborhood(sim.creatures);let searches=0;this.processSeeds();
-  for(const c of sim.creatures){const r=this.ensure(c),near=plants.near(c,5),edible=near.filter(f=>!f.recovery.dormant&&f.growth>.5&&(f.type===4)===(c.species===5)).length,e=this.micro(c,undefined,undefined,c.ecology?.cover||0),bad=e.temperature<8||e.temperature>34||(c.species!==5&&e.moisture<.16)||(edible===0&&c.species!==3&&c.energy<58);
+  for(const c of sim.creatures){const r=this.ensure(c),near=plants.near(c,5),edible=near.filter(f=>!f.recovery.dormant&&f.growth>.5&&(f.type===4)===(c.species===5)).length+(sim.biosphere?.forage(c)?1:0),e=this.micro(c,undefined,undefined,c.ecology?.cover||0),bad=e.temperature<8||e.temperature>34||(c.species!==5&&e.moisture<.16)||(edible===0&&c.species!==3&&c.energy<58);
    r.protection=e.protection;r.stress=bad?r.stress+elapsed:Math.max(0,r.stress-elapsed*2);r.calm=bad?0:r.calm+elapsed;
    if(r.mode==='dormant'){
     const predator=c.species!==3&&animals.near(c,5).some(p=>p.species===3&&p.energy<52);

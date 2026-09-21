@@ -1,8 +1,14 @@
-# SimCivi · Véspera IV.5 — El paisaje tiene memoria
+# SimCivi · Véspera IV.6 — La vida pequeña
 
 Experiencia contemplativa en HTML, CSS, JavaScript nativo y Three.js r170. Un planeta esférico con continentes, océanos, ríos, organismos celulares y prácticas aprendidas. Intervenir es opcional.
 
 [Observar el planeta](https://vespera-biodigital.mrtiagosan.chatgpt.site) · [Roadmap de diez ideas](docs/ROADMAP-V4.md) · [Arquitectura y límites de V4](docs/V4-PLANET.md)
+
+## Novedades de IV.6
+
+Biosfera persistente de productores, fitoplancton, descomponedores, microfauna del suelo y zooplancton. Reservas finitas, dormancia, reciclaje, colonias visibles y variantes heredables con costes. El pastoreo deja raíces vivas; comer ya no elimina automáticamente la planta entera. El observatorio **La vida resiste** permite conocer y enfocar las colonias.
+
+[Investigación, diagnóstico, reglas y límites](docs/V4-BIOSPHERE.md). Guardado v8 en IndexedDB con importación del guardado anterior. Es la base de C1: insectos individuales, aves, nuevos nichos marinos y radiación de macrofauna siguen planificados. No se resucitan animales extintos ni se reconstruyen culturas desaparecidas.
 
 ## Novedades de IV.5
 
@@ -70,7 +76,7 @@ Sexos, madurez, energía, salud, edad, gestación, semillas genéticas únicas, 
 
 ## Guardado y rendimiento
 
-Se conserva la clave local `vespera-world-v2`, ahora con formato 7. Los formatos 2–6 migran automáticamente; el original se respalda en `vespera-pre-planet-backup`. El jardín anterior se traslada a Auralia conservando identidades e historias; otros continentes reciben fundadores. Las partidas sin atmósfera reciben un clima geográfico determinista, conservando sus habitantes e historias. Guardado cada 12 segundos, al salir y después de acciones relevantes. Estado local, sin sincronización y sin avance con la página cerrada.
+Se conserva el identificador `vespera-world-v2`, ahora con formato 8 en IndexedDB. Los formatos 2–7 migran automáticamente; el original de localStorage se conserva al importar. El jardín anterior se traslada a Auralia conservando identidades e historias; otros continentes reciben fundadores. Las partidas sin atmósfera reciben un clima geográfico determinista, conservando sus habitantes e historias. Guardado cada 12 segundos, al salir y después de acciones relevantes. Estado local, sin sincronización y sin avance con la página cerrada.
 
 Límites: 384 criaturas vivas, 2.400 plantas, 1.400 piezas, 420 depósitos materiales, 64 cadáveres, 180 parches de nutrientes, 500 difuntos y 100 eventos recientes. La recuperación añade hasta 1.200 semillas y 48 microrefugios observados; la atmósfera usa 512 celdas persistentes. Los temporizadores se conservan y el clima/aptitud derivados no se duplican en el guardado. El navegador puede ralentizar o suspender una pestaña oculta. Bajo sobrecarga el reloj puede avanzar más despacio, manteniendo los mismos pasos de simulación.
 
@@ -86,6 +92,10 @@ Los resultados `verification.json` y `verification-emergence.json` corresponden 
 
 ## Código
 
+- `biosphere.js`: red trófica microscópica, dormancia, herencia, transferencias y censos.
+- `biosphere-visuals.js`: colonias y microfauna agregada con instancias acotadas.
+- `world-store.js`: persistencia atómica e importación de guardados locales.
+- `ecology-census.js`: métricas diarias de diagnóstico.
 - `planet.js`: coordenadas, distancias, geografía, ciclo solar y adaptación.
 - `hydrology.js` y `geology.js`: reservas, cuencas, sedimentos, tensión, magma y consecuencias persistentes.
 - `land-process-visuals.js`: relieve, red de drenaje, agua, conos, lava y fallas con buffers acotados.

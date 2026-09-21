@@ -1,0 +1,5554 @@
+{
+  "seed": 1726312000001,
+  "days": 150,
+  "extinct": 35,
+  "empty": null,
+  "rows": [
+    {
+      "day": 1,
+      "animals": 156,
+      "bySpecies": [
+        29,
+        30,
+        29,
+        13,
+        27,
+        28
+      ],
+      "plants": 2380,
+      "plantTypes": [
+        848,
+        300,
+        391,
+        212,
+        629
+      ],
+      "biomass": 5666.991934491438,
+      "seeds": 1145,
+      "nutrients": 497.9624181548148,
+      "births": 32,
+      "deaths": 8,
+      "causes": {
+        "predation": 8
+      },
+      "climate": {
+        "temperature": 15.272799046070148,
+        "humidity": 0.6560230294277628,
+        "moisture": 0.6876600042169413,
+        "cloud": 0.07614206699166434,
+        "rain": 0.013276672978195188,
+        "fertility": 0.509901621314865
+      }
+    },
+    {
+      "day": 2,
+      "animals": 175,
+      "bySpecies": [
+        33,
+        29,
+        33,
+        15,
+        33,
+        32
+      ],
+      "plants": 2077,
+      "plantTypes": [
+        634,
+        154,
+        563,
+        160,
+        566
+      ],
+      "biomass": 5292.437075221594,
+      "seeds": 150,
+      "nutrients": 3219.9764799997574,
+      "births": 58,
+      "deaths": 15,
+      "causes": {
+        "predation": 15
+      },
+      "climate": {
+        "temperature": 15.187457786091679,
+        "humidity": 0.5765397848732294,
+        "moisture": 0.63977602065167,
+        "cloud": 0.06565625182270589,
+        "rain": 0.01211680705814056,
+        "fertility": 0.5101048111074902
+      }
+    },
+    {
+      "day": 3,
+      "animals": 190,
+      "bySpecies": [
+        35,
+        29,
+        36,
+        17,
+        37,
+        36
+      ],
+      "plants": 1314,
+      "plantTypes": [
+        317,
+        82,
+        610,
+        99,
+        206
+      ],
+      "biomass": 3938.9905267576128,
+      "seeds": 151,
+      "nutrients": 5221.724889344593,
+      "births": 82,
+      "deaths": 24,
+      "causes": {
+        "predation": 24
+      },
+      "climate": {
+        "temperature": 15.185113793119232,
+        "humidity": 0.5385943135811664,
+        "moisture": 0.6045700508093158,
+        "cloud": 0.054130549121362614,
+        "rain": 0.009747074921299706,
+        "fertility": 0.5110462508321821
+      }
+    },
+    {
+      "day": 4,
+      "animals": 208,
+      "bySpecies": [
+        37,
+        31,
+        41,
+        17,
+        41,
+        41
+      ],
+      "plants": 1001,
+      "plantTypes": [
+        193,
+        65,
+        564,
+        62,
+        117
+      ],
+      "biomass": 3263.6826184757733,
+      "seeds": 205,
+      "nutrients": 5924.802103140683,
+      "births": 106,
+      "deaths": 30,
+      "causes": {
+        "predation": 30
+      },
+      "climate": {
+        "temperature": 15.240194247880986,
+        "humidity": 0.5285804104529757,
+        "moisture": 0.5765840200523397,
+        "cloud": 0.04592923557203777,
+        "rain": 0.008065222912275084,
+        "fertility": 0.5098336012852224
+      }
+    },
+    {
+      "day": 5,
+      "animals": 221,
+      "bySpecies": [
+        37,
+        31,
+        46,
+        19,
+        40,
+        48
+      ],
+      "plants": 953,
+      "plantTypes": [
+        152,
+        57,
+        617,
+        43,
+        84
+      ],
+      "biomass": 3184.1765725176547,
+      "seeds": 270,
+      "nutrients": 6077.8357187300635,
+      "births": 125,
+      "deaths": 36,
+      "causes": {
+        "predation": 36
+      },
+      "climate": {
+        "temperature": 15.320507202487041,
+        "humidity": 0.5148374924171454,
+        "moisture": 0.5549526885634579,
+        "cloud": 0.04254801962634694,
+        "rain": 0.007214602919343859,
+        "fertility": 0.5084201315207005
+      }
+    },
+    {
+      "day": 6,
+      "animals": 226,
+      "bySpecies": [
+        34,
+        30,
+        51,
+        19,
+        36,
+        56
+      ],
+      "plants": 888,
+      "plantTypes": [
+        101,
+        43,
+        648,
+        32,
+        64
+      ],
+      "biomass": 3254.655966801676,
+      "seeds": 312,
+      "nutrients": 6237.316951449493,
+      "births": 139,
+      "deaths": 45,
+      "causes": {
+        "predation": 44,
+        "murió por falta de alimento": 1
+      },
+      "climate": {
+        "temperature": 15.366670981198887,
+        "humidity": 0.48767758773251824,
+        "moisture": 0.5387479335730062,
+        "cloud": 0.04098703960317739,
+        "rain": 0.006804750705389725,
+        "fertility": 0.5082457594480995
+      }
+    },
+    {
+      "day": 7,
+      "animals": 224,
+      "bySpecies": [
+        34,
+        27,
+        51,
+        20,
+        32,
+        60
+      ],
+      "plants": 755,
+      "plantTypes": [
+        75,
+        18,
+        597,
+        22,
+        43
+      ],
+      "biomass": 3063.288716317235,
+      "seeds": 411,
+      "nutrients": 6451.44197343475,
+      "births": 148,
+      "deaths": 56,
+      "causes": {
+        "predation": 51,
+        "murió por falta de alimento": 5
+      },
+      "climate": {
+        "temperature": 15.390460135964593,
+        "humidity": 0.4668351220885699,
+        "moisture": 0.5256025650955894,
+        "cloud": 0.04013442766279569,
+        "rain": 0.006729095452168163,
+        "fertility": 0.5094912580988378
+      }
+    },
+    {
+      "day": 8,
+      "animals": 199,
+      "bySpecies": [
+        20,
+        23,
+        45,
+        21,
+        28,
+        62
+      ],
+      "plants": 590,
+      "plantTypes": [
+        41,
+        3,
+        498,
+        13,
+        35
+      ],
+      "biomass": 2599.0234612569025,
+      "seeds": 453,
+      "nutrients": 7183.960416802014,
+      "births": 155,
+      "deaths": 88,
+      "causes": {
+        "predation": 59,
+        "murió por falta de alimento": 29
+      },
+      "climate": {
+        "temperature": 15.385800505823285,
+        "humidity": 0.454748451753181,
+        "moisture": 0.5156283803351495,
+        "cloud": 0.03829822596671225,
+        "rain": 0.006351856680401605,
+        "fertility": 0.5142696898522804
+      }
+    },
+    {
+      "day": 9,
+      "animals": 164,
+      "bySpecies": [
+        8,
+        18,
+        32,
+        20,
+        23,
+        63
+      ],
+      "plants": 429,
+      "plantTypes": [
+        13,
+        1,
+        379,
+        4,
+        32
+      ],
+      "biomass": 2099.3025633292546,
+      "seeds": 463,
+      "nutrients": 8041.605312101658,
+      "births": 158,
+      "deaths": 126,
+      "causes": {
+        "predation": 66,
+        "murió por falta de alimento": 60
+      },
+      "climate": {
+        "temperature": 15.359833196610728,
+        "humidity": 0.4492547348454933,
+        "moisture": 0.5087661392543067,
+        "cloud": 0.03636740664386655,
+        "rain": 0.0059040005619187055,
+        "fertility": 0.5145149085125901
+      }
+    },
+    {
+      "day": 10,
+      "animals": 135,
+      "bySpecies": [
+        2,
+        7,
+        25,
+        20,
+        17,
+        64
+      ],
+      "plants": 324,
+      "plantTypes": [
+        7,
+        0,
+        282,
+        1,
+        34
+      ],
+      "biomass": 1532.5399274137774,
+      "seeds": 451,
+      "nutrients": 8980.794770958539,
+      "births": 160,
+      "deaths": 157,
+      "causes": {
+        "predation": 68,
+        "murió por falta de alimento": 89
+      },
+      "climate": {
+        "temperature": 15.326279239809475,
+        "humidity": 0.44482713563667037,
+        "moisture": 0.5037807880769573,
+        "cloud": 0.033813365450016786,
+        "rain": 0.005474927128864826,
+        "fertility": 0.5168264734991288
+      }
+    },
+    {
+      "day": 11,
+      "animals": 113,
+      "bySpecies": [
+        0,
+        4,
+        14,
+        20,
+        11,
+        64
+      ],
+      "plants": 257,
+      "plantTypes": [
+        11,
+        0,
+        218,
+        0,
+        28
+      ],
+      "biomass": 1203.2661885575053,
+      "seeds": 415,
+      "nutrients": 9545.194626097255,
+      "births": 160,
+      "deaths": 179,
+      "causes": {
+        "predation": 70,
+        "murió por falta de alimento": 109
+      },
+      "climate": {
+        "temperature": 15.280470168315643,
+        "humidity": 0.4349661493657302,
+        "moisture": 0.5008387952117092,
+        "cloud": 0.03171009632217646,
+        "rain": 0.00516010294431926,
+        "fertility": 0.5164136646444847
+      }
+    },
+    {
+      "day": 12,
+      "animals": 95,
+      "bySpecies": [
+        0,
+        2,
+        6,
+        20,
+        4,
+        63
+      ],
+      "plants": 155,
+      "plantTypes": [
+        6,
+        0,
+        125,
+        0,
+        24
+      ],
+      "biomass": 860.2976712563808,
+      "seeds": 372,
+      "nutrients": 10078.105120939801,
+      "births": 160,
+      "deaths": 197,
+      "causes": {
+        "predation": 74,
+        "murió por falta de alimento": 123
+      },
+      "climate": {
+        "temperature": 15.213590063641236,
+        "humidity": 0.4170200870887634,
+        "moisture": 0.4988791500224014,
+        "cloud": 0.03006872859545404,
+        "rain": 0.005104098369493549,
+        "fertility": 0.5151704356075357
+      }
+    },
+    {
+      "day": 13,
+      "animals": 84,
+      "bySpecies": [
+        0,
+        0,
+        3,
+        18,
+        0,
+        63
+      ],
+      "plants": 75,
+      "plantTypes": [
+        2,
+        0,
+        55,
+        0,
+        18
+      ],
+      "biomass": 557.6515681974057,
+      "seeds": 323,
+      "nutrients": 10476.938640021925,
+      "births": 161,
+      "deaths": 209,
+      "causes": {
+        "predation": 74,
+        "murió por falta de alimento": 135
+      },
+      "climate": {
+        "temperature": 15.130025063700971,
+        "humidity": 0.41144350583621575,
+        "moisture": 0.497490612737049,
+        "cloud": 0.02861236372982704,
+        "rain": 0.004803295005643297,
+        "fertility": 0.5133939508511687
+      }
+    },
+    {
+      "day": 14,
+      "animals": 79,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        16,
+        0,
+        63
+      ],
+      "plants": 42,
+      "plantTypes": [
+        1,
+        0,
+        27,
+        0,
+        14
+      ],
+      "biomass": 192.5644958865626,
+      "seeds": 265,
+      "nutrients": 10970.846018408118,
+      "births": 162,
+      "deaths": 215,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 140
+      },
+      "climate": {
+        "temperature": 15.037585112640246,
+        "humidity": 0.4112224338737564,
+        "moisture": 0.49614944737448563,
+        "cloud": 0.028271798933427565,
+        "rain": 0.004593395025318988,
+        "fertility": 0.5126188620937727
+      }
+    },
+    {
+      "day": 15,
+      "animals": 70,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        10,
+        0,
+        60
+      ],
+      "plants": 33,
+      "plantTypes": [
+        1,
+        0,
+        20,
+        0,
+        12
+      ],
+      "biomass": 90.18572688913437,
+      "seeds": 206,
+      "nutrients": 11215.46481889461,
+      "births": 162,
+      "deaths": 224,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 149
+      },
+      "climate": {
+        "temperature": 14.957123573628767,
+        "humidity": 0.4092409165180694,
+        "moisture": 0.4950028911099053,
+        "cloud": 0.02693115558739768,
+        "rain": 0.004664304393208043,
+        "fertility": 0.5120629943819051
+      }
+    },
+    {
+      "day": 16,
+      "animals": 59,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        6,
+        0,
+        53
+      ],
+      "plants": 36,
+      "plantTypes": [
+        2,
+        0,
+        22,
+        0,
+        12
+      ],
+      "biomass": 94.7799140067283,
+      "seeds": 154,
+      "nutrients": 11385.977881751727,
+      "births": 162,
+      "deaths": 235,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 160
+      },
+      "climate": {
+        "temperature": 14.894063115537374,
+        "humidity": 0.4132619442241859,
+        "moisture": 0.4937736637653015,
+        "cloud": 0.027618958338713608,
+        "rain": 0.004695513155578567,
+        "fertility": 0.5123542136705116
+      }
+    },
+    {
+      "day": 17,
+      "animals": 57,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        4,
+        0,
+        53
+      ],
+      "plants": 48,
+      "plantTypes": [
+        1,
+        0,
+        40,
+        0,
+        7
+      ],
+      "biomass": 105.90018697940565,
+      "seeds": 116,
+      "nutrients": 11466.010504776463,
+      "births": 162,
+      "deaths": 237,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 162
+      },
+      "climate": {
+        "temperature": 14.880744923301625,
+        "humidity": 0.41432202402417834,
+        "moisture": 0.4933283047107948,
+        "cloud": 0.029748604704589884,
+        "rain": 0.005056121481345508,
+        "fertility": 0.5121843109808314
+      }
+    },
+    {
+      "day": 18,
+      "animals": 50,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        3,
+        0,
+        47
+      ],
+      "plants": 95,
+      "plantTypes": [
+        1,
+        0,
+        88,
+        0,
+        6
+      ],
+      "biomass": 219.3906253176392,
+      "seeds": 116,
+      "nutrients": 11532.969800098424,
+      "births": 162,
+      "deaths": 244,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 169
+      },
+      "climate": {
+        "temperature": 14.875919963075766,
+        "humidity": 0.41572070845421916,
+        "moisture": 0.4931279326414425,
+        "cloud": 0.031972232144721516,
+        "rain": 0.005373332881807143,
+        "fertility": 0.5121719127871011
+      }
+    },
+    {
+      "day": 19,
+      "animals": 41,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        39
+      ],
+      "plants": 199,
+      "plantTypes": [
+        0,
+        0,
+        193,
+        0,
+        6
+      ],
+      "biomass": 499.3864430369849,
+      "seeds": 166,
+      "nutrients": 11656.659802748167,
+      "births": 162,
+      "deaths": 253,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 178
+      },
+      "climate": {
+        "temperature": 14.877014649083387,
+        "humidity": 0.4169885906752007,
+        "moisture": 0.49287423337503133,
+        "cloud": 0.03107514534098024,
+        "rain": 0.005247640203850254,
+        "fertility": 0.5118505217110497
+      }
+    },
+    {
+      "day": 20,
+      "animals": 26,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        26
+      ],
+      "plants": 312,
+      "plantTypes": [
+        0,
+        0,
+        307,
+        0,
+        5
+      ],
+      "biomass": 920.629141174916,
+      "seeds": 258,
+      "nutrients": 11811.198325483769,
+      "births": 162,
+      "deaths": 268,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 193
+      },
+      "climate": {
+        "temperature": 14.889254279322751,
+        "humidity": 0.419646490653352,
+        "moisture": 0.4927480469373796,
+        "cloud": 0.02983857703470076,
+        "rain": 0.005036871934486183,
+        "fertility": 0.5122515590738134
+      }
+    },
+    {
+      "day": 21,
+      "animals": 16,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        16
+      ],
+      "plants": 444,
+      "plantTypes": [
+        0,
+        0,
+        442,
+        0,
+        2
+      ],
+      "biomass": 1468.594775596892,
+      "seeds": 440,
+      "nutrients": 12018.83495032442,
+      "births": 162,
+      "deaths": 278,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 203
+      },
+      "climate": {
+        "temperature": 14.923711054851397,
+        "humidity": 0.41857594399198833,
+        "moisture": 0.4928163359614195,
+        "cloud": 0.02988526463442994,
+        "rain": 0.005153089465871127,
+        "fertility": 0.5131184208509707
+      }
+    },
+    {
+      "day": 22,
+      "animals": 12,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        12
+      ],
+      "plants": 556,
+      "plantTypes": [
+        0,
+        0,
+        554,
+        0,
+        2
+      ],
+      "biomass": 2120.9013399481146,
+      "seeds": 630,
+      "nutrients": 12147.028953649566,
+      "births": 162,
+      "deaths": 282,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 207
+      },
+      "climate": {
+        "temperature": 14.985906050415903,
+        "humidity": 0.41276996625505125,
+        "moisture": 0.49326591297896216,
+        "cloud": 0.02990541248624129,
+        "rain": 0.0050657829586712375,
+        "fertility": 0.5136060453675507
+      }
+    },
+    {
+      "day": 23,
+      "animals": 8,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        8
+      ],
+      "plants": 664,
+      "plantTypes": [
+        0,
+        0,
+        663,
+        0,
+        1
+      ],
+      "biomass": 2951.267749307669,
+      "seeds": 858,
+      "nutrients": 12223.846444187868,
+      "births": 162,
+      "deaths": 286,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 211
+      },
+      "climate": {
+        "temperature": 15.054167206158143,
+        "humidity": 0.4064665693340956,
+        "moisture": 0.4941380047624411,
+        "cloud": 0.03002826173044187,
+        "rain": 0.004978102373421637,
+        "fertility": 0.5135767648278095
+      }
+    },
+    {
+      "day": 24,
+      "animals": 7,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        7
+      ],
+      "plants": 771,
+      "plantTypes": [
+        0,
+        0,
+        770,
+        0,
+        1
+      ],
+      "biomass": 3720.1439732775266,
+      "seeds": 1075,
+      "nutrients": 12448.992545688405,
+      "births": 162,
+      "deaths": 287,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 212
+      },
+      "climate": {
+        "temperature": 15.1124947694313,
+        "humidity": 0.39904550075009365,
+        "moisture": 0.49483752290485483,
+        "cloud": 0.029246549978688495,
+        "rain": 0.004965394998242559,
+        "fertility": 0.5145351504382035
+      }
+    },
+    {
+      "day": 25,
+      "animals": 3,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      "plants": 924,
+      "plantTypes": [
+        0,
+        0,
+        923,
+        0,
+        1
+      ],
+      "biomass": 4772.492458184389,
+      "seeds": 1200,
+      "nutrients": 12570.61342150165,
+      "births": 162,
+      "deaths": 291,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 216
+      },
+      "climate": {
+        "temperature": 15.152799619187759,
+        "humidity": 0.4013946626286535,
+        "moisture": 0.49514515028188166,
+        "cloud": 0.028224259961442656,
+        "rain": 0.004825764479458731,
+        "fertility": 0.5141363502953249
+      }
+    },
+    {
+      "day": 26,
+      "animals": 2,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "plants": 1002,
+      "plantTypes": [
+        0,
+        0,
+        1001,
+        0,
+        1
+      ],
+      "biomass": 5368.345160005358,
+      "seeds": 1200,
+      "nutrients": 13177.9014984302,
+      "births": 162,
+      "deaths": 292,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 217
+      },
+      "climate": {
+        "temperature": 15.189015136978934,
+        "humidity": 0.40310522594649634,
+        "moisture": 0.4949405859141885,
+        "cloud": 0.02925339197761374,
+        "rain": 0.004937240110059166,
+        "fertility": 0.5149178575915011
+      }
+    },
+    {
+      "day": 27,
+      "animals": 2,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "plants": 968,
+      "plantTypes": [
+        0,
+        0,
+        967,
+        0,
+        1
+      ],
+      "biomass": 5603.9407660243405,
+      "seeds": 1200,
+      "nutrients": 14067.361032187755,
+      "births": 162,
+      "deaths": 292,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 217
+      },
+      "climate": {
+        "temperature": 15.233480185504547,
+        "humidity": 0.4046802115735072,
+        "moisture": 0.49434373621879657,
+        "cloud": 0.028878220991192877,
+        "rain": 0.005019943086817635,
+        "fertility": 0.5153346551166422
+      }
+    },
+    {
+      "day": 28,
+      "animals": 2,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "plants": 923,
+      "plantTypes": [
+        0,
+        0,
+        922,
+        0,
+        1
+      ],
+      "biomass": 5519.565542936495,
+      "seeds": 1200,
+      "nutrients": 15206.263773108762,
+      "births": 162,
+      "deaths": 292,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 217
+      },
+      "climate": {
+        "temperature": 15.275004522411653,
+        "humidity": 0.4059897154400104,
+        "moisture": 0.49265517984020213,
+        "cloud": 0.0277739408291523,
+        "rain": 0.004596857240331666,
+        "fertility": 0.5155997563373537
+      }
+    },
+    {
+      "day": 29,
+      "animals": 1,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "plants": 866,
+      "plantTypes": [
+        0,
+        0,
+        866,
+        0,
+        0
+      ],
+      "biomass": 5315.045075027024,
+      "seeds": 1200,
+      "nutrients": 16363.14134006217,
+      "births": 162,
+      "deaths": 293,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 218
+      },
+      "climate": {
+        "temperature": 15.329863520216897,
+        "humidity": 0.40542839270670794,
+        "moisture": 0.4913144843647892,
+        "cloud": 0.029284661413124084,
+        "rain": 0.004665603826301626,
+        "fertility": 0.5153081552020596
+      }
+    },
+    {
+      "day": 30,
+      "animals": 1,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "plants": 864,
+      "plantTypes": [
+        0,
+        0,
+        864,
+        0,
+        0
+      ],
+      "biomass": 5154.768215010685,
+      "seeds": 1187,
+      "nutrients": 17538.887864348726,
+      "births": 162,
+      "deaths": 293,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 218
+      },
+      "climate": {
+        "temperature": 15.358061257957056,
+        "humidity": 0.3950430934985144,
+        "moisture": 0.4904369813199739,
+        "cloud": 0.030248035150039307,
+        "rain": 0.004932587049583524,
+        "fertility": 0.5144150736215591
+      }
+    },
+    {
+      "day": 31,
+      "animals": 1,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "plants": 862,
+      "plantTypes": [
+        0,
+        0,
+        862,
+        0,
+        0
+      ],
+      "biomass": 5163.070645215554,
+      "seeds": 1175,
+      "nutrients": 18482.29153175712,
+      "births": 162,
+      "deaths": 293,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 218
+      },
+      "climate": {
+        "temperature": 15.358321808003419,
+        "humidity": 0.39223786722072695,
+        "moisture": 0.49003381265964574,
+        "cloud": 0.03047230158974076,
+        "rain": 0.005056879754893169,
+        "fertility": 0.5134316345962624
+      }
+    },
+    {
+      "day": 32,
+      "animals": 1,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "plants": 887,
+      "plantTypes": [
+        0,
+        0,
+        887,
+        0,
+        0
+      ],
+      "biomass": 5159.179337277265,
+      "seeds": 1179,
+      "nutrients": 19525.236993139024,
+      "births": 162,
+      "deaths": 293,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 218
+      },
+      "climate": {
+        "temperature": 15.341796595300751,
+        "humidity": 0.3977155952141904,
+        "moisture": 0.48991086455719274,
+        "cloud": 0.03011174699436895,
+        "rain": 0.004807292245273763,
+        "fertility": 0.5133294867411972
+      }
+    },
+    {
+      "day": 33,
+      "animals": 1,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "plants": 957,
+      "plantTypes": [
+        0,
+        0,
+        957,
+        0,
+        0
+      ],
+      "biomass": 5506.719359729897,
+      "seeds": 1168,
+      "nutrients": 20335.970567214223,
+      "births": 162,
+      "deaths": 293,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 218
+      },
+      "climate": {
+        "temperature": 15.318213133522672,
+        "humidity": 0.4048015968960289,
+        "moisture": 0.490076016377675,
+        "cloud": 0.02899439477131457,
+        "rain": 0.004591721939076396,
+        "fertility": 0.5139224076940079
+      }
+    },
+    {
+      "day": 34,
+      "animals": 1,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "plants": 1033,
+      "plantTypes": [
+        0,
+        0,
+        1033,
+        0,
+        0
+      ],
+      "biomass": 5819.40579011076,
+      "seeds": 1149,
+      "nutrients": 21265.055453403267,
+      "births": 162,
+      "deaths": 293,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 218
+      },
+      "climate": {
+        "temperature": 15.29587083252336,
+        "humidity": 0.4054805844230114,
+        "moisture": 0.49038013417698495,
+        "cloud": 0.02831222228163746,
+        "rain": 0.00453136832485723,
+        "fertility": 0.5132874931382481
+      }
+    },
+    {
+      "day": 35,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1088,
+      "plantTypes": [
+        0,
+        0,
+        1088,
+        0,
+        0
+      ],
+      "biomass": 6218.274611603114,
+      "seeds": 1175,
+      "nutrients": 22150.10030746595,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.254776529301834,
+        "humidity": 0.4020776713166714,
+        "moisture": 0.4909894291750039,
+        "cloud": 0.027615419237025245,
+        "rain": 0.0046338702374123155,
+        "fertility": 0.5134254182495496
+      }
+    },
+    {
+      "day": 36,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1133,
+      "plantTypes": [
+        0,
+        0,
+        1133,
+        0,
+        0
+      ],
+      "biomass": 6405.0183087152545,
+      "seeds": 1200,
+      "nutrients": 23328.360166495164,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.194001918270533,
+        "humidity": 0.3966631115109211,
+        "moisture": 0.4915717793706435,
+        "cloud": 0.026289317383312426,
+        "rain": 0.004489731197243194,
+        "fertility": 0.5135009195323238
+      }
+    },
+    {
+      "day": 37,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1114,
+      "plantTypes": [
+        0,
+        0,
+        1114,
+        0,
+        0
+      ],
+      "biomass": 6533.128490980943,
+      "seeds": 1200,
+      "nutrients": 24473.892004489313,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.116508572460374,
+        "humidity": 0.40003805640219064,
+        "moisture": 0.4919027084238048,
+        "cloud": 0.027048678729078755,
+        "rain": 0.00454228591462296,
+        "fertility": 0.5135375945593252
+      }
+    },
+    {
+      "day": 38,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1032,
+      "plantTypes": [
+        0,
+        0,
+        1032,
+        0,
+        0
+      ],
+      "biomass": 6131.824044896147,
+      "seeds": 1194,
+      "nutrients": 26056.132775139216,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.029585251490854,
+        "humidity": 0.40133480521972875,
+        "moisture": 0.4919180582347515,
+        "cloud": 0.026296810212547796,
+        "rain": 0.004587291977243852,
+        "fertility": 0.5131122869656763
+      }
+    },
+    {
+      "day": 39,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1029,
+      "plantTypes": [
+        0,
+        0,
+        1029,
+        0,
+        0
+      ],
+      "biomass": 5982.14483546701,
+      "seeds": 1200,
+      "nutrients": 27460.64514611615,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.945327730042303,
+        "humidity": 0.4016039963750518,
+        "moisture": 0.49146512647310664,
+        "cloud": 0.027300175870256058,
+        "rain": 0.0046485893486628415,
+        "fertility": 0.5124789011049596
+      }
+    },
+    {
+      "day": 40,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1061,
+      "plantTypes": [
+        0,
+        0,
+        1061,
+        0,
+        0
+      ],
+      "biomass": 6263.655249288928,
+      "seeds": 1200,
+      "nutrients": 28449.139580534946,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.887302966164416,
+        "humidity": 0.4025726419261981,
+        "moisture": 0.49103100003874767,
+        "cloud": 0.02949198975941217,
+        "rain": 0.005124605042451027,
+        "fertility": 0.5121520789317793
+      }
+    },
+    {
+      "day": 41,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1099,
+      "plantTypes": [
+        0,
+        0,
+        1099,
+        0,
+        0
+      ],
+      "biomass": 6496.38761660778,
+      "seeds": 1197,
+      "nutrients": 29561.22227151552,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.868162876664663,
+        "humidity": 0.4036546783885968,
+        "moisture": 0.4914069862425656,
+        "cloud": 0.03157466447270095,
+        "rain": 0.005559343087705432,
+        "fertility": 0.5121347412840566
+      }
+    },
+    {
+      "day": 42,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1163,
+      "plantTypes": [
+        0,
+        0,
+        1163,
+        0,
+        0
+      ],
+      "biomass": 6805.584807922412,
+      "seeds": 1183,
+      "nutrients": 30625.256167464355,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.863036607153004,
+        "humidity": 0.40801929869013154,
+        "moisture": 0.4916816718123425,
+        "cloud": 0.03219781500506318,
+        "rain": 0.005563479789738532,
+        "fertility": 0.5121989487069818
+      }
+    },
+    {
+      "day": 43,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1156,
+      "plantTypes": [
+        0,
+        0,
+        1156,
+        0,
+        0
+      ],
+      "biomass": 6903.316834985062,
+      "seeds": 1155,
+      "nutrients": 31877.108357660807,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.8706830457752,
+        "humidity": 0.41147941551086703,
+        "moisture": 0.4918784600905358,
+        "cloud": 0.03092636374645059,
+        "rain": 0.005330194600921659,
+        "fertility": 0.5123420475313624
+      }
+    },
+    {
+      "day": 44,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1158,
+      "plantTypes": [
+        0,
+        0,
+        1158,
+        0,
+        0
+      ],
+      "biomass": 6945.158872085973,
+      "seeds": 1179,
+      "nutrients": 33206.2704057994,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.886182497259261,
+        "humidity": 0.41594938845092233,
+        "moisture": 0.49217720459529657,
+        "cloud": 0.02978887409459414,
+        "rain": 0.005004748945699105,
+        "fertility": 0.5117101713868569
+      }
+    },
+    {
+      "day": 45,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1167,
+      "plantTypes": [
+        0,
+        0,
+        1167,
+        0,
+        0
+      ],
+      "biomass": 7077.269122556649,
+      "seeds": 1192,
+      "nutrients": 34390.970872759455,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.926108029471132,
+        "humidity": 0.4138486850844684,
+        "moisture": 0.49252710244529163,
+        "cloud": 0.030980281998171193,
+        "rain": 0.005310952528559831,
+        "fertility": 0.5114564729908229
+      }
+    },
+    {
+      "day": 46,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1131,
+      "plantTypes": [
+        0,
+        0,
+        1131,
+        0,
+        0
+      ],
+      "biomass": 6554.660894853959,
+      "seeds": 1200,
+      "nutrients": 36256.302151167794,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.988802037063232,
+        "humidity": 0.41016257338462536,
+        "moisture": 0.49292462244036006,
+        "cloud": 0.030762126333505398,
+        "rain": 0.0052030436060839695,
+        "fertility": 0.5121037679704321
+      }
+    },
+    {
+      "day": 47,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1147,
+      "plantTypes": [
+        0,
+        0,
+        1147,
+        0,
+        0
+      ],
+      "biomass": 6538.881699968964,
+      "seeds": 1200,
+      "nutrients": 37662.00875944881,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.060111834060526,
+        "humidity": 0.403487311597165,
+        "moisture": 0.4932482267036784,
+        "cloud": 0.030435811803358533,
+        "rain": 0.005236866111388155,
+        "fertility": 0.511839823731151
+      }
+    },
+    {
+      "day": 48,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1163,
+      "plantTypes": [
+        0,
+        0,
+        1163,
+        0,
+        0
+      ],
+      "biomass": 6804.623967917197,
+      "seeds": 1200,
+      "nutrients": 38741.310153816674,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.118730330627026,
+        "humidity": 0.3976371655153929,
+        "moisture": 0.49349997522396544,
+        "cloud": 0.030204277689422816,
+        "rain": 0.005196043946399455,
+        "fertility": 0.5113990659733557
+      }
+    },
+    {
+      "day": 49,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1089,
+      "plantTypes": [
+        0,
+        0,
+        1089,
+        0,
+        0
+      ],
+      "biomass": 6476.132976337965,
+      "seeds": 1200,
+      "nutrients": 40347.80629936209,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.160175220641792,
+        "humidity": 0.3998908649213038,
+        "moisture": 0.49379549096657244,
+        "cloud": 0.028418383938988052,
+        "rain": 0.004945195557130892,
+        "fertility": 0.5120024257155238
+      }
+    },
+    {
+      "day": 50,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1044,
+      "plantTypes": [
+        0,
+        0,
+        1044,
+        0,
+        0
+      ],
+      "biomass": 6293.657635108864,
+      "seeds": 1200,
+      "nutrients": 41701.77141838981,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.194228553274979,
+        "humidity": 0.4056092399910872,
+        "moisture": 0.4939237494052652,
+        "cloud": 0.028923824126727907,
+        "rain": 0.004949763091897738,
+        "fertility": 0.5121685526353168
+      }
+    },
+    {
+      "day": 51,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 924,
+      "plantTypes": [
+        0,
+        0,
+        924,
+        0,
+        0
+      ],
+      "biomass": 5676.1705279061325,
+      "seeds": 1181,
+      "nutrients": 43360.62649497457,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.235971878833347,
+        "humidity": 0.40503361020932693,
+        "moisture": 0.4938001692145313,
+        "cloud": 0.029980650945456804,
+        "rain": 0.0051251291800020965,
+        "fertility": 0.5125797506872518
+      }
+    },
+    {
+      "day": 52,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 857,
+      "plantTypes": [
+        0,
+        0,
+        857,
+        0,
+        0
+      ],
+      "biomass": 5233.440530066873,
+      "seeds": 1127,
+      "nutrients": 44845.94624830151,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.28060887413057,
+        "humidity": 0.40563966083355063,
+        "moisture": 0.4924548458824195,
+        "cloud": 0.028193408065930257,
+        "rain": 0.004703369996201339,
+        "fertility": 0.5122972119836062
+      }
+    },
+    {
+      "day": 53,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 980,
+      "plantTypes": [
+        0,
+        0,
+        980,
+        0,
+        0
+      ],
+      "biomass": 5746.645099052287,
+      "seeds": 1073,
+      "nutrients": 45482.17477472582,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.337348866573612,
+        "humidity": 0.40399688346824025,
+        "moisture": 0.49095923632722266,
+        "cloud": 0.029295215546834185,
+        "rain": 0.00479870244692412,
+        "fertility": 0.5122986427941145
+      }
+    },
+    {
+      "day": 54,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1027,
+      "plantTypes": [
+        0,
+        0,
+        1027,
+        0,
+        0
+      ],
+      "biomass": 5969.0351873134705,
+      "seeds": 1030,
+      "nutrients": 46442.59241642578,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.361674664154329,
+        "humidity": 0.39294859934817494,
+        "moisture": 0.49038786413710633,
+        "cloud": 0.028723032545352793,
+        "rain": 0.004700109306276687,
+        "fertility": 0.5122806877379542
+      }
+    },
+    {
+      "day": 55,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1040,
+      "plantTypes": [
+        0,
+        0,
+        1040,
+        0,
+        0
+      ],
+      "biomass": 6189.095642055583,
+      "seeds": 1037,
+      "nutrients": 47431.24855325345,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.358966105671367,
+        "humidity": 0.39376445811552363,
+        "moisture": 0.49015100892140345,
+        "cloud": 0.029363191621793305,
+        "rain": 0.004728376880790594,
+        "fertility": 0.5123557061955378
+      }
+    },
+    {
+      "day": 56,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1118,
+      "plantTypes": [
+        0,
+        0,
+        1118,
+        0,
+        0
+      ],
+      "biomass": 6593.515943464746,
+      "seeds": 1088,
+      "nutrients": 48416.10894194394,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.346114234184533,
+        "humidity": 0.40023606611102486,
+        "moisture": 0.48992086342932534,
+        "cloud": 0.028625294372067137,
+        "rain": 0.004610763510639197,
+        "fertility": 0.5127493220933934
+      }
+    },
+    {
+      "day": 57,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1110,
+      "plantTypes": [
+        0,
+        0,
+        1110,
+        0,
+        0
+      ],
+      "biomass": 6638.306511909324,
+      "seeds": 1160,
+      "nutrients": 49643.879061726904,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.323465319106468,
+        "humidity": 0.4064701885069145,
+        "moisture": 0.48997790096868143,
+        "cloud": 0.027590149438442374,
+        "rain": 0.004422874908101479,
+        "fertility": 0.5127837331071691
+      }
+    },
+    {
+      "day": 58,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1141,
+      "plantTypes": [
+        0,
+        0,
+        1141,
+        0,
+        0
+      ],
+      "biomass": 6799.138441213455,
+      "seeds": 1195,
+      "nutrients": 50872.79234812249,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.301559604269283,
+        "humidity": 0.4100268007667429,
+        "moisture": 0.49019080084451405,
+        "cloud": 0.02738509940596683,
+        "rain": 0.004497313168914216,
+        "fertility": 0.5128949343742004
+      }
+    },
+    {
+      "day": 59,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1060,
+      "plantTypes": [
+        0,
+        0,
+        1060,
+        0,
+        0
+      ],
+      "biomass": 6472.413564899009,
+      "seeds": 1192,
+      "nutrients": 52426.73965587873,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.261216389738275,
+        "humidity": 0.4080300735114455,
+        "moisture": 0.49076459621466356,
+        "cloud": 0.026990002279773835,
+        "rain": 0.004355812371486995,
+        "fertility": 0.5126771514355148
+      }
+    },
+    {
+      "day": 60,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1121,
+      "plantTypes": [
+        0,
+        0,
+        1121,
+        0,
+        0
+      ],
+      "biomass": 6681.293181593981,
+      "seeds": 1150,
+      "nutrients": 53637.42682649271,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.200647484900413,
+        "humidity": 0.39802988955656177,
+        "moisture": 0.4913317129681327,
+        "cloud": 0.02585676441742413,
+        "rain": 0.004304626290526566,
+        "fertility": 0.5127285881555346
+      }
+    },
+    {
+      "day": 61,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1127,
+      "plantTypes": [
+        0,
+        0,
+        1127,
+        0,
+        0
+      ],
+      "biomass": 7005.962003142221,
+      "seeds": 1141,
+      "nutrients": 54615.78783568443,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.121791015066927,
+        "humidity": 0.39947964134082276,
+        "moisture": 0.4915537867625154,
+        "cloud": 0.02700490071330269,
+        "rain": 0.004518316434396974,
+        "fertility": 0.5123632402434293
+      }
+    },
+    {
+      "day": 62,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1100,
+      "plantTypes": [
+        0,
+        0,
+        1100,
+        0,
+        0
+      ],
+      "biomass": 6711.403989061919,
+      "seeds": 1132,
+      "nutrients": 56225.43467856413,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.03594947576179,
+        "humidity": 0.4002307613895939,
+        "moisture": 0.4915593716277532,
+        "cloud": 0.027499222439941483,
+        "rain": 0.004726022683344816,
+        "fertility": 0.5121394236147527
+      }
+    },
+    {
+      "day": 63,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1228,
+      "plantTypes": [
+        0,
+        0,
+        1228,
+        0,
+        0
+      ],
+      "biomass": 7217.3107049647915,
+      "seeds": 1071,
+      "nutrients": 57292.05222160177,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.951570568065543,
+        "humidity": 0.4062008324971556,
+        "moisture": 0.491174296310511,
+        "cloud": 0.027533562610095087,
+        "rain": 0.004617340101826417,
+        "fertility": 0.5121729099610599
+      }
+    },
+    {
+      "day": 64,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1174,
+      "plantTypes": [
+        0,
+        0,
+        1174,
+        0,
+        0
+      ],
+      "biomass": 7095.128849040714,
+      "seeds": 1024,
+      "nutrients": 58771.214271064426,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.892852147424831,
+        "humidity": 0.4075320888798457,
+        "moisture": 0.49117393193353104,
+        "cloud": 0.030337186455234588,
+        "rain": 0.005184484850531661,
+        "fertility": 0.5123411267178777
+      }
+    },
+    {
+      "day": 65,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1207,
+      "plantTypes": [
+        0,
+        0,
+        1207,
+        0,
+        0
+      ],
+      "biomass": 7032.323826168217,
+      "seeds": 1006,
+      "nutrients": 60361.12421617786,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.86936475554723,
+        "humidity": 0.4038142168044809,
+        "moisture": 0.49135080238159695,
+        "cloud": 0.03163086298832492,
+        "rain": 0.00559111687263248,
+        "fertility": 0.5125513108509399
+      }
+    },
+    {
+      "day": 66,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1219,
+      "plantTypes": [
+        0,
+        0,
+        1219,
+        0,
+        0
+      ],
+      "biomass": 7108.2912817329125,
+      "seeds": 1006,
+      "nutrients": 61771.00751889506,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.860617084600959,
+        "humidity": 0.41046269692947673,
+        "moisture": 0.49163581233507997,
+        "cloud": 0.031400667149405925,
+        "rain": 0.005377280403705513,
+        "fertility": 0.512657569595217
+      }
+    },
+    {
+      "day": 67,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1227,
+      "plantTypes": [
+        0,
+        0,
+        1227,
+        0,
+        0
+      ],
+      "biomass": 7181.401913704512,
+      "seeds": 957,
+      "nutrients": 63182.48770490975,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.871836393377198,
+        "humidity": 0.41551228943180846,
+        "moisture": 0.4919486193783888,
+        "cloud": 0.031017391021477745,
+        "rain": 0.005255826753369011,
+        "fertility": 0.5126671107553501
+      }
+    },
+    {
+      "day": 68,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1207,
+      "plantTypes": [
+        0,
+        0,
+        1207,
+        0,
+        0
+      ],
+      "biomass": 7151.683910460924,
+      "seeds": 974,
+      "nutrients": 64657.81546692837,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.888967493573784,
+        "humidity": 0.4196515968463072,
+        "moisture": 0.49228055208135,
+        "cloud": 0.030174194778348328,
+        "rain": 0.005045230794637261,
+        "fertility": 0.5122655018026928
+      }
+    },
+    {
+      "day": 69,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1211,
+      "plantTypes": [
+        0,
+        0,
+        1211,
+        0,
+        0
+      ],
+      "biomass": 7217.466673466393,
+      "seeds": 956,
+      "nutrients": 66057.73988589768,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.927535041768008,
+        "humidity": 0.4170232637592625,
+        "moisture": 0.49288456609179776,
+        "cloud": 0.03067511100276414,
+        "rain": 0.005247256014818492,
+        "fertility": 0.5118841902512797
+      }
+    },
+    {
+      "day": 70,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1254,
+      "plantTypes": [
+        0,
+        0,
+        1254,
+        0,
+        0
+      ],
+      "biomass": 7332.376978443525,
+      "seeds": 940,
+      "nutrients": 67512.37452845185,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.988383731156038,
+        "humidity": 0.41392685177983624,
+        "moisture": 0.49356661858492157,
+        "cloud": 0.031246874670152316,
+        "rain": 0.00522102643589778,
+        "fertility": 0.5118740019679786
+      }
+    },
+    {
+      "day": 71,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1181,
+      "plantTypes": [
+        0,
+        0,
+        1181,
+        0,
+        0
+      ],
+      "biomass": 7099.197814025457,
+      "seeds": 915,
+      "nutrients": 69210.94258236165,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.06058617291504,
+        "humidity": 0.4072460053413744,
+        "moisture": 0.4941913194294008,
+        "cloud": 0.029886653515520126,
+        "rain": 0.005121739721207594,
+        "fertility": 0.5119619566426972
+      }
+    },
+    {
+      "day": 72,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1280,
+      "plantTypes": [
+        0,
+        0,
+        1280,
+        0,
+        0
+      ],
+      "biomass": 7456.147904063171,
+      "seeds": 943,
+      "nutrients": 70455.89174525777,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.120256101915306,
+        "humidity": 0.40211478575188914,
+        "moisture": 0.49458710965547925,
+        "cloud": 0.029834166033092052,
+        "rain": 0.005127858985155158,
+        "fertility": 0.512023202743926
+      }
+    },
+    {
+      "day": 73,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1280,
+      "plantTypes": [
+        0,
+        0,
+        1280,
+        0,
+        0
+      ],
+      "biomass": 7498.209962724361,
+      "seeds": 965,
+      "nutrients": 71976.90296912554,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.163997097282312,
+        "humidity": 0.40478507561906235,
+        "moisture": 0.49486404288604124,
+        "cloud": 0.029428344951904026,
+        "rain": 0.0050806923939234255,
+        "fertility": 0.5118627846501943
+      }
+    },
+    {
+      "day": 74,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1266,
+      "plantTypes": [
+        0,
+        0,
+        1266,
+        0,
+        0
+      ],
+      "biomass": 7555.9386079095275,
+      "seeds": 999,
+      "nutrients": 73423.90419286973,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.205377723139197,
+        "humidity": 0.40582253861665957,
+        "moisture": 0.4945471266541142,
+        "cloud": 0.029308607056893483,
+        "rain": 0.005096557963972921,
+        "fertility": 0.5116771366619846
+      }
+    },
+    {
+      "day": 75,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1226,
+      "plantTypes": [
+        0,
+        0,
+        1226,
+        0,
+        0
+      ],
+      "biomass": 7361.883382357212,
+      "seeds": 998,
+      "nutrients": 75110.11387477758,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.24479332768955,
+        "humidity": 0.4023184430841549,
+        "moisture": 0.49398807633816366,
+        "cloud": 0.029421878519285675,
+        "rain": 0.005286610924497996,
+        "fertility": 0.5115838617782967
+      }
+    },
+    {
+      "day": 76,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1227,
+      "plantTypes": [
+        0,
+        0,
+        1227,
+        0,
+        0
+      ],
+      "biomass": 7256.2037458718305,
+      "seeds": 942,
+      "nutrients": 76730.65486866503,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.282707393610027,
+        "humidity": 0.40538436439131803,
+        "moisture": 0.4923157837156079,
+        "cloud": 0.028599420971464312,
+        "rain": 0.0047775354465199125,
+        "fertility": 0.5117587935425566
+      }
+    },
+    {
+      "day": 77,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1206,
+      "plantTypes": [
+        0,
+        0,
+        1206,
+        0,
+        0
+      ],
+      "biomass": 7159.339935271585,
+      "seeds": 917,
+      "nutrients": 78278.602141892,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.337616863498868,
+        "humidity": 0.40501022949597737,
+        "moisture": 0.4909243687150383,
+        "cloud": 0.030477594208705532,
+        "rain": 0.004892740019251607,
+        "fertility": 0.511822229042027
+      }
+    },
+    {
+      "day": 78,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1222,
+      "plantTypes": [
+        0,
+        0,
+        1222,
+        0,
+        0
+      ],
+      "biomass": 7308.595001879767,
+      "seeds": 909,
+      "nutrients": 79558.9719875386,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.366059561144086,
+        "humidity": 0.39281592945590654,
+        "moisture": 0.4902531776372067,
+        "cloud": 0.031070016150094457,
+        "rain": 0.005125135620963272,
+        "fertility": 0.511769509564903
+      }
+    },
+    {
+      "day": 79,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1130,
+      "plantTypes": [
+        0,
+        0,
+        1130,
+        0,
+        0
+      ],
+      "biomass": 6874.583885196401,
+      "seeds": 865,
+      "nutrients": 81282.95603870504,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.369165278075544,
+        "humidity": 0.38459693838136305,
+        "moisture": 0.49008440668041126,
+        "cloud": 0.031063011356752046,
+        "rain": 0.005161376988014523,
+        "fertility": 0.5118750017449475
+      }
+    },
+    {
+      "day": 80,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1031,
+      "plantTypes": [
+        0,
+        0,
+        1031,
+        0,
+        0
+      ],
+      "biomass": 6347.637383310606,
+      "seeds": 810,
+      "nutrients": 83037.39680584286,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.34647589757419,
+        "humidity": 0.3911477842495722,
+        "moisture": 0.48994443215255806,
+        "cloud": 0.02981207463084525,
+        "rain": 0.0048386868623367454,
+        "fertility": 0.5119892522281034
+      }
+    },
+    {
+      "day": 81,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1019,
+      "plantTypes": [
+        0,
+        0,
+        1019,
+        0,
+        0
+      ],
+      "biomass": 6118.51407091426,
+      "seeds": 793,
+      "nutrients": 84488.65528802793,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.321901312240742,
+        "humidity": 0.3973280880169131,
+        "moisture": 0.4899756413707581,
+        "cloud": 0.028574834817573114,
+        "rain": 0.0045597498666980684,
+        "fertility": 0.5119196001596431
+      }
+    },
+    {
+      "day": 82,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1117,
+      "plantTypes": [
+        0,
+        0,
+        1117,
+        0,
+        0
+      ],
+      "biomass": 6609.764131513236,
+      "seeds": 781,
+      "nutrients": 85443.828601639,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.295735684180737,
+        "humidity": 0.40390649808617507,
+        "moisture": 0.49019827144716654,
+        "cloud": 0.02686607802886792,
+        "rain": 0.00432806660860722,
+        "fertility": 0.5120431889738388
+      }
+    },
+    {
+      "day": 83,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1064,
+      "plantTypes": [
+        0,
+        0,
+        1064,
+        0,
+        0
+      ],
+      "biomass": 6364.928277766169,
+      "seeds": 779,
+      "nutrients": 86989.98893734276,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.256034687945952,
+        "humidity": 0.40497678580850693,
+        "moisture": 0.4907216665808916,
+        "cloud": 0.02681100886004904,
+        "rain": 0.004322122223990594,
+        "fertility": 0.512209915477542
+      }
+    },
+    {
+      "day": 84,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1100,
+      "plantTypes": [
+        0,
+        0,
+        1100,
+        0,
+        0
+      ],
+      "biomass": 6726.534612620833,
+      "seeds": 788,
+      "nutrients": 87933.94447834879,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.198342339863654,
+        "humidity": 0.39951489100010085,
+        "moisture": 0.4912538860505606,
+        "cloud": 0.026575641396220005,
+        "rain": 0.004421585070030382,
+        "fertility": 0.5117350081212386
+      }
+    },
+    {
+      "day": 85,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1093,
+      "plantTypes": [
+        0,
+        0,
+        1093,
+        0,
+        0
+      ],
+      "biomass": 6594.32773496598,
+      "seeds": 780,
+      "nutrients": 89396.99106277464,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.122420649178421,
+        "humidity": 0.3998308970128664,
+        "moisture": 0.4914288854398044,
+        "cloud": 0.02703944248054351,
+        "rain": 0.0045439350007817885,
+        "fertility": 0.5118272618541793
+      }
+    },
+    {
+      "day": 86,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1099,
+      "plantTypes": [
+        0,
+        0,
+        1099,
+        0,
+        0
+      ],
+      "biomass": 6629.142161086416,
+      "seeds": 750,
+      "nutrients": 90728.25139061808,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.036199016111862,
+        "humidity": 0.40116624970278913,
+        "moisture": 0.4914201821022571,
+        "cloud": 0.027264174753156855,
+        "rain": 0.00474374796679355,
+        "fertility": 0.5117872602223281
+      }
+    },
+    {
+      "day": 87,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1079,
+      "plantTypes": [
+        0,
+        0,
+        1079,
+        0,
+        0
+      ],
+      "biomass": 6606.190153033709,
+      "seeds": 764,
+      "nutrients": 92021.19302332323,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.952680642357995,
+        "humidity": 0.4071202042292618,
+        "moisture": 0.4911608585193984,
+        "cloud": 0.027730838683618052,
+        "rain": 0.004658949539484224,
+        "fertility": 0.5118979989295324
+      }
+    },
+    {
+      "day": 88,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1105,
+      "plantTypes": [
+        0,
+        0,
+        1105,
+        0,
+        0
+      ],
+      "biomass": 6731.875827016681,
+      "seeds": 804,
+      "nutrients": 93329.56324885738,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.895677051089656,
+        "humidity": 0.40748178573915317,
+        "moisture": 0.49111745684163216,
+        "cloud": 0.03015700440126603,
+        "rain": 0.005126763599568593,
+        "fertility": 0.5123581781737522
+      }
+    },
+    {
+      "day": 89,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1182,
+      "plantTypes": [
+        0,
+        0,
+        1182,
+        0,
+        0
+      ],
+      "biomass": 7011.363447223882,
+      "seeds": 808,
+      "nutrients": 94485.92021173127,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.872138531431592,
+        "humidity": 0.4025662959450169,
+        "moisture": 0.4913263884257178,
+        "cloud": 0.031214982344266194,
+        "rain": 0.005496437677002487,
+        "fertility": 0.5124187544603076
+      }
+    },
+    {
+      "day": 90,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1154,
+      "plantTypes": [
+        0,
+        0,
+        1154,
+        0,
+        0
+      ],
+      "biomass": 6980.761811989431,
+      "seeds": 805,
+      "nutrients": 95832.20540986123,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.859704855156288,
+        "humidity": 0.40914160414449846,
+        "moisture": 0.49150595072434256,
+        "cloud": 0.030108668966922478,
+        "rain": 0.005101027080887589,
+        "fertility": 0.5119832360487931
+      }
+    },
+    {
+      "day": 91,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1089,
+      "plantTypes": [
+        0,
+        0,
+        1089,
+        0,
+        0
+      ],
+      "biomass": 6689.634998684319,
+      "seeds": 805,
+      "nutrients": 97378.81656084438,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.867029821058905,
+        "humidity": 0.41524518419602874,
+        "moisture": 0.49173560989560283,
+        "cloud": 0.030301539899334463,
+        "rain": 0.005134494096328533,
+        "fertility": 0.5121273206912794
+      }
+    },
+    {
+      "day": 92,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1101,
+      "plantTypes": [
+        0,
+        0,
+        1101,
+        0,
+        0
+      ],
+      "biomass": 6988.2726591955925,
+      "seeds": 841,
+      "nutrients": 98342.8540465161,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.889223699872828,
+        "humidity": 0.4206850069388766,
+        "moisture": 0.4920406893517926,
+        "cloud": 0.030395001681033422,
+        "rain": 0.005002523135666844,
+        "fertility": 0.5121531208506529
+      }
+    },
+    {
+      "day": 93,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1184,
+      "plantTypes": [
+        0,
+        0,
+        1184,
+        0,
+        0
+      ],
+      "biomass": 7300.010228186922,
+      "seeds": 861,
+      "nutrients": 99517.75161903104,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.926655534491376,
+        "humidity": 0.4183845446119369,
+        "moisture": 0.49252495854760203,
+        "cloud": 0.030698969831613142,
+        "rain": 0.005188779463865427,
+        "fertility": 0.5118115172161295
+      }
+    },
+    {
+      "day": 94,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1152,
+      "plantTypes": [
+        0,
+        0,
+        1152,
+        0,
+        0
+      ],
+      "biomass": 7033.525437643434,
+      "seeds": 853,
+      "nutrients": 101107.66588299343,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.98570936462167,
+        "humidity": 0.41473152741099745,
+        "moisture": 0.4930815643246208,
+        "cloud": 0.03067270474336317,
+        "rain": 0.005168420680033869,
+        "fertility": 0.5122381753644034
+      }
+    },
+    {
+      "day": 95,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1138,
+      "plantTypes": [
+        0,
+        0,
+        1138,
+        0,
+        0
+      ],
+      "biomass": 6774.859184423659,
+      "seeds": 841,
+      "nutrients": 102670.05601770525,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.055249399476079,
+        "humidity": 0.40901892908593307,
+        "moisture": 0.4935574628341131,
+        "cloud": 0.02942246747802888,
+        "rain": 0.005080309713520852,
+        "fertility": 0.5125643134911283
+      }
+    },
+    {
+      "day": 96,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1248,
+      "plantTypes": [
+        0,
+        0,
+        1248,
+        0,
+        0
+      ],
+      "biomass": 7297.806144018921,
+      "seeds": 896,
+      "nutrients": 103691.47138980577,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.114191342894944,
+        "humidity": 0.40299683373142553,
+        "moisture": 0.49364278640442116,
+        "cloud": 0.029689590922000884,
+        "rain": 0.005079480247656855,
+        "fertility": 0.5123257479159659
+      }
+    },
+    {
+      "day": 97,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1204,
+      "plantTypes": [
+        0,
+        0,
+        1204,
+        0,
+        0
+      ],
+      "biomass": 7222.705264224438,
+      "seeds": 915,
+      "nutrients": 105122.85407836734,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.157852039112788,
+        "humidity": 0.4054412081079391,
+        "moisture": 0.49362780193340866,
+        "cloud": 0.029158500748154362,
+        "rain": 0.005040187596227988,
+        "fertility": 0.5126507445574714
+      }
+    },
+    {
+      "day": 98,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1144,
+      "plantTypes": [
+        0,
+        0,
+        1144,
+        0,
+        0
+      ],
+      "biomass": 7077.062282207017,
+      "seeds": 915,
+      "nutrients": 106580.05230768851,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.200260455901958,
+        "humidity": 0.4058660360609871,
+        "moisture": 0.4936947787752735,
+        "cloud": 0.029678240074907256,
+        "rain": 0.005044672255354294,
+        "fertility": 0.5129098547850127
+      }
+    },
+    {
+      "day": 99,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1137,
+      "plantTypes": [
+        0,
+        0,
+        1137,
+        0,
+        0
+      ],
+      "biomass": 6930.568732696502,
+      "seeds": 916,
+      "nutrients": 108105.14558618865,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.24283135523962,
+        "humidity": 0.4031891776547124,
+        "moisture": 0.4935868428214144,
+        "cloud": 0.029726754854193814,
+        "rain": 0.005235199351723172,
+        "fertility": 0.5130731483531878
+      }
+    },
+    {
+      "day": 100,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1170,
+      "plantTypes": [
+        0,
+        0,
+        1170,
+        0,
+        0
+      ],
+      "biomass": 7266.467582976547,
+      "seeds": 952,
+      "nutrients": 109216.4393291653,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.278169902732692,
+        "humidity": 0.40283166350853755,
+        "moisture": 0.4923284859169002,
+        "cloud": 0.029008796293375314,
+        "rain": 0.004858458190045579,
+        "fertility": 0.5130393760585247
+      }
+    },
+    {
+      "day": 101,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1216,
+      "plantTypes": [
+        0,
+        0,
+        1216,
+        0,
+        0
+      ],
+      "biomass": 7541.488384374566,
+      "seeds": 949,
+      "nutrients": 110359.78486012915,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.328347205448683,
+        "humidity": 0.4044681918401015,
+        "moisture": 0.49093203217132597,
+        "cloud": 0.030144787062226033,
+        "rain": 0.004817311626622598,
+        "fertility": 0.5123238186402255
+      }
+    },
+    {
+      "day": 102,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1151,
+      "plantTypes": [
+        0,
+        0,
+        1151,
+        0,
+        0
+      ],
+      "biomass": 7100.569036308023,
+      "seeds": 952,
+      "nutrients": 112146.64015530866,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.361554263070241,
+        "humidity": 0.3954760597405986,
+        "moisture": 0.490230807265308,
+        "cloud": 0.030144339902925022,
+        "rain": 0.004984662781150327,
+        "fertility": 0.513072475802188
+      }
+    },
+    {
+      "day": 103,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1189,
+      "plantTypes": [
+        0,
+        0,
+        1189,
+        0,
+        0
+      ],
+      "biomass": 7178.574719935428,
+      "seeds": 960,
+      "nutrients": 113558.47938655266,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.365362289825745,
+        "humidity": 0.38818245206871743,
+        "moisture": 0.49004872118642356,
+        "cloud": 0.030157523678951435,
+        "rain": 0.005012044568918712,
+        "fertility": 0.5132959484796247
+      }
+    },
+    {
+      "day": 104,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1187,
+      "plantTypes": [
+        0,
+        0,
+        1187,
+        0,
+        0
+      ],
+      "biomass": 7164.867369715339,
+      "seeds": 949,
+      "nutrients": 115059.3151566186,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.348529972332736,
+        "humidity": 0.3922717908346655,
+        "moisture": 0.4899502975433032,
+        "cloud": 0.029600966529899048,
+        "rain": 0.004801929270865134,
+        "fertility": 0.5129276208845502
+      }
+    },
+    {
+      "day": 105,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1205,
+      "plantTypes": [
+        0,
+        0,
+        1205,
+        0,
+        0
+      ],
+      "biomass": 7247.044377660006,
+      "seeds": 931,
+      "nutrients": 116463.7441645335,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.32265358369453,
+        "humidity": 0.3987930217868498,
+        "moisture": 0.48996481682365095,
+        "cloud": 0.029011038786314794,
+        "rain": 0.004588283576256759,
+        "fertility": 0.5125249817213752
+      }
+    },
+    {
+      "day": 106,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1228,
+      "plantTypes": [
+        0,
+        0,
+        1228,
+        0,
+        0
+      ],
+      "biomass": 7318.901894440707,
+      "seeds": 947,
+      "nutrients": 117894.33365061138,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.29619364682519,
+        "humidity": 0.40211650268228394,
+        "moisture": 0.49020075666831947,
+        "cloud": 0.02820730090851008,
+        "rain": 0.00449396344083775,
+        "fertility": 0.5129682965594328
+      }
+    },
+    {
+      "day": 107,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1280,
+      "plantTypes": [
+        0,
+        0,
+        1280,
+        0,
+        0
+      ],
+      "biomass": 7710.119882664755,
+      "seeds": 921,
+      "nutrients": 119042.41531178095,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.253505704705839,
+        "humidity": 0.39889839677332134,
+        "moisture": 0.4907215929847598,
+        "cloud": 0.02767309067158238,
+        "rain": 0.0046416622289347865,
+        "fertility": 0.5131204129722583
+      }
+    },
+    {
+      "day": 108,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1268,
+      "plantTypes": [
+        0,
+        0,
+        1268,
+        0,
+        0
+      ],
+      "biomass": 7731.731316088464,
+      "seeds": 919,
+      "nutrients": 120528.0633917526,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.190371796170883,
+        "humidity": 0.3940863475305412,
+        "moisture": 0.49127259916379024,
+        "cloud": 0.026144185647577742,
+        "rain": 0.004472435567000757,
+        "fertility": 0.5132215322489881
+      }
+    },
+    {
+      "day": 109,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1280,
+      "plantTypes": [
+        0,
+        0,
+        1280,
+        0,
+        0
+      ],
+      "biomass": 7712.856321665895,
+      "seeds": 927,
+      "nutrients": 122069.76606280285,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.117151589371398,
+        "humidity": 0.39603357276620965,
+        "moisture": 0.49145174997379987,
+        "cloud": 0.027164358228008553,
+        "rain": 0.00464191748307264,
+        "fertility": 0.5131786325582126
+      }
+    },
+    {
+      "day": 110,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1292,
+      "plantTypes": [
+        0,
+        0,
+        1292,
+        0,
+        0
+      ],
+      "biomass": 7658.915154029166,
+      "seeds": 896,
+      "nutrients": 123689.24486746255,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.033974064226404,
+        "humidity": 0.3973114314548056,
+        "moisture": 0.49137412263699787,
+        "cloud": 0.027878695770332144,
+        "rain": 0.004892414944673186,
+        "fertility": 0.5132904004613836
+      }
+    },
+    {
+      "day": 111,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1266,
+      "plantTypes": [
+        0,
+        0,
+        1266,
+        0,
+        0
+      ],
+      "biomass": 7508.551439629562,
+      "seeds": 895,
+      "nutrients": 125338.84301890839,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.95307657889025,
+        "humidity": 0.3973491499332627,
+        "moisture": 0.49102730272893774,
+        "cloud": 0.02772100048808901,
+        "rain": 0.004809253867378475,
+        "fertility": 0.5134203047660163
+      }
+    },
+    {
+      "day": 112,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1321,
+      "plantTypes": [
+        0,
+        0,
+        1321,
+        0,
+        0
+      ],
+      "biomass": 7761.465996986009,
+      "seeds": 897,
+      "nutrients": 126680.69644357428,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.891516621326206,
+        "humidity": 0.4014181638559498,
+        "moisture": 0.4910401486325624,
+        "cloud": 0.0304107984692228,
+        "rain": 0.005235575052766392,
+        "fertility": 0.513466640379531
+      }
+    },
+    {
+      "day": 113,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1338,
+      "plantTypes": [
+        0,
+        0,
+        1338,
+        0,
+        0
+      ],
+      "biomass": 7897.525460664369,
+      "seeds": 870,
+      "nutrients": 128136.79410997874,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.86864692054835,
+        "humidity": 0.4025366213917406,
+        "moisture": 0.4912145991785439,
+        "cloud": 0.0320464293084806,
+        "rain": 0.005625027005445134,
+        "fertility": 0.5134385448477212
+      }
+    },
+    {
+      "day": 114,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1313,
+      "plantTypes": [
+        0,
+        0,
+        1313,
+        0,
+        0
+      ],
+      "biomass": 7822.66940278978,
+      "seeds": 876,
+      "nutrients": 129727.82370779895,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.862489835123872,
+        "humidity": 0.40832153342613925,
+        "moisture": 0.4913533062872321,
+        "cloud": 0.031173236091403066,
+        "rain": 0.00538469599742442,
+        "fertility": 0.5135287717101559
+      }
+    },
+    {
+      "day": 115,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1299,
+      "plantTypes": [
+        0,
+        0,
+        1299,
+        0,
+        0
+      ],
+      "biomass": 7696.795158685121,
+      "seeds": 895,
+      "nutrients": 131350.9286911435,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.870678282689235,
+        "humidity": 0.41122536311738617,
+        "moisture": 0.49144841814546847,
+        "cloud": 0.030251595058654768,
+        "rain": 0.005240630689808976,
+        "fertility": 0.5136616273089816
+      }
+    },
+    {
+      "day": 116,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1280,
+      "plantTypes": [
+        0,
+        0,
+        1280,
+        0,
+        0
+      ],
+      "biomass": 7528.389980568467,
+      "seeds": 900,
+      "nutrients": 133069.3926642903,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.88610820951701,
+        "humidity": 0.4169834855104959,
+        "moisture": 0.49165477066714713,
+        "cloud": 0.029873860730302463,
+        "rain": 0.0050363924298118656,
+        "fertility": 0.5137024979100565
+      }
+    },
+    {
+      "day": 117,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1312,
+      "plantTypes": [
+        0,
+        0,
+        1312,
+        0,
+        0
+      ],
+      "biomass": 7758.285633822365,
+      "seeds": 938,
+      "nutrients": 134411.3327221895,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.925878159337616,
+        "humidity": 0.4147293856890023,
+        "moisture": 0.49193622610222715,
+        "cloud": 0.030700240405096585,
+        "rain": 0.00528488825999272,
+        "fertility": 0.5132815940058875
+      }
+    },
+    {
+      "day": 118,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1312,
+      "plantTypes": [
+        0,
+        0,
+        1312,
+        0,
+        0
+      ],
+      "biomass": 7802.157028282807,
+      "seeds": 989,
+      "nutrients": 135929.47029997705,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.986965377803267,
+        "humidity": 0.41053761977766523,
+        "moisture": 0.4921313766581414,
+        "cloud": 0.03103317272655446,
+        "rain": 0.00527379610227891,
+        "fertility": 0.5133985045925422
+      }
+    },
+    {
+      "day": 119,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1265,
+      "plantTypes": [
+        0,
+        0,
+        1265,
+        0,
+        0
+      ],
+      "biomass": 7572.438488866153,
+      "seeds": 964,
+      "nutrients": 137656.11770531558,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.05938211494386,
+        "humidity": 0.4042997273042401,
+        "moisture": 0.4923617941700989,
+        "cloud": 0.029819712131826336,
+        "rain": 0.005117123908061038,
+        "fertility": 0.5140011232556788
+      }
+    },
+    {
+      "day": 120,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1330,
+      "plantTypes": [
+        0,
+        0,
+        1330,
+        0,
+        0
+      ],
+      "biomass": 7781.351141533544,
+      "seeds": 957,
+      "nutrients": 139127.94600334144,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.1186575101334,
+        "humidity": 0.39795251927105263,
+        "moisture": 0.49267885465298705,
+        "cloud": 0.029974832650623843,
+        "rain": 0.0051072695155934544,
+        "fertility": 0.5139577273683289
+      }
+    },
+    {
+      "day": 121,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1257,
+      "plantTypes": [
+        0,
+        0,
+        1257,
+        0,
+        0
+      ],
+      "biomass": 7602.772011231328,
+      "seeds": 965,
+      "nutrients": 140745.03997662812,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.15868635438619,
+        "humidity": 0.3993763434100389,
+        "moisture": 0.49314835980259936,
+        "cloud": 0.02775295989054273,
+        "rain": 0.004881084562488443,
+        "fertility": 0.5139243240625551
+      }
+    },
+    {
+      "day": 122,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1261,
+      "plantTypes": [
+        0,
+        0,
+        1261,
+        0,
+        0
+      ],
+      "biomass": 7557.613251194211,
+      "seeds": 988,
+      "nutrients": 142320.5343582374,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.19191323190232,
+        "humidity": 0.40459616982144914,
+        "moisture": 0.49361068242616335,
+        "cloud": 0.029057962072788743,
+        "rain": 0.004945438987989342,
+        "fertility": 0.5134376314836504
+      }
+    },
+    {
+      "day": 123,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1276,
+      "plantTypes": [
+        0,
+        0,
+        1276,
+        0,
+        0
+      ],
+      "biomass": 7771.578391622434,
+      "seeds": 996,
+      "nutrients": 143605.17369221748,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.231972388760774,
+        "humidity": 0.4033352080721219,
+        "moisture": 0.49370665715791406,
+        "cloud": 0.030122614594396593,
+        "rain": 0.005218078765855464,
+        "fertility": 0.5134661696180416
+      }
+    },
+    {
+      "day": 124,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1120,
+      "plantTypes": [
+        0,
+        0,
+        1120,
+        0,
+        0
+      ],
+      "biomass": 6943.599107594375,
+      "seeds": 950,
+      "nutrients": 145784.43835350836,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.278127943929283,
+        "humidity": 0.40183188688229854,
+        "moisture": 0.4923845512514493,
+        "cloud": 0.028974707411458692,
+        "rain": 0.004859409294399351,
+        "fertility": 0.5135400661090682
+      }
+    },
+    {
+      "day": 125,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1118,
+      "plantTypes": [
+        0,
+        0,
+        1118,
+        0,
+        0
+      ],
+      "biomass": 6838.0268698887685,
+      "seeds": 904,
+      "nutrients": 147166.5198859354,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.3296348724823,
+        "humidity": 0.40031850302432453,
+        "moisture": 0.4908692690339258,
+        "cloud": 0.03012462977879365,
+        "rain": 0.004895469036427788,
+        "fertility": 0.5141504475017086
+      }
+    },
+    {
+      "day": 126,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1096,
+      "plantTypes": [
+        0,
+        0,
+        1096,
+        0,
+        0
+      ],
+      "biomass": 6680.536798195974,
+      "seeds": 886,
+      "nutrients": 148560.58679479727,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.358067060472386,
+        "humidity": 0.3905582917478624,
+        "moisture": 0.4902359533033779,
+        "cloud": 0.029849305251784395,
+        "rain": 0.004923369406582182,
+        "fertility": 0.5138012674732299
+      }
+    },
+    {
+      "day": 127,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1125,
+      "plantTypes": [
+        0,
+        0,
+        1125,
+        0,
+        0
+      ],
+      "biomass": 6683.311234556775,
+      "seeds": 912,
+      "nutrients": 149869.29149778618,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.356142197815032,
+        "humidity": 0.3906497294550787,
+        "moisture": 0.4900292276362191,
+        "cloud": 0.029755031348849947,
+        "rain": 0.004892784590293579,
+        "fertility": 0.5137083258692743
+      }
+    },
+    {
+      "day": 128,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1134,
+      "plantTypes": [
+        0,
+        0,
+        1134,
+        0,
+        0
+      ],
+      "biomass": 6876.864187361537,
+      "seeds": 942,
+      "nutrients": 150985.90654313413,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.341616882335757,
+        "humidity": 0.39567507487447334,
+        "moisture": 0.4899402258089385,
+        "cloud": 0.028648542844936512,
+        "rain": 0.004674265380471461,
+        "fertility": 0.5139046352965112
+      }
+    },
+    {
+      "day": 129,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1204,
+      "plantTypes": [
+        0,
+        0,
+        1204,
+        0,
+        0
+      ],
+      "biomass": 7132.208490199464,
+      "seeds": 911,
+      "nutrients": 152177.81108844237,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.318589551326099,
+        "humidity": 0.40242390638446207,
+        "moisture": 0.48994515547543277,
+        "cloud": 0.02755513789653935,
+        "rain": 0.004448619033175907,
+        "fertility": 0.5139252290257307
+      }
+    },
+    {
+      "day": 130,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1189,
+      "plantTypes": [
+        0,
+        0,
+        1189,
+        0,
+        0
+      ],
+      "biomass": 7000.359006737623,
+      "seeds": 881,
+      "nutrients": 153627.13929683797,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.290829709547854,
+        "humidity": 0.4070649277737786,
+        "moisture": 0.4902085426572717,
+        "cloud": 0.026798518608346183,
+        "rain": 0.004242214086121447,
+        "fertility": 0.513931899395347
+      }
+    },
+    {
+      "day": 131,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1153,
+      "plantTypes": [
+        0,
+        0,
+        1153,
+        0,
+        0
+      ],
+      "biomass": 6886.681725290134,
+      "seeds": 917,
+      "nutrients": 155155.7192017629,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.252352484227641,
+        "humidity": 0.4068762221620324,
+        "moisture": 0.49075294041358175,
+        "cloud": 0.027264053393683967,
+        "rain": 0.004428847455019341,
+        "fertility": 0.5140848704258025
+      }
+    },
+    {
+      "day": 132,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1253,
+      "plantTypes": [
+        0,
+        0,
+        1253,
+        0,
+        0
+      ],
+      "biomass": 7286.439996428955,
+      "seeds": 961,
+      "nutrients": 156259.98229647527,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.196467824243628,
+        "humidity": 0.3971092304436985,
+        "moisture": 0.4913368281100129,
+        "cloud": 0.026150003331101512,
+        "rain": 0.004431307043762025,
+        "fertility": 0.5138790321628095
+      }
+    },
+    {
+      "day": 133,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1294,
+      "plantTypes": [
+        0,
+        0,
+        1294,
+        0,
+        0
+      ],
+      "biomass": 7622.148017351357,
+      "seeds": 1002,
+      "nutrients": 157455.36877364232,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.120110577557753,
+        "humidity": 0.39570720626154865,
+        "moisture": 0.4915104961730419,
+        "cloud": 0.026372629060439547,
+        "rain": 0.004575283343075345,
+        "fertility": 0.5138655837019614
+      }
+    },
+    {
+      "day": 134,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1339,
+      "plantTypes": [
+        0,
+        0,
+        1339,
+        0,
+        0
+      ],
+      "biomass": 7865.052080308779,
+      "seeds": 1016,
+      "nutrients": 158784.50592932344,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.031415403335767,
+        "humidity": 0.399199275480514,
+        "moisture": 0.49144378256029836,
+        "cloud": 0.0277958887337024,
+        "rain": 0.004771656162460056,
+        "fertility": 0.5138563889077535
+      }
+    },
+    {
+      "day": 135,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1373,
+      "plantTypes": [
+        0,
+        0,
+        1373,
+        0,
+        0
+      ],
+      "biomass": 8108.837627561388,
+      "seeds": 1030,
+      "nutrients": 160121.11894454865,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.948883276101236,
+        "humidity": 0.40436198663228184,
+        "moisture": 0.49110359430085865,
+        "cloud": 0.02770228211916331,
+        "rain": 0.004679869177090716,
+        "fertility": 0.5139312619366356
+      }
+    },
+    {
+      "day": 136,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1355,
+      "plantTypes": [
+        0,
+        0,
+        1355,
+        0,
+        0
+      ],
+      "biomass": 8153.897032587349,
+      "seeds": 1024,
+      "nutrients": 161736.0573379303,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.890756261585711,
+        "humidity": 0.4062282080461854,
+        "moisture": 0.49107375284008153,
+        "cloud": 0.029913310173111652,
+        "rain": 0.005132738224341635,
+        "fertility": 0.5139781969285169
+      }
+    },
+    {
+      "day": 137,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1374,
+      "plantTypes": [
+        0,
+        0,
+        1374,
+        0,
+        0
+      ],
+      "biomass": 8197.797473047693,
+      "seeds": 1022,
+      "nutrients": 163409.74571782845,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.86726379105543,
+        "humidity": 0.40440076296374516,
+        "moisture": 0.4913111068881947,
+        "cloud": 0.03129981343905479,
+        "rain": 0.005524217982631685,
+        "fertility": 0.5140046846133851
+      }
+    },
+    {
+      "day": 138,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1461,
+      "plantTypes": [
+        0,
+        0,
+        1461,
+        0,
+        0
+      ],
+      "biomass": 8697.370292330408,
+      "seeds": 1020,
+      "nutrients": 164605.41953719436,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.858355239791827,
+        "humidity": 0.4103666718816696,
+        "moisture": 0.4913993773762113,
+        "cloud": 0.030417925069455908,
+        "rain": 0.005200196365636845,
+        "fertility": 0.5134742949298707
+      }
+    },
+    {
+      "day": 139,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1339,
+      "plantTypes": [
+        0,
+        0,
+        1339,
+        0,
+        0
+      ],
+      "biomass": 7920.133787877189,
+      "seeds": 998,
+      "nutrients": 167010.8909578488,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.8662084303987,
+        "humidity": 0.412891671521615,
+        "moisture": 0.4915239878381466,
+        "cloud": 0.029331040413930823,
+        "rain": 0.005033534425364052,
+        "fertility": 0.5133861895678395
+      }
+    },
+    {
+      "day": 140,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1391,
+      "plantTypes": [
+        0,
+        0,
+        1391,
+        0,
+        0
+      ],
+      "biomass": 8174.641731513098,
+      "seeds": 1002,
+      "nutrients": 168514.56950192625,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.884424969518232,
+        "humidity": 0.4189348972490725,
+        "moisture": 0.4917118545267781,
+        "cloud": 0.029418145527657657,
+        "rain": 0.004849560162592543,
+        "fertility": 0.5134172023323623
+      }
+    },
+    {
+      "day": 141,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1374,
+      "plantTypes": [
+        0,
+        0,
+        1374,
+        0,
+        0
+      ],
+      "biomass": 8094.278600263952,
+      "seeds": 1017,
+      "nutrients": 170232.9056680019,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.922937206102393,
+        "humidity": 0.4172518443474906,
+        "moisture": 0.49225797831181234,
+        "cloud": 0.029971612093033378,
+        "rain": 0.005082455382865054,
+        "fertility": 0.5134080572736097
+      }
+    },
+    {
+      "day": 142,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1455,
+      "plantTypes": [
+        0,
+        0,
+        1455,
+        0,
+        0
+      ],
+      "biomass": 8744.350519121546,
+      "seeds": 1014,
+      "nutrients": 171344.25883154836,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 14.98199820199385,
+        "humidity": 0.4140598656543237,
+        "moisture": 0.49285398487438914,
+        "cloud": 0.030459715177684272,
+        "rain": 0.005080010208390433,
+        "fertility": 0.513397241341637
+      }
+    },
+    {
+      "day": 143,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1331,
+      "plantTypes": [
+        0,
+        0,
+        1331,
+        0,
+        0
+      ],
+      "biomass": 7869.988270734662,
+      "seeds": 1003,
+      "nutrients": 173829.4065014599,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.053360204882088,
+        "humidity": 0.4084361396637728,
+        "moisture": 0.49329184920858976,
+        "cloud": 0.02947363411739053,
+        "rain": 0.005029133363000027,
+        "fertility": 0.5133833972421485
+      }
+    },
+    {
+      "day": 144,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1493,
+      "plantTypes": [
+        0,
+        0,
+        1493,
+        0,
+        0
+      ],
+      "biomass": 8697.605404687369,
+      "seeds": 1034,
+      "nutrients": 174891.88468167963,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.110205110576524,
+        "humidity": 0.4026346532303584,
+        "moisture": 0.49332167071174776,
+        "cloud": 0.02951790584132146,
+        "rain": 0.005048540883889921,
+        "fertility": 0.5133734393712619
+      }
+    },
+    {
+      "day": 145,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1389,
+      "plantTypes": [
+        0,
+        0,
+        1389,
+        0,
+        0
+      ],
+      "biomass": 8161.317419400308,
+      "seeds": 1011,
+      "nutrients": 177065.1617465316,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.157734173982485,
+        "humidity": 0.40264640940641283,
+        "moisture": 0.4933802778794425,
+        "cloud": 0.028988790483640687,
+        "rain": 0.005024999086920909,
+        "fertility": 0.5134064365930068
+      }
+    },
+    {
+      "day": 146,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1386,
+      "plantTypes": [
+        0,
+        0,
+        1386,
+        0,
+        0
+      ],
+      "biomass": 8406.828320552539,
+      "seeds": 992,
+      "nutrients": 178463.57892459843,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.197897481318295,
+        "humidity": 0.40473670537554296,
+        "moisture": 0.4936700196982355,
+        "cloud": 0.02995238240903095,
+        "rain": 0.005072262028634013,
+        "fertility": 0.5133551169320402
+      }
+    },
+    {
+      "day": 147,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1156,
+      "plantTypes": [
+        0,
+        0,
+        1156,
+        0,
+        0
+      ],
+      "biomass": 7222.4029773497305,
+      "seeds": 941,
+      "nutrients": 180984.9544149942,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.238824802411719,
+        "humidity": 0.40173159998437696,
+        "moisture": 0.49356693784069655,
+        "cloud": 0.029742324297062795,
+        "rain": 0.005249277194444108,
+        "fertility": 0.5133586823985761
+      }
+    },
+    {
+      "day": 148,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1119,
+      "plantTypes": [
+        0,
+        0,
+        1119,
+        0,
+        0
+      ],
+      "biomass": 6886.780445937847,
+      "seeds": 913,
+      "nutrients": 182531.36837821995,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.274014012977226,
+        "humidity": 0.40108370635954554,
+        "moisture": 0.49237372835295923,
+        "cloud": 0.027964198796289252,
+        "rain": 0.004713144044326164,
+        "fertility": 0.5133559260156606
+      }
+    },
+    {
+      "day": 149,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1007,
+      "plantTypes": [
+        0,
+        0,
+        1007,
+        0,
+        0
+      ],
+      "biomass": 6230.028809820832,
+      "seeds": 866,
+      "nutrients": 184295.41632127037,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.32420980942813,
+        "humidity": 0.4045819873289895,
+        "moisture": 0.4908803841477048,
+        "cloud": 0.029752344722371617,
+        "rain": 0.0047630777127570965,
+        "fertility": 0.5131934707898392
+      }
+    },
+    {
+      "day": 150,
+      "animals": 0,
+      "bySpecies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plants": 1001,
+      "plantTypes": [
+        0,
+        0,
+        1001,
+        0,
+        0
+      ],
+      "biomass": 6021.429552399337,
+      "seeds": 786,
+      "nutrients": 185747.13271341403,
+      "births": 162,
+      "deaths": 294,
+      "causes": {
+        "predation": 75,
+        "murió por falta de alimento": 219
+      },
+      "climate": {
+        "temperature": 15.360641020247304,
+        "humidity": 0.3955482555571352,
+        "moisture": 0.4901864594957493,
+        "cloud": 0.030808105497556745,
+        "rain": 0.005079941822220203,
+        "fertility": 0.512786937769856
+      }
+    }
+  ],
+  "elapsedSeconds": 333.96687184900003
+}

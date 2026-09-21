@@ -11,7 +11,7 @@
   ],
   "simulatedSeconds": 2400,
   "waterError": -5.238689482212067e-10,
-  "cpuEnvironmentalGeologyP95ms": 1.1807450000000017,
+  "cpuEnvironmentalGeologyP95ms": 1.5684289999999237,
   "earthquakes": 48,
   "eruptions": 16,
   "limits": "Node CPU and injected renderer; no real-device FPS or browser visual review."
