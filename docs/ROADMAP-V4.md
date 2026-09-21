@@ -2,6 +2,8 @@
 
 Objetivo: contemplación autónoma, intervención opcional y evolución visible con consecuencias duraderas.
 
+**Estado al 21 de septiembre de 2026:** IV.6 está mergeada y publicada en Sites. La validación prolongada y la diversidad trófica siguen abiertas. [Tareas actuales y prioridades](STATUS-TASKS.md).
+
 1. **Anatomía evolutiva funcional:** siluetas, locomoción y capacidades heredadas con ventajas y costes ambientales.
 2. **Paisaje que provoque evolución:** continentes, océanos, ríos, climas, estaciones, aislamiento y migraciones. Ampliación: planeta esférico y sol orbital, día/noche locales, luz que afecte a temperatura, evaporación, plantas y descanso.
 3. **Transformación útil del hábitat:** transportar, colocar, retirar, reutilizar y reparar materiales; refugio y retención de humedad, sin planos de ciudades.
@@ -46,7 +48,7 @@ Completados dentro de un alcance de reglas locales acotadas:
 
 Se profundiza el punto 2 y su conexión con el 9: clima autónomo con memoria térmica, ciclo del agua y viento local. Se eliminan los sliders climáticos. [Implementación](V4-ENVIRONMENT.md).
 
-El nuevo [plan de naturaleza y sociedades](PLANET-SOCIETIES-ROADMAP.md) organiza riesgos, comunidades e información pública en seis entregas; solo A está completada. No sustituye ni declara terminado el punto 8 de memoria histórica.
+El nuevo [plan de naturaleza y sociedades](PLANET-SOCIETIES-ROADMAP.md) organiza riesgos, comunidades e información pública por entregas; A–C están completadas y C1 tiene su base microscópica publicada en IV.6. No sustituye ni declara terminado el punto 8 de memoria histórica.
 
 ## Ampliación ambiental · IV.5
 
@@ -59,3 +61,14 @@ El usuario informa de desaparición de vida cerca del día 100. C1 del [plan amb
 ## IV.6 · Base de continuidad ecológica
 
 C1 recibe una biosfera microscópica finita, red trófica basal, adaptación heredable, colonias observables y pastoreo que conserva raíces. [Investigación y pruebas](V4-BIOSPHERE.md). Siguen pendientes la radiación de nuevos animales tras una extinción, insectos individuales, aves y la memoria histórica del punto 8.
+
+## Orden de trabajo vigente
+
+1. **Validación y balance de IV.6:** dos mundos de 150 días con el código final, recargas y revisión en navegador/GPU; investigar desaparición de depredadores y reducción de tipos vegetales.
+2. **Insectos funcionales:** detritívoro y polinizador individuales; huevo, larva, adulto, diapausa y herencia con costes.
+3. **Red marina ampliada:** oxígeno disuelto y nichos bentónicos/pelágicos sobre la base de fitoplancton y zooplancton.
+4. **Aves:** vuelo, dieta, reproducción y migración dependientes de recursos y presas.
+5. **Radiación macroscópica:** nuevas formas desde linajes supervivientes; innovación heredable acotada y procedencia visible.
+6. **Memoria e instituciones:** punto 8 original, comunidades persistentes, instituciones y crónica/medios. Tormentas organizadas siguen en el backlog ambiental D.
+
+La próxima tarea ejecutable es cerrar el punto 1. Insectos es la siguiente funcionalidad, no una funcionalidad ya entregada. C1 completo todavía no se considera terminado.

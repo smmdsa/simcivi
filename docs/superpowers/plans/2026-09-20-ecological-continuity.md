@@ -53,9 +53,17 @@
 **Interfaces:** `BiosphereVisuals(world).update(time)` updates bounded instance meshes; recovery panel displays guilds, phase, lineage and resources.
 - [x] Test class stays read-only with empty/dense state and bounded finite matrices; add UI labels and safe escaped lineage display.
 - [x] Run view checks RED; implement geometry and observatory integration; run GREEN.
-- [ ] Execute two 150-day integrated worlds and reduced repeated-crisis runs; summarize observations/limits in `docs/V4-BIOSPHERE.md` and reports.
+- [x] Run reduced repeated-crisis tests covering 228 model days; preserve preliminary 70-day integrated reports.
+- [ ] Repeat both integrated seeds for 150 days on the final precision-fixed code and document diversity, mortality, resources and save continuation.
+- [ ] Verify the observatory, save migration and performance in a browser/GPU.
 - [x] Full suite, diff check, independent review, fix important findings with regression tests; commit and push feature branch, create draft PR.
 
-## Handoff status
+## Handoff status · 2026-09-21
 
-Implementation, full suite and independent review are complete. Integrated runs were interrupted after 70 days each; their daily reports are preserved. The 150-day integrated gate and browser/GPU visual check remain open, so the PR stays draft. Reduced crisis tests cover 228 days. The diagnostic runner now serializes its prior-day snapshot and saves a full checkpoint with each report.
+- [x] Implementation, full suite and independent review completed; important findings corrected.
+- [x] PR #3 merged into `main` at `1c121932f956a6ef3ea50250db75790efb39a530`.
+- [x] Merged main published to [Véspera](https://vespera-biodigital.mrtiagosan.chatgpt.site). The replacement deployment succeeded; all 29 static source files were verified byte-for-byte against main before upload.
+- [x] Diagnostic snapshots serialized immediately and full checkpoints saved with periodic reports.
+- [ ] Complete the 150-day integrated runs and browser/GPU check. Publication does not close these validation tasks.
+
+The preliminary integrated runs stopped at 70 days and precede the final precision fix. Both retained five animal families but lost predators and three plant types. Reduced crisis tests cover 228 days on four cells, not complete planets. Current priorities and acceptance criteria are maintained in [STATUS-TASKS.md](../../STATUS-TASKS.md).

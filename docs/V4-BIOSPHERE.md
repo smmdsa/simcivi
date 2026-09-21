@@ -41,7 +41,7 @@ Estos informes preceden a la corrección final de redondeo en el consumo microbi
 
 La persistencia mejora respecto de las extinciones totales de fauna de `main` en los días 25/35, pero los depredadores desaparecen en ambas corridas. Sobreviven helechos y algas, y aumenta el peso relativo de los animales acuáticos. **No está demostrada la estabilidad de la diversidad ni la recuperación de fauna extinta.** El límite de 384 animales también condiciona la composición. El mayor desvío absoluto observado del balance microbiano fue menor que 3 × 10⁻⁷ unidades del modelo.
 
-Quedan pendientes completar los dos mundos a 150 días y observar la interfaz en un navegador con GPU. Por eso la entrega se presenta en un PR borrador. El censo diario y los guardados periódicos del diagnóstico permiten continuar investigando sin atribuir al modelo resultados aún no medidos.
+El [PR #3](https://github.com/smmdsa/simcivi/pull/3) ya está mergeado y la entrega está publicada en [Sites](https://vespera-biodigital.mrtiagosan.chatgpt.site), desde el contenido exacto de `main`. Siguen pendientes repetir los dos mundos a 150 días con la corrección final y observar la interfaz en un navegador con GPU. Publicación y validación prolongada son estados distintos. El censo diario y los guardados periódicos del diagnóstico permiten continuar investigando sin atribuir al modelo resultados aún no medidos.
 
 ## Reglas y contabilidad
 
@@ -81,6 +81,8 @@ Se usa IndexedDB con transacciones atómicas para superar la cuota pequeña de l
 `npm run diagnose:ecology -- 1726312000000 150 output.json` ejecuta 150 días completos. Las mediciones CPU no certifican FPS reales de navegador o GPU. La validación visual automatizada usa geometría Three.js con renderer inyectado.
 
 ## Siguiente desarrollo
+
+Antes de ampliar especies: cerrar las validaciones y analizar la pérdida de depredadores y diversidad vegetal. [Tareas y criterios de cierre](STATUS-TASKS.md).
 
 1. Insectos individuales con desarrollo, diapausa, detritivoría y polinización.
 2. Más nichos marinos, oxígeno disuelto y consumidores bentónicos/pelágicos.

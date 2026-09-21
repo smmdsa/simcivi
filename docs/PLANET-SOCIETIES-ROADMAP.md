@@ -1,8 +1,10 @@
 # Véspera · Clima autónomo, riesgos naturales y sociedades observables
 
-Investigación y plan de implementación · 14 de septiembre de 2026.
+Investigación inicial · 14 de septiembre de 2026. Estado actualizado · 21 de septiembre de 2026.
 
-El objetivo es que un mundo con intervención opcional produzca cambios que puedan observarse y explicarse. A está implementada en IV.4; B y C se incorporan en IV.5. Ciclones e información social siguen planificados.
+[Tablero de tareas, evidencia y criterios de cierre](STATUS-TASKS.md).
+
+El objetivo es que un mundo con intervención opcional produzca cambios que puedan observarse y explicarse. A está implementada en IV.4; B y C en IV.5. La base microscópica de C1 está mergeada y publicada en IV.6; validación prolongada, diversidad estable y radiación macroscópica siguen abiertas. Ciclones e información social siguen planificados.
 
 ## Lo que había y lo que faltaba
 
@@ -91,7 +93,7 @@ Se completan A–C. D–F, medios, países y huracanes siguen pendientes. Cuenca
 
 ## Próxima prioridad: continuidad de la vida · 20 de septiembre de 2026
 
-**Observación del usuario, pendiente de reproducir:** alrededor del día 100 desaparece la vida visible y no vuelve. No se asume todavía que la causa sea un desastre natural: puede ser agotamiento de nutrientes, desequilibrio trófico, clima persistente, pérdida de semillas o un problema de reglas. La entrega C1 va después de cerrar B/C y antes de tormentas organizadas, instituciones y medios. No se implementa en IV.5.
+**Observación inicial del usuario:** alrededor del día 100 desaparece la vida visible y no vuelve. **Diagnóstico ya realizado:** dos semillas de la versión anterior pierden toda la fauna en los días 25 y 35, con vegetación superviviente. Esto reproduce un colapso animal, aunque no la partida exacta del usuario ni una esterilización total. El pastoreo entero fue corregido; todavía no se atribuye toda extinción a una única causa. La entrega C1 va después de cerrar B/C y antes de tormentas organizadas, instituciones y medios. No se implementa en IV.5.
 
 ### 1. Diagnosticar antes de compensar
 
@@ -128,4 +130,4 @@ El observatorio distinguirá «sin animales», «refugios microscópicos activos
 
 ## Actualización IV.6
 
-Se reproduce el colapso animal en dos semillas y se entrega microbiología, productores, microconsumidores, dormancia, mutación heredable y pastoreo parcial. [Resultados y límites](V4-BIOSPHERE.md). La recuperación de fauna compleja desde nuevos linajes y el ritmo de 3 + 20 días no están implementados. Se prioriza después insectos funcionales, red marina y aves, antes de instituciones y medios.
+Se reproduce el colapso animal en dos semillas y se entrega microbiología, productores, microconsumidores, dormancia, mutación heredable y pastoreo parcial. [Resultados y límites](V4-BIOSPHERE.md). La recuperación de fauna compleja desde nuevos linajes y el ritmo de 3 + 20 días no están implementados. El PR #3 está mergeado y la publicación de Sites fue repetida desde main, verificando los 29 archivos estáticos. Primero se cierran las pruebas de 150 días, navegador/GPU y el diagnóstico de pérdida de diversidad; después se priorizan insectos funcionales, red marina y aves, antes de instituciones y medios. El estado publicado no equivale a C1 completo.
