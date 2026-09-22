@@ -7,6 +7,9 @@ export function census(sim){
   plantBiomass:sum(sim.food,'biomass'),seedBank:sim.recovery.seeds.length,
   dormantPlants:sim.food.filter(f=>f.recovery?.dormant).length,
   nutrients:sum(sim.soil,'nutrients'),corpseBiomass:sum(sim.remains,'biomass'),
+  hungry:sim.creatures.filter(c=>c.energy<25).length,
+  pregnant:sim.creatures.filter(c=>c.pregnancy).length,
+  byRegion:Array.from({length:4},(_,r)=>sim.creatures.filter(c=>c.region===r).length),
   births:sim.births,deaths:sim.deaths,climate:{...sim.environment.summary},
   biosphere:sim.biosphere?{...sim.biosphere.summary,massError:sim.biosphere.mass()-sim.biosphere.expectedMass()}:null};
 }

@@ -1,3 +1,4 @@
+await import('./verify-population.mjs');
 await import('./verify-world-store.mjs');
 await import('./verify-biosphere-view.mjs');
 await import('./verify-census.mjs');

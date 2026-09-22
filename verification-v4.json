@@ -10,50 +10,50 @@
     "20 simulated minutes: population/material bounds, valid habitats, births, deaths, nutrients, learning"
   ],
   "observed": {
-    "seed": 1793661362,
+    "seed": 2550298783,
     "seconds": 1200.000000000004,
-    "population": 321,
-    "births": 237,
-    "deaths": 48,
-    "plants": 2132,
-    "pieces": 547,
-    "groups": 30,
-    "migrations": 352,
+    "population": 193,
+    "births": 150,
+    "deaths": 89,
+    "plants": 1900,
+    "pieces": 424,
+    "groups": 24,
+    "migrations": 365,
     "activity": {
-      "collected": 634,
-      "placed": 882,
-      "shared": 276,
-      "contests": 24,
-      "learned": 14536
+      "collected": 492,
+      "placed": 693,
+      "shared": 352,
+      "contests": 17,
+      "learned": 10586
     },
     "lifeways": {
-      "transmissions": 653,
-      "forgotten": 1071,
-      "care": 355,
-      "companionship": 6316,
-      "pollinations": 202,
-      "dispersed": 3389,
-      "germinated": 6663,
-      "refuge": 42.90000000000034
+      "transmissions": 710,
+      "forgotten": 684,
+      "care": 512,
+      "companionship": 4338,
+      "pollinations": 178,
+      "dispersed": 2221,
+      "germinated": 6367,
+      "refuge": 41.60000000000032
     },
     "recovery": {
-      "stored": 2365,
-      "sprouted": 1431,
+      "stored": 2091,
+      "sprouted": 1437,
       "expired": 1,
-      "plantSleeps": 3214,
-      "plantWakes": 1853,
-      "animalSleeps": 780,
-      "animalWakes": 723,
-      "windMoved": 325
+      "plantSleeps": 2939,
+      "plantWakes": 1791,
+      "animalSleeps": 413,
+      "animalWakes": 379,
+      "windMoved": 334
     },
-    "seedBank": 933,
+    "seedBank": 653,
     "sharedPractices": 96,
-    "snapshotBytes": 5121258,
-    "plantGenerations": 10
+    "snapshotBytes": 4315500,
+    "plantGenerations": 9
   },
   "cpu": {
-    "stepP95ms": 21.427,
-    "closeViewPreparationP95ms": 5.085
+    "stepP95ms": 50.998,
+    "closeViewPreparationP95ms": 11.007
   },
   "limits": "Node CPU and real Three.js geometry only. No browser/GPU verification or universal 60 FPS guarantee. Six anatomical families; local learned practices, not guaranteed civilizations."
 }

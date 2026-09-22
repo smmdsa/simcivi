@@ -1,3 +1,4 @@
+export const DRAW_LIMITS={cells:23000,bones:4096,animals:4096};
 export const TIERS=[
  {name:'Cinemática',cells:23000,plants:12000,dpr:1.5,pixels:3200000,environment:.18,clouds:1},
  {name:'Equilibrada',cells:15000,plants:8000,dpr:1.15,pixels:2100000,environment:.24,clouds:.65},

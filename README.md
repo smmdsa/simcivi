@@ -1,8 +1,14 @@
-# SimCivi · Véspera IV.6 — La vida pequeña
+# SimCivi · Véspera IV.7 — Población y recursos
 
 Experiencia contemplativa en HTML, CSS, JavaScript nativo y Three.js r170. Un planeta esférico con continentes, océanos, ríos, organismos celulares y prácticas aprendidas. Intervenir es opcional.
 
 [Observar el planeta](https://vespera-biodigital.mrtiagosan.chatgpt.site) · [Roadmap de diez ideas](docs/ROADMAP-V4.md) · [Arquitectura y límites de V4](docs/V4-PLANET.md)
+
+## Novedades de IV.7
+
+Se elimina el cupo global de animales. La reproducción consume reservas parentales, la gestación mantiene su coste y la carroña es alimento finito. Los refugios reducen gasto, sin producir energía. Búsqueda y exploración locales, guardados sin truncar población y presupuestos visuales independientes. Se retiran reglas y campos obsoletos.
+
+[Reglas, pruebas y límites](docs/V4-POPULATION.md) · [Plan de implementación](docs/superpowers/plans/2026-09-22-local-population.md).
 
 ## Novedades de IV.6
 
@@ -78,7 +84,7 @@ Sexos, madurez, energía, salud, edad, gestación, semillas genéticas únicas, 
 
 Se conserva el identificador `vespera-world-v2`, ahora con formato 8 en IndexedDB. Los formatos 2–7 migran automáticamente; el original de localStorage se conserva al importar. El jardín anterior se traslada a Auralia conservando identidades e historias; otros continentes reciben fundadores. Las partidas sin atmósfera reciben un clima geográfico determinista, conservando sus habitantes e historias. Guardado cada 12 segundos, al salir y después de acciones relevantes. Estado local, sin sincronización y sin avance con la página cerrada.
 
-Límites: 384 criaturas vivas, 2.400 plantas, 1.400 piezas, 420 depósitos materiales, 64 cadáveres, 180 parches de nutrientes, 500 difuntos y 100 eventos recientes. La recuperación añade hasta 1.200 semillas y 48 microrefugios observados; la atmósfera usa 512 celdas persistentes. Los temporizadores se conservan y el clima/aptitud derivados no se duplican en el guardado. El navegador puede ralentizar o suspender una pestaña oculta. Bajo sobrecarga el reloj puede avanzar más despacio, manteniendo los mismos pasos de simulación.
+Límites: sin cupo global de criaturas vivas; hasta 4.096 animales dibujados por fotograma, 2.400 plantas, 1.400 piezas, 420 depósitos materiales, 64 cadáveres, 180 parches de nutrientes, 500 difuntos y 100 eventos recientes. La recuperación añade hasta 1.200 semillas y 48 microrefugios observados; la atmósfera usa 512 celdas persistentes. Los temporizadores se conservan y el clima/aptitud derivados no se duplican en el guardado. El navegador puede ralentizar o suspender una pestaña oculta. Bajo sobrecarga el reloj puede avanzar más despacio, manteniendo los mismos pasos de simulación.
 
 Objetivo 60 FPS con contador real y calidad adaptativa. No se garantiza en todo hardware. Las pruebas principales miden CPU, transporte y geometría Three.js. La prueba opcional de shaders compila y enlaza GLSL ES 3 con Mesa; la revisión visual empleó rasterización por software. **No certifican 60 FPS ni fluidez en un navegador o GPU concreto**.
 

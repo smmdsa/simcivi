@@ -59,3 +59,19 @@ El usuario informa de desaparición de vida cerca del día 100. C1 del [plan amb
 ## IV.6 · Base de continuidad ecológica
 
 C1 recibe una biosfera microscópica finita, red trófica basal, adaptación heredable, colonias observables y pastoreo que conserva raíces. [Investigación y pruebas](V4-BIOSPHERE.md). Siguen pendientes la radiación de nuevos animales tras una extinción, insectos individuales, aves y la memoria histórica del punto 8.
+
+
+## IV.7 · Regulación local de población · 22 de septiembre de 2026
+
+La observación del día 516 mostró 65 Folívoros y 319 Nácares: 384 animales, dos de seis familias y ningún carnívoro. Se priorizó eliminar el cupo animal global como regla biológica, manteniendo la competencia por alimento local y los costes reproductivos. [Entrega, pruebas y límites](V4-POPULATION.md).
+
+Implementado: nacimientos sin cupo, reserva parental para crías, coste de gestación, carroña descontada de biomasa, refugios sin calorías gratuitas, búsquedas espaciales, exploración local y render independiente. La supervivencia de todas las familias no se fuerza.
+
+Orden siguiente:
+1. Analizar diversidad, hambre y distribución en corridas largas; separar pérdida de depredadores, empobrecimiento vegetal y limitaciones de dispersión. Extender el muestreo de semillas y usar el paso de 0,1 del worker para comparaciones controladas.
+2. Detritívoro y polinizador individuales con etapas, diapausa, costes y herencia.
+3. Red marina con nichos y oxígeno; después aves dependientes de esa red.
+4. Radiación de nuevas formas macroscópicas desde supervivientes. La meta de 3 + 20 días sigue sin implementarse.
+5. Comunidades persistentes, instituciones e historia; agricultura y pastoreo como prácticas con recursos, trabajo, aprendizaje y costes.
+
+Tormentas organizadas y memoria histórica del roadmap original siguen pendientes. No se declaran completadas por esta entrega.

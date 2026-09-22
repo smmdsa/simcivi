@@ -129,3 +129,19 @@ El observatorio distinguirá «sin animales», «refugios microscópicos activos
 ## Actualización IV.6
 
 Se reproduce el colapso animal en dos semillas y se entrega microbiología, productores, microconsumidores, dormancia, mutación heredable y pastoreo parcial. [Resultados y límites](V4-BIOSPHERE.md). La recuperación de fauna compleja desde nuevos linajes y el ritmo de 3 + 20 días no están implementados. Se prioriza después insectos funcionales, red marina y aves, antes de instituciones y medios.
+
+
+## IV.7 · Regulación local de población · 22 de septiembre de 2026
+
+La observación del día 516 mostró 65 Folívoros y 319 Nácares: 384 animales, dos de seis familias y ningún carnívoro. Se priorizó eliminar el cupo animal global como regla biológica, manteniendo la competencia por alimento local y los costes reproductivos. [Entrega, pruebas y límites](V4-POPULATION.md).
+
+Implementado: nacimientos sin cupo, reserva parental para crías, coste de gestación, carroña descontada de biomasa, refugios sin calorías gratuitas, búsquedas espaciales, exploración local y render independiente. La supervivencia de todas las familias no se fuerza.
+
+Orden siguiente:
+1. Analizar diversidad, hambre y distribución en corridas largas; separar pérdida de depredadores, empobrecimiento vegetal y limitaciones de dispersión. Extender el muestreo de semillas y usar el paso de 0,1 del worker para comparaciones controladas.
+2. Detritívoro y polinizador individuales con etapas, diapausa, costes y herencia.
+3. Red marina con nichos y oxígeno; después aves dependientes de esa red.
+4. Radiación de nuevas formas macroscópicas desde supervivientes. La meta de 3 + 20 días sigue sin implementarse.
+5. Comunidades persistentes, instituciones e historia; agricultura y pastoreo como prácticas con recursos, trabajo, aprendizaje y costes.
+
+Tormentas organizadas y memoria histórica del roadmap original siguen pendientes. No se declaran completadas por esta entrega.
