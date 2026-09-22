@@ -67,11 +67,19 @@ La observación del día 516 mostró 65 Folívoros y 319 Nácares: 384 animales,
 
 Implementado: nacimientos sin cupo, reserva parental para crías, coste de gestación, carroña descontada de biomasa, refugios sin calorías gratuitas, búsquedas espaciales, exploración local y render independiente. La supervivencia de todas las familias no se fuerza.
 
-Orden siguiente:
-1. Analizar diversidad, hambre y distribución en corridas largas; separar pérdida de depredadores, empobrecimiento vegetal y limitaciones de dispersión. Extender el muestreo de semillas y usar el paso de 0,1 del worker para comparaciones controladas.
-2. Detritívoro y polinizador individuales con etapas, diapausa, costes y herencia.
-3. Red marina con nichos y oxígeno; después aves dependientes de esa red.
-4. Radiación de nuevas formas macroscópicas desde supervivientes. La meta de 3 + 20 días sigue sin implementarse.
-5. Comunidades persistentes, instituciones e historia; agricultura y pastoreo como prácticas con recursos, trabajo, aprendizaje y costes.
+**Estado:** IV.7 implementada y publicada en GitHub y Sites. Pruebas funcionales completadas; dos diagnósticos hasta el día 10 con paso 0,2. La validación de 150 días sigue abierta. Quitar el cupo no demuestra por sí solo que se haya resuelto la pérdida de diversidad.
 
-Tormentas organizadas y memoria histórica del roadmap original siguen pendientes. No se declaran completadas por esta entrega.
+## Próximas entregas
+
+| Prioridad | Entrega | Condición de cierre |
+| --- | --- | --- |
+| P0 · IV.7.1 | Diagnóstico prolongado y correcciones causales | Corridas reproducibles, causas de declive identificadas y regresiones de cada fallo corregido. |
+| P1 · IV.8 | Detritívoros y polinizadores | Ciclos de vida, alimento finito, costes, diapausa y efectos ecológicos medidos. |
+| P2 · IV.9 | Red marina; después aves | Nichos y oxígeno funcionales; aves con alimento y reproducción sostenidos por la red. |
+| P3 · IV.10 | Radiación macroscópica | Linajes derivados de supervivientes, costes heredables y sucesión sin aparición obligatoria. |
+| P4 | Comunidades, agricultura y pastoreo | Producción, consumo, trabajo, aprendizaje y dependencia de recursos verificables. |
+| P5 | Instituciones, conflictos e historia | Comunidades persistentes y registro de hechos que sustenten memoria y noticias. |
+
+[Tareas concretas, dependencias y aceptación](NEXT-TASKS.md). IV.8 no empieza hasta cerrar el diagnóstico y los fallos bloqueantes de IV.7.1. Las versiones futuras son un orden de trabajo, no fechas comprometidas.
+
+Tormentas organizadas, memoria histórica y presentación visual siguen en el backlog. La meta acelerada de 3 + 20 días no está implementada ni se garantiza por temporizador.

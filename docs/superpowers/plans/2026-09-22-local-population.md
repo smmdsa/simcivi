@@ -26,7 +26,10 @@
 
 ## 4. Entrega
 - [x] Actualizar roadmap y documentar resultados y límites.
-- [ ] Publicar los cambios en GitHub y sincronizar el sitio con el código verificado.
+- [x] Publicar los cambios en GitHub y sincronizar el sitio con el código verificado.
 
 ## Riesgos que se verificarán
 Guardados antiguos con gestación en curso; nacimientos con hábitat incompatible; cadáver sin biomasa; muerte durante búsqueda; buffers visuales saturados. No se garantiza diversidad ni se resucitan familias extintas. El presupuesto temporal del worker puede ralentizar el reloj bajo carga; no se bloquean nacimientos por rendimiento. La contabilidad vegetal y animal sigue siendo reducida, no un balance global de carbono.
+
+## Cierre de entrega
+IV.7 publicada en GitHub (`4b4ca72`) y Sites (despliegue confirmado). La calibración prolongada continúa abierta en [próximas tareas](../../NEXT-TASKS.md).
