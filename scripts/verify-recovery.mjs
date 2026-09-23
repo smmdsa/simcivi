@@ -5,7 +5,7 @@ import {Ecosystem} from '../dist/simulation.js';
 import {geography,move} from '../dist/planet.js';
 import {MAX_SEEDS} from '../dist/recovery.js';
 const checks=[];
-function empty(){const s=new Ecosystem();s.creatures=[];s.food=[];s.remains=[];s.archive=[];s.soil=[];s.events=[];s.recovery.seeds=[];s.recovery.cursor=0;s.recovery.regions=[];s.culture.blocks=[];s.culture.materials=[];s.culture.index();s.rain=0;s.reindex();return s;}
+function empty(){const now=Date.now;Date.now=()=>1726312000000;let s;try{s=new Ecosystem();}finally{Date.now=now;}s.creatures=[];s.food=[];s.remains=[];s.archive=[];s.soil=[];s.events=[];s.recovery.seeds=[];s.recovery.cursor=0;s.recovery.regions=[];s.culture.blocks=[];s.culture.materials=[];s.culture.index();s.rain=0;s.reindex();return s;}
 function land(s){for(let i=0;i<2000;i++){const p=s.point(0,0),g=geography(p.x,p.z);if(Math.abs(p.z)<8&&g.riverDistance>10&&g.moisture>.4)return p;}throw Error('Fixture land not found');}
 const weather=forceWeather;
 function advance(s,seconds){for(let i=0;i<Math.round(seconds*10);i++)s.step(.1);}
