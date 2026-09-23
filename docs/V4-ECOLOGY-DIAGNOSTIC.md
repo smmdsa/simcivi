@@ -13,7 +13,7 @@ El censo registra las seis familias y las cuatro regiones, hambre, energía, ges
 
 ## Resultado controlado hasta el día 20
 
-Las cinco semillas alcanzaron el día 20 con paso 0,1. Los informes diarios completos están comprimidos en `verification/ecology-v4.7.1/<semilla>.json.gz`; los checkpoints reanudables se entregan por separado en `vespera-iv7.1-checkpoints-day20.zip`. Para reanudar en otra copia del repositorio, extraer los cinco pares `<semilla>.json` y `<semilla>.json.checkpoint.json` del ZIP dentro de `docs/verification/ecology-v4.7.1/` y ejecutar el comando del comienzo. Las cifras siguientes no son una extrapolación a 150 días.
+Las cinco semillas alcanzaron el día 20 con paso 0,1. Los informes diarios completos están comprimidos en `verification/ecology-v4.7.1/<semilla>.json.gz`; los checkpoints reanudables se entregan por separado en `vespera-iv7.1-checkpoints-day20.zip`. Para reanudar en otra copia del repositorio, extraer los cinco pares `<semilla>.json` y `<semilla>.json.checkpoint.json` del ZIP dentro de `docs/verification/ecology-v4.7.1/` y ejecutar el comando del comienzo. La optimización posterior cambió el hash del código: el script rechaza esos checkpoints hasta verificar igualdad de estado entre revisiones y abrir una nueva serie controlada. Las cifras siguientes no son una extrapolación a 150 días.
 
 | Semilla | Animales día 10 → 20 | Nácares día 20 | Último día con Rubrones | Tiempo acumulado |
 | --- | ---: | ---: | ---: | ---: |

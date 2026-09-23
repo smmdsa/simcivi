@@ -1,4 +1,4 @@
-# SimCivi · Véspera IV.7.1 — Diagnóstico ecológico en curso
+# SimCivi · Véspera IV.7.2 — Rendimiento y diagnóstico ecológico en curso
 
 Experiencia contemplativa en HTML, CSS, JavaScript nativo y Three.js r170. Un planeta esférico con continentes, océanos, ríos, organismos celulares y prácticas aprendidas. Intervenir es opcional.
 
