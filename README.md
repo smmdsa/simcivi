@@ -1,8 +1,12 @@
-# SimCivi · Véspera IV.7 — Población y recursos
+# SimCivi · Véspera IV.7.1 — Diagnóstico ecológico en curso
 
 Experiencia contemplativa en HTML, CSS, JavaScript nativo y Three.js r170. Un planeta esférico con continentes, océanos, ríos, organismos celulares y prácticas aprendidas. Intervenir es opcional.
 
 [Observar el planeta](https://vespera-biodigital.mrtiagosan.chatgpt.site) · [Roadmap de diez ideas](docs/ROADMAP-V4.md) · [Arquitectura y límites de V4](docs/V4-PLANET.md)
+
+## IV.7.1 · Diagnóstico en curso
+
+Cinco semillas reproducibles llegaron al día 20 con paso 0,1. En todas desapareció el Rubrón mientras creció la población acuática; el coste creciente de simulación bloquea por ahora la validación de 150 días. [Mediciones, checkpoints y próxima tarea](docs/V4-ECOLOGY-DIAGNOSTIC.md).
 
 ## Novedades de IV.7
 

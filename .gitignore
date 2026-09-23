@@ -1,6 +1,6 @@
 .sites-runtime/
 node_modules/
-docs/verification/ecology-v4.7.1/*.checkpoint.json
+docs/verification/ecology-v4.7.1/*.json
 docs/verification/ecology-v4.7.1/*.day-*-before.json
 docs/verification/ecology-v4.7.1/*.day-*-after.json
 docs/verification/ecology-v4.7.1/*.day-*-extinction.json

@@ -69,7 +69,7 @@ Implementado: nacimientos sin cupo, reserva parental para crías, coste de gesta
 
 **Estado:** IV.7 implementada y publicada en GitHub y Sites. Pruebas funcionales completadas; dos diagnósticos hasta el día 10 con paso 0,2. La validación de 150 días sigue abierta. Quitar el cupo no demuestra por sí solo que se haya resuelto la pérdida de diversidad.
 
-**IV.7.1 en curso:** cinco semillas declaradas, censo diario ampliado, comparación a paso 0,1 y checkpoints reanudables. [Protocolo y resultados parciales](V4-ECOLOGY-DIAGNOSTIC.md). No se declara cerrada hasta analizar las cinco corridas completas y los fallos que aparezcan.
+**IV.7.1 en curso:** cinco semillas declaradas, censo diario ampliado, comparación a paso 0,1 y checkpoints reanudables. [Resultados parciales hasta el día 20](V4-ECOLOGY-DIAGNOSTIC.md): declive de Rubrones en las cinco semillas y crecimiento acuático que aumenta el coste de simulación. Prioridad inmediata: perfilar y optimizar sin cambiar resultados, luego completar 150 días y analizar causas. No se declara cerrada.
 
 ## Próximas entregas
 
