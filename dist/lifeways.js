@@ -1,10 +1,10 @@
-import {distance,move,xyz,geography,clamp} from './planet.js';
+import {distance,move,xyz,geography,clamp,PLANET_RADIUS} from './planet.js';
 import {hash} from './genetics.js';
 
 // Chord-space buckets work across the longitude seam and at both poles.
 export class Neighborhood {
- constructor(items,size=4){this.size=size;this.buckets=new Map();for(const p of items){const v=xyz(p.x,p.z),k=[v.x,v.y,v.z].map(n=>Math.floor(n/size)).join(',');if(!this.buckets.has(k))this.buckets.set(k,[]);this.buckets.get(k).push(p);}}
- near(p,r){const v=xyz(p.x,p.z),s=this.size,out=[];for(let x=Math.floor((v.x-r)/s);x<=Math.floor((v.x+r)/s);x++)for(let y=Math.floor((v.y-r)/s);y<=Math.floor((v.y+r)/s);y++)for(let z=Math.floor((v.z-r)/s);z<=Math.floor((v.z+r)/s);z++)for(const q of this.buckets.get(`${x},${y},${z}`)||[])if(distance(p,q)<=r)out.push(q);return out;}
+ constructor(items,size=4){this.size=size;this.buckets=new Map();for(const p of items){const v=xyz(p.x,p.z),k=[v.x,v.y,v.z].map(n=>Math.floor(n/size)).join(',');if(!this.buckets.has(k))this.buckets.set(k,[]);this.buckets.get(k).push({p,v});}}
+ near(p,r){const v=xyz(p.x,p.z),s=this.size,out=[],chord=2*PLANET_RADIUS*Math.sin(r/(2*PLANET_RADIUS))+1e-9,limit=chord*chord;for(let x=Math.floor((v.x-r)/s);x<=Math.floor((v.x+r)/s);x++)for(let y=Math.floor((v.y-r)/s);y<=Math.floor((v.y+r)/s);y++)for(let z=Math.floor((v.z-r)/s);z<=Math.floor((v.z+r)/s);z++)for(const q of this.buckets.get(`${x},${y},${z}`)||[]){const dx=v.x-q.v.x,dy=v.y-q.v.y,dz=v.z-q.v.z;if(dx*dx+dy*dy+dz*dz<=limit&&distance(p,q.p)<=r)out.push(q.p);}return out;}
 }
 export function plantGenome(seed,parent=null,random=null){const sample=i=>hash(Math.floor(seed*1000)+i*7919)/4294967296;const mutate=v=>clamp(v+(random()-.5)*.12,.15,1);return parent?{nectar:mutate(parent.nectar),height:mutate(parent.height),dispersal:mutate(parent.dispersal),generation:parent.generation+1}:{nectar:.25+sample(1)*.65,height:.2+sample(2)*.75,dispersal:.2+sample(3)*.7,generation:1};}
 export function inheritKnowledge(c,mother,father){c.mind.knowledge??=[];if(c.mind.knowledgeInherited)return;for(const p of [mother,father])for(const k of p?.mind?.knowledge?.slice(0,3)||[])if(!c.mind.knowledge.some(o=>o.id===k.id))c.mind.knowledge.push({...k,strength:k.strength*.65,source:p.id});if(mother||father)c.mind.knowledgeInherited=true;}
