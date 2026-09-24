@@ -2,7 +2,7 @@
   "step": 0.1,
   "days": 150,
   "seeds": [1726312000000, 1726312000001, 1726312000002, 1726312000003, 1726312000004],
-  "checkpointIntervalDays": 10,
+  "checkpointIntervalDays": 1,
   "longRuns": [1726312000000, 1726312000001],
   "longRunDays": 600
 }

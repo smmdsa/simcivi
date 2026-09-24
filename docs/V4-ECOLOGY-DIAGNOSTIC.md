@@ -3,17 +3,16 @@
 La primera prioridad es establecer qué ocurre después de retirar el cupo animal. Las cinco semillas y el paso de 0,1 segundos están fijados antes de observar resultados en [el manifiesto](verification/ecology-seeds.json). Un día equivale a 160 segundos simulados y 1.600 pasos, como en el worker. Los resultados previos de paso 0,2 quedan separados.
 
 ```sh
-node scripts/run-ecology-batch.mjs
-node scripts/run-ecology-batch.mjs
+node scripts/run-ecology-batch.mjs /ruta/a/checkpoints-migrados
 ```
 
-El segundo comando reanuda desde los checkpoints que ya existan. Cada salida `docs/verification/ecology-v4.7.1/<semilla>.json` contiene revisión de Git, hash SHA-256 de los módulos `dist/*.js`, semilla del mundo, paso, días completados, tiempo de proceso y filas diarias. El checkpoint contiene además el estado íntegro. Se escribe primero en un archivo temporal y luego se reemplaza atómicamente. Si el informe quedó más viejo por una interrupción, la reanudación toma el checkpoint; nunca vuelve a ejecutar días ya confirmados. Un cambio en el código de simulación detiene la reanudación para impedir mezclar experimentos.
+El comando reanuda desde los checkpoints que ya existan en el directorio indicado. Cada salida `<semilla>.json` contiene revisión de Git, hash SHA-256 de los módulos `dist/*.js`, semilla del mundo, paso, días completados, tiempo de proceso y filas diarias. El checkpoint contiene además el estado íntegro. Se escribe primero en un archivo temporal y luego se reemplaza atómicamente, ahora al final de **cada día**. Si el informe quedó más viejo por una interrupción, la reanudación toma el checkpoint; nunca vuelve a ejecutar días ya confirmados. Un cambio en el código de simulación detiene la reanudación para impedir mezclar experimentos.
 
 El censo registra las seis familias y las cuatro regiones, hambre, energía, gestaciones, preparación para cortejo, nacimientos, muertes por causa, plantas, biomasa, semillas, nutrientes y migraciones. `accessibleFood` estima si hay plantas viables o presas/carroña dentro de la búsqueda inmediata; no garantiza una ruta transitables, ni incluye biofilm. Un cero representa ausencia de estas fuentes en el radio, no necesariamente escasez total del mundo. Los checkpoints inmediatamente anteriores y posteriores al cruce bajo 20 animales y a la extinción se guardan para reconstruir la crisis, si ocurre.
 
 ## Resultado controlado hasta el día 20
 
-Las cinco semillas alcanzaron el día 20 con paso 0,1. Los informes diarios completos están comprimidos en `verification/ecology-v4.7.1/<semilla>.json.gz`; los checkpoints reanudables se entregan por separado en `vespera-iv7.1-checkpoints-day20.zip`. Para reanudar en otra copia del repositorio, extraer los cinco pares `<semilla>.json` y `<semilla>.json.checkpoint.json` del ZIP dentro de `docs/verification/ecology-v4.7.1/` y ejecutar el comando del comienzo. La optimización posterior cambió el hash del código: el script rechaza esos checkpoints hasta verificar igualdad de estado entre revisiones y abrir una nueva serie controlada. Las cifras siguientes no son una extrapolación a 150 días.
+Las cinco semillas alcanzaron el día 20 con paso 0,1. Los informes diarios completos están comprimidos en `verification/ecology-v4.7.1/<semilla>.json.gz`; los checkpoints originales se entregaron por separado en `vespera-iv7.1-checkpoints-day20.zip`. La optimización posterior cambió el hash del código: el script rechaza correctamente los originales y exige una migración validada. Las cifras siguientes no son una extrapolación a 150 días.
 
 | Semilla | Animales día 10 → 20 | Nácares día 20 | Último día con Rubrones | Tiempo acumulado |
 | --- | ---: | ---: | ---: | ---: |
@@ -35,4 +34,29 @@ Se cargó el checkpoint del día 20 de la semilla 1726312000000 (1.169 animales,
 
 En esta máquina, 100 pasos tomaron 6,3 s antes y 5,7 s después, medidos por separado sin carga comparable garantizada: una mejora indicativa cercana al 10 %, no una medición de FPS. El JSON completo del snapshot tras esos pasos coincidió byte a byte (SHA-256 `adfa4b2a3a6a49887c22c6ae0dd68928032fcc4fdcbbc3e38cc532bae47dcd33`). El cambio no altera las reglas de alimentación, reproducción ni energía.
 
-**Pendiente para ECO-01:** comparar jornadas completas con más semillas; migrar los checkpoints solo tras esa comparación porque el diagnóstico rechaza correctamente hashes de código distintos; reanudar las cinco semillas hasta 150 días y extender dos hasta 600. Después investigar causas ecológicas con esos checkpoints y corregir solo fallos demostrados antes de IV.8. Las otras cinco familias animales sobreviven al día 20; Rubrón es la única familia animal perdida en esas corridas.
+## Migración controlada y continuación · 24 de septiembre
+
+Se recuperó la distribución JavaScript exacta que produjo los checkpoints originales: SHA-256 de los módulos `dist/*.js` `3e67508fcd976cc4b02395a59840f883ce6ddc9814540e81cfa383b5d5bcdab4`. La revisión Git escrita en esos checkpoints (`0677503a9f4add37ceaf27652490de66ec263916`) no reconstruye por sí sola estos archivos; por eso el hash de los módulos y su copia íntegra acompañan a la evidencia. El código actual tiene hash `c63d426f38d775943f05199782056c2ae45952a3443d4ea02a493b0c1586ff83`.
+
+`scripts/migrate-ecology-checkpoints.mjs` comprueba el hash original, conserva los archivos originales y carga el mismo snapshot en ambas versiones. Ejecuta **1.600 pasos de 0,1 por semilla**, equivalentes a un día, y exige igualdad exacta del JSON completo resultante. Las cinco comparaciones coincidieron. Cada checkpoint migrado conserva las filas y el estado del día 20, registra el hash y la revisión de origen y añade la huella SHA-256 del estado comparado. La prueba automatizada rechaza un hash de origen incorrecto y un motor con evolución divergente; verifica también la conservación de la procedencia tras reanudar.
+
+Para reproducir la migración desde los originales, extraer `baseline/dist`, `original/<semilla>.json.checkpoint.json` y ejecutar desde la raíz del repositorio:
+
+```sh
+node scripts/migrate-ecology-checkpoints.mjs /ruta/baseline/dist /ruta/original /ruta/migrados
+node scripts/run-ecology-batch.mjs /ruta/migrados
+```
+
+Las cinco semillas alcanzaron el día 21 desde los checkpoints migrados, sin recalcular los veinte días anteriores:
+
+| Semilla | Animales día 20 → 21 | Familias presentes | Rubrones |
+| --- | ---: | ---: | ---: |
+| 1726312000000 | 1.169 → 1.382 | 5 | 0 |
+| 1726312000001 | 1.546 → 1.754 | 5 | 0 |
+| 1726312000002 | 1.162 → 1.322 | 5 | 0 |
+| 1726312000003 | 1.378 → 1.548 | 5 | 0 |
+| 1726312000004 | 1.193 → 1.359 | 5 | 0 |
+
+El archivo `vespera-iv7.1-checkpoints-day21.zip` contiene los cinco checkpoints originales, los cinco nuevos informes y checkpoints, los comprobantes de migración y el código original exacto. Los checkpoints nuevos guardan el día 21 y se pueden reanudar directamente con el comando anterior, después de extraer el directorio `migrated`.
+
+**Pendiente para ECO-01:** continuar las cinco series hasta 150 días y perfilar cargas de 1.000–4.000 animales; extender dos semillas hasta 600 días en ECO-06. Después ECO-02 investiga causas ecológicas con esos checkpoints y ECO-03 corrige solo fallos demostrados antes de IV.8. Las otras cinco familias animales sobreviven al día 21 de las cinco semillas; Rubrón es la única familia animal perdida hasta ese punto.

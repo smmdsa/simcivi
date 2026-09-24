@@ -6,8 +6,9 @@ import {Ecosystem,DAY} from '../dist/simulation.js';
 import {census} from '../dist/ecology-census.js';
 
 const [seedArg='1726312000000',daysArg='150',out='ecology-diagnostic.json',stepArg='0.1',resumeArg]=process.argv.slice(2);
+const {checkpointIntervalDays}=JSON.parse(fs.readFileSync(new URL('../docs/verification/ecology-seeds.json',import.meta.url),'utf8'));
 const seed=Number(seedArg),days=Number(daysArg),step=Number(stepArg);
-if(!Number.isSafeInteger(seed)||!Number.isInteger(days)||days<1||days>5000||![.1,.2].includes(step)||resumeArg&&resumeArg!=='--resume')throw Error('Usage: node scripts/diagnose-ecology.mjs SEED DAYS(1..5000) OUTPUT.json [0.1|0.2] [--resume]');
+if(!Number.isSafeInteger(seed)||!Number.isInteger(days)||days<1||days>5000||![.1,.2].includes(step)||resumeArg&&resumeArg!=='--resume'||!Number.isInteger(checkpointIntervalDays)||checkpointIntervalDays<1)throw Error('Usage: node scripts/diagnose-ecology.mjs SEED DAYS(1..5000) OUTPUT.json [0.1|0.2] [--resume]');
 const root=new URL('../dist/',import.meta.url),checkpoint=out+'.checkpoint.json';
 const files=fs.readdirSync(root).filter(name=>name.endsWith('.js')).sort();
 const hash=crypto.createHash('sha256');for(const name of files){hash.update(name);hash.update(fs.readFileSync(new URL(name,root)));}
@@ -29,9 +30,9 @@ for(let day=(prior?.days??0)+1;day<=days;day++){
  const row={...census(sim),day,causes:{...causes},birthsByFamily:[...birthsByFamily],deathsByFamily:deathsByFamily.map(x=>({...x})),migrations:sim.migrations};rows.push(row);
  if(row.animals<20&&(day===1||rows.at(-2).animals>=20)){save(out+`.day-${day}-before.json`,JSON.parse(before));save(out+`.day-${day}-after.json`,sim.snapshot());}
  if(!row.animals&&extinctionDay===null){extinctionDay=day;save(out+`.day-${day}-extinction.json`,sim.snapshot());}
- if(day%10===0||day===days){
+ if(day%checkpointIntervalDays===0||day===days){
   const elapsedSeconds=(prior?.elapsedSeconds??0)+(performance.now()-started)/1000;
-  const common={seed,worldSeed:sim.worldSeed,step,days:day,revision,codeHash,extinctionDay,rows,elapsedSeconds};
+  const common={seed,worldSeed:sim.worldSeed,step,days:day,revision,codeHash,extinctionDay,rows,elapsedSeconds,...(prior?.migration?{migration:prior.migration}:{})};
   save(checkpoint,{...common,causes,deathsByFamily,birthsByFamily,snapshot:sim.snapshot()});
   save(out,common);
   console.log(JSON.stringify({seed,day,animals:row.animals,bySpecies:row.bySpecies,plants:row.plants,seeds:row.seedBank,elapsedSeconds:Math.round(elapsedSeconds)}));
